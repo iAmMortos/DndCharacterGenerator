@@ -39,9 +39,13 @@ class MainView(ui.View):
     self.ggtr_sw = sv['sw_ggtr']
     self.ttp_sw = sv['sw_ttp']
     self.lr_sw = sv['sw_lr']
-    self.gpdf_sw = sv['sw_gpdf']
+    self.erftlw_sw = sv['sw_erftlw']
+    self.ua_sw = sv['sw_ua']
+    self.tcoe_sw = sv['sw_tcoe']
+    self.fc5e_sw = sv['sw_fc5e']
     self.source_sws = [self.phb_sw, self.dmg_sw, self.xgte_sw, self.vgtm_sw, self.scag_sw, self.mtof_sw,
-                       self.eepc_sw, self.wgte_sw, self.ggtr_sw, self.ttp_sw, self.lr_sw, self.gpdf_sw]
+                       self.eepc_sw, self.wgte_sw, self.ggtr_sw, self.ttp_sw, self.lr_sw, self.erftlw_sw,
+                       self.ua_sw, self.tcoe_sw, self.fc5e_sw]
     
     self.sel_all_btn = sv['btn_sel_all']
     self.sel_all_btn.action = self.handle_sel_all
@@ -94,8 +98,14 @@ class MainView(ui.View):
       srcs += ['tTP']
     if self.lr_sw.value:
       srcs += ['LR']
-    if self.gpdf_sw.value:
-      srcs += ['gPDF']
+    if self.erftlw_sw.value:
+      srcs += ['ERftLW']
+    if self.ua_sw.value:
+      srcs += ['UA']
+    if self.tcoe_sw.value:
+      srcs += ['TCoE']
+    if self.fc5e_sw.value:
+      srcs += ['FC5E']
     return srcs
   
   @staticmethod
