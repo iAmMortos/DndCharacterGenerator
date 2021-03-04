@@ -78,9 +78,9 @@ class Randomizer(object):
     return '(Source: %s)' % ', '.join(src_texts)
 
   def _shuffle_race(self, even=False, skip_race=False, sources=None):
-    if skip_race:
-      return
     rs = self._get_filtered_list(self.races, sources)
+    if skip_race or rs == []:
+      return
     if even:
       races = []
       for r in rs:
@@ -106,9 +106,9 @@ class Randomizer(object):
     self.cur_race_src_short = self._get_short_source_text(srcs)
 
   def _shuffle_class(self, even=False, skip_class=False, skip_spec=False, sources=None):
-    if skip_class and skip_spec:
-      return
     cs = self._get_filtered_list(self.classes, sources)
+    if (skip_class and skip_spec) or cs == []:
+      return
     if even or skip_class:
       if skip_class:
         class_name = self.cur_class
