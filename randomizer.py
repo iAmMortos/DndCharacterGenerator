@@ -1,5 +1,6 @@
 
 import random
+from views.main_view import MainView
 
 
 class Randomizer(object):
@@ -13,6 +14,8 @@ class Randomizer(object):
     self.cur_race_src = None
     self.cur_race_src_short = None
     self.cur_class = None
+    self.cur_spec_name = None
+    self.cur_spec = None
     self.cur_class_src = None
     self.cur_class_src_short = None
 
@@ -58,7 +61,7 @@ class Randomizer(object):
       if additional:
         rsrc = "%s [addl. vars.]" % rsrc
       src_texts += [rsrc]
-    return '(Src: %s)' % ', '.join(src_texts)
+    return ', '.join(src_texts)
 
   def _get_source_text(self, srctext):
     src_texts = []
@@ -93,23 +96,25 @@ class Randomizer(object):
     class_name, specification, exception, srcs = random.choice(cs)
 
     spec_name, formatting = self.specializations[class_name]
-    class_text = '%s -' % class_name
+    
+    spec_text = ''
     if exception != '':
-      class_text = '%s %s' % (class_text, exception)
+      spec_text = exception
     else:
-      class_text = '%s %s: %s' % (class_text, spec_name, formatting)
-      class_text = str.format(class_text, specification)
+      spec_text = str.format(formatting, specification)
 
-    self.cur_class = class_text
+    self.cur_class = class_name
+    self.cur_spec = spec_text
+    self.cur_spec_name = spec_name
     self.cur_class_src = self._get_source_text(srcs)
     self.cur_class_src_short = self._get_short_source_text(srcs)
 
-  def pick(self, skip_race=False, skip_class=False, sources=None):
+  def pick(self, skip_race=False, skip_class=False, skip_spec=False, sources=None):
     if not skip_race:
       self._shuffle_race(sources)
     if not skip_class:
       self._shuffle_class(sources)
-    self.print_race_class_with_short_sources()
+    # self.print_race_class_with_short_sources()
 
   def print_race_class(self):
     print(self.cur_race)
@@ -126,7 +131,5 @@ class Randomizer(object):
 
 if __name__ == '__main__':
   rnd = Randomizer()
-
-  for _ in range(50):
-    rnd.pick()
-    print()
+  v = MainView.load_view(rnd)
+  v.present()
