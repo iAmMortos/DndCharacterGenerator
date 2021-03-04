@@ -1,9 +1,11 @@
+Artificer,Artificer Specialty,{}
 Barbarian,Primal Path,Path of the {}
 Bard,Bard College,College of {}
 Cleric,Divine Domain,{} Domain
 Druid,Druid Circle,Circle of {}
 Fighter,Martial Archetype,{}
 Monk,Monastic Tradition,Way of {}
+Mystic,Mystic Order,Order of the {}
 Paladin,Sacred Oath,Oath of {}
 Ranger,Ranger Archetype,{}
 Rogue,Roguish Archetype,{}
