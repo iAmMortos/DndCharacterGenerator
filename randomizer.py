@@ -77,9 +77,23 @@ class Randomizer(object):
       src_texts += [full_src]
     return '(Source: %s)' % ', '.join(src_texts)
 
-  def _shuffle_race(self, sources=None):
+  def _shuffle_race(self, even=False, skip_race=False, sources=None):
+    if skip_race:
+      return
     rs = self._get_filtered_list(self.races, sources)
-    race, variation, identity, srcs = random.choice(rs)
+    if even:
+      races = []
+      for r in rs:
+        if r[0] not in races:
+          races += [r[0]]
+      race = random.choice(races)
+      single_race = []
+      for r in rs:
+        if r[0] == race:
+          single_race += [r]
+      _, variation, identity, srcs = random.choice(single_race)
+    else:
+      race, variation, identity, srcs = random.choice(rs)
 
     race_text = race
     if variation != '':
@@ -91,9 +105,26 @@ class Randomizer(object):
     self.cur_race_src = self._get_source_text(srcs)
     self.cur_race_src_short = self._get_short_source_text(srcs)
 
-  def _shuffle_class(self, sources=None):
+  def _shuffle_class(self, even=False, skip_class=False, skip_spec=False, sources=None):
+    if skip_class and skip_spec:
+      return
     cs = self._get_filtered_list(self.classes, sources)
-    class_name, specification, exception, srcs = random.choice(cs)
+    if even or skip_class:
+      if skip_class:
+        class_name = self.cur_class
+      else:
+        classes = []
+        for c in cs:
+          if c[0] not in classes:
+            classes += [c[0]]
+        class_name = random.choice(classes)
+      single_class = []
+      for c in cs:
+        if c[0] == class_name:
+          single_class += [c]
+      _, specification, exception, srcs = random.choice(single_class)
+    else:
+      class_name, specification, exception, srcs = random.choice(cs)
 
     spec_name, formatting = self.specializations[class_name]
     
@@ -109,11 +140,9 @@ class Randomizer(object):
     self.cur_class_src = self._get_source_text(srcs)
     self.cur_class_src_short = self._get_short_source_text(srcs)
 
-  def pick(self, skip_race=False, skip_class=False, skip_spec=False, sources=None):
-    if not skip_race:
-      self._shuffle_race(sources)
-    if not skip_class:
-      self._shuffle_class(sources)
+  def pick(self, even, skip_race=False, skip_class=False, skip_spec=False, sources=None):
+    self._shuffle_race(even, skip_race, sources)
+    self._shuffle_class(even, skip_class, skip_spec, sources)
     # self.print_race_class_with_short_sources()
 
   def print_race_class(self):

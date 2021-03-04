@@ -39,6 +39,8 @@ class MainView(ui.View):
     self.ttp_sw = sv['sw_ttp']
     self.lr_sw = sv['sw_lr']
     self.gpdf_sw = sv['sw_gpdf']
+    self.source_sws = [self.phb_sw, self.dmg_sw, self.xgte_sw, self.vgtm_sw, self.scag_sw, self.mtof_sw,
+                       self.eepc_sw, self.wgte_sw, self.ggtr_sw, self.ttp_sw, self.lr_sw, self.gpdf_sw]
     
     self.sel_all_btn = sv['btn_sel_all']
     self.sel_all_btn.action = self.handle_sel_all
@@ -52,33 +54,13 @@ class MainView(ui.View):
     self.update_labels()
   
   def handle_sel_all(self, target):
-    self.phb_sw.value = True
-    self.dmg_sw.value = True
-    self.xgte_sw.value = True
-    self.vgtm_sw.value = True
-    self.scag_sw.value = True
-    self.mtof_sw.value = True
-    self.eepc_sw.value = True
-    self.wgte_sw.value = True
-    self.ggtr_sw.value = True
-    self.ttp_sw.value = True
-    self.lr_sw.value = True
-    self.gpdf_sw.value = True
-    
+    for sw in self.source_sws:
+      sw.value = True
+
   def handle_desel_all(self, target):
-    self.phb_sw.value = False
-    self.dmg_sw.value = False
-    self.xgte_sw.value = False
-    self.vgtm_sw.value = False
-    self.scag_sw.value = False
-    self.mtof_sw.value = False
-    self.eepc_sw.value = False
-    self.wgte_sw.value = False
-    self.ggtr_sw.value = False
-    self.ttp_sw.value = False
-    self.lr_sw.value = False
-    self.gpdf_sw.value = False
-    
+    for sw in self.source_sws:
+      sw.value = False
+
   def handle_class_sw(self, target):
     if not self.class_sw.value:
       self.spec_sw.value = False
