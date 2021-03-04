@@ -26,6 +26,7 @@ class MainView(ui.View):
     self.class_sw.action = self.handle_class_sw
     self.spec_sw = sv['sw_spec']
     self.spec_sw.action = self.handle_spec_sw
+    self.even_sw = sv['sw_even']
     
     self.phb_sw = sv['sw_phb']
     self.dmg_sw = sv['sw_dmg']
@@ -50,7 +51,7 @@ class MainView(ui.View):
     self.shuffle_btn.action = self.handle_shuffle
     
   def handle_shuffle(self, target):
-    self.rand.pick(self.race_sw.value, self.class_sw.value, self.spec_sw.value, self.get_selected_sources())
+    self.rand.pick(self.even_sw.value, self.race_sw.value, self.class_sw.value, self.spec_sw.value, self.get_selected_sources())
     self.update_labels()
   
   def handle_sel_all(self, target):

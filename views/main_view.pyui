@@ -170,7 +170,7 @@
               "name" : "sw_race",
               "uuid" : "98BE23BE-625E-4F6B-AC68-2D89A0765CC6"
             },
-            "selected" : true
+            "selected" : false
           },
           {
             "nodes" : [
@@ -246,7 +246,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 126}, {319, 23}}",
+            "frame" : "{{6, 167}, {319, 23}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "W",
@@ -266,7 +266,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 157}, {156, 32}}",
+            "frame" : "{{6, 198}, {156, 32}}",
             "class" : "Button",
             "attributes" : {
               "flex" : "WRB",
@@ -283,7 +283,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{170, 157}, {155, 32}}",
+            "frame" : "{{170, 198}, {155, 32}}",
             "class" : "Button",
             "attributes" : {
               "flex" : "WLB",
@@ -300,7 +300,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 197}, {260, 32}}",
+            "frame" : "{{6, 238}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
@@ -319,7 +319,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 198}, {51, 31}}",
+            "frame" : "{{274, 239}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -335,7 +335,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 237}, {51, 31}}",
+            "frame" : "{{274, 278}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -351,7 +351,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 276}, {51, 31}}",
+            "frame" : "{{274, 317}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -367,7 +367,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 315}, {51, 31}}",
+            "frame" : "{{274, 356}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -383,7 +383,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 354}, {51, 31}}",
+            "frame" : "{{274, 395}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -399,7 +399,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 393}, {51, 31}}",
+            "frame" : "{{274, 434}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -415,7 +415,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 432}, {51, 31}}",
+            "frame" : "{{274, 473}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -431,7 +431,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 471}, {51, 31}}",
+            "frame" : "{{274, 512}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -447,7 +447,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 510}, {51, 31}}",
+            "frame" : "{{274, 551}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -463,7 +463,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 549}, {51, 31}}",
+            "frame" : "{{274, 590}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -479,7 +479,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 588}, {51, 31}}",
+            "frame" : "{{274, 629}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -495,7 +495,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 627}, {51, 31}}",
+            "frame" : "{{274, 668}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -511,7 +511,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 276}, {260, 32}}",
+            "frame" : "{{6, 317}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
@@ -530,7 +530,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 237}, {260, 32}}",
+            "frame" : "{{6, 278}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
@@ -549,7 +549,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 315}, {260, 32}}",
+            "frame" : "{{6, 356}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
@@ -568,7 +568,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 354}, {260, 32}}",
+            "frame" : "{{6, 395}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
@@ -587,7 +587,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 393}, {260, 32}}",
+            "frame" : "{{6, 434}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
@@ -606,7 +606,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 432}, {260, 32}}",
+            "frame" : "{{6, 473}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
@@ -625,7 +625,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 471}, {260, 32}}",
+            "frame" : "{{6, 512}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
@@ -644,7 +644,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 510}, {260, 32}}",
+            "frame" : "{{6, 551}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
@@ -663,7 +663,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 549}, {260, 32}}",
+            "frame" : "{{6, 590}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
@@ -682,7 +682,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 588}, {260, 32}}",
+            "frame" : "{{6, 629}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
@@ -701,7 +701,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 627}, {260, 32}}",
+            "frame" : "{{6, 668}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
@@ -715,6 +715,41 @@
               "font_name" : "<System>"
             },
             "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 128}, {260, 32}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "WB",
+              "font_size" : 18,
+              "frame" : "{{91, 337}, {150, 32}}",
+              "uuid" : "C0B53E72-2818-4C28-9F02-9B82E2F17434",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "Evenly distribute base classes\/races",
+              "name" : "label5",
+              "font_name" : "<System>"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{274, 128}, {51, 31}}",
+            "class" : "Switch",
+            "attributes" : {
+              "flex" : "LB",
+              "frame" : "{{140, 338}, {51, 31}}",
+              "value" : true,
+              "class" : "Switch",
+              "name" : "sw_even",
+              "uuid" : "F966E775-3A31-4077-B4A0-A18B2A98983A"
+            },
+            "selected" : true
           }
         ],
         "frame" : "{{0, 176}, {331, 207}}",
@@ -723,22 +758,22 @@
           "flex" : "WH",
           "frame" : "{{6, 58}, {320, 320}}",
           "uuid" : "1FB7AED1-3F37-48BA-B4E2-7AC1FE24E8D9",
-          "content_height" : 666,
+          "content_height" : 706,
           "class" : "ScrollView",
           "content_width" : 331,
           "name" : "sv"
         },
-        "selected" : true
+        "selected" : false
       }
     ],
     "frame" : "{{0, 0}, {331, 435}}",
     "class" : "View",
     "attributes" : {
-      "custom_class" : "MainView",
-      "enabled" : true,
-      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "enabled" : true,
       "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "custom_class" : "MainView",
       "flex" : ""
     },
     "selected" : false

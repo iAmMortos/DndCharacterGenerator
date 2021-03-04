@@ -140,7 +140,7 @@ class Randomizer(object):
     self.cur_class_src = self._get_source_text(srcs)
     self.cur_class_src_short = self._get_short_source_text(srcs)
 
-  def pick(self, even, skip_race=False, skip_class=False, skip_spec=False, sources=None):
+  def pick(self, even=False, skip_race=False, skip_class=False, skip_spec=False, sources=None):
     self._shuffle_race(even, skip_race, sources)
     self._shuffle_class(even, skip_class, skip_spec, sources)
     # self.print_race_class_with_short_sources()
