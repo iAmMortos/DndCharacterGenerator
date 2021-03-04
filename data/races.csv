@@ -1,5 +1,8 @@
 Aarakocra,,,EEPC
-Aasimar,,,VGtM
+Aasimar,,Fallen,VGtM,FC5E
+Aasimar,,Protector,VGtM,FC5E
+Aasimar,,Scourge,VGtM,FC5E
+Bugbear,,,FC5E
 Centaur,,,GGtR
 Changeling,,,WGtE
 Dragonborn,,,PHB
@@ -22,22 +25,34 @@ Gith,,Githzerai,MToF
 Gnome,Deep,Svirfneblin,EEPC/MToF/SCAG
 Gnome,Forest,,PHB
 Gnome,Rock,,PHB
+Goblin,,,FC5E
 Goliath,,,EEPC/VGtM
 Half-Elf,,,PHB/SCAG+
+Half-Elf,,Aquatic Elf Descent,FC5E
+Half-Elf,,Drow Descent,FC5E
+Half-Elf,,Moon/Sun Elf Descent,FC5E
+Half-Elf,,Wood Elf Descent,FC5E
 Half-Orc,,,PHB
 Halfling,Lightfoot,,PHB
+Halfling,Ghostwise,,FC5E
 Halfling,Stout,,PHB
+Hobgoblin,,,FC5E
 Human,,,PHB
 Kalashtar,,,WGtE
 Kenku,,,VGtM
+Kobold,,,FC5E
 Lizardfolk,,,VGtM
 Loxodon,,,GGtR
 Minotaur,,,GGtR
-Shifter,,,WGtE
+Orc,,,FC5E
+Shifter,Razorclaw,,WGtE/FC5E
+Shifter,Wildhunt,,WGtE/FC5E
 Simic Hybrid,,,GGtR
 Tabaxi,,,VGtM
 Tiefling,,,PHB/SCAG+
+Tiefling,Infernal,,FC5E
 Tortle,,,tTP
 Triton,,,VGtM
 Vedalken,,,GGtR
 Warforged,,,WGtE
+Yuan-ti Pureblood,,,FC5E
