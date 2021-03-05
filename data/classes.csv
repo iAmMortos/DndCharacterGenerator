@@ -1,9 +1,17 @@
-Barbarian,Berserker,,PHB
-Barbarian,Totem Warrior,,PHB/SCAG
-Barbarian,Dwarven Battlerager,,SCAG
-Barbarian,Ancestral Guardian,,XGtE
-Barbarian,Storm Herald,,XGtE
-Barbarian,Zealot,,XGtE
+Artificer,Alchemist,,TCoE
+Artificer,Armorer,,TCoE
+Artificer,Artillerist,,TCoE
+Artificer,Battle Smith,,TCoE
+Barbarian,Beast,,TCoE
+Barbarian,the Berserker,,PHB
+Barbarian,the Totem Warrior,,PHB/SCAG
+Barbarian,the Dwarven Battlerager,,SCAG
+Barbarian,the Ancestral Guardian,,XGtE
+Barbarian,the Storm Herald,,XGtE
+Barbarian,the Zealot,,XGtE
+Barbarian,Wild Magic,,TCoE
+Bard,Creation,,TCoE
+Bard,Eloquence,,TCoE
 Bard,Lore,,PHB
 Bard,Valor,,PHB
 Bard,Glamour,,XGtE
@@ -23,11 +31,19 @@ Cleric,Forge,,XGtE
 Cleric,Grave,,XGtE
 Cleric,City,,UA-07
 Cleric,Protection,,UA-22
+Cleric,Order,,TCoE
+Cleric,Peace,,TCoE
+Cleric,Twilight,,TCoE
 Druid,the Land,,PHB
 Druid,the Moon,,PHB
 Druid,Dreams,,XGtE
 Druid,the Shepherd,,XGtE
 Druid,Twilight,,UA-23
+Druid,Spores,,TCoE
+Druid,Stars,,TCoE
+Druid,Wildfire,,TCoE
+Fighter,Psi Warrior,,TCoE
+Fighter,Rune Knight,,TCoE
 Fighter,Champion,,PHB
 Fighter,Battle Master,,PHB
 Fighter,Eldritch Knight,,PHB
@@ -39,6 +55,8 @@ Fighter,Scout,,UA-12
 Fighter,Monster Hunter,,UA-14
 Fighter,Knight,,UA-24
 Fighter,Sharpshooter,,UA-24
+Monk,Mercy,,TCoE
+Monk,Astral Self,,TCoE
 Monk,the Open Hand,,PHB
 Monk,Shadow,,PHB
 Monk,the Four Elements,,PHB
@@ -53,6 +71,8 @@ Mystic,Immortal,,UA-33
 Mystic,Nomad,,UA-33
 Mystic,Soul Knife,,UA-33
 Mystic,Wu Jen,,UA-33
+Paladin,Glory,,TCoE
+Paladin,the Watchers,,TCoE
 Paladin,Devotion,,PHB
 Paladin,Ancients,,PHB
 Paladin,Vengeance,,PHB
@@ -61,6 +81,8 @@ Paladin,Conquest,,XGtE
 Paladin,Redemption,,XGtE
 Paladin,Oathbreaker,Oathbreaker,DMG
 Paladin,Treachery,,UA-26
+Ranger,Fey Wanderer,,TCoE
+Ranger,Swampkeeper,,TCoE
 Ranger,Hunter,,PHB
 Ranger,Beast Master,,PHB
 Ranger,Gloom Stalker,,XGtE
@@ -73,6 +95,8 @@ Ranger,Stalker,,UA-08
 Ranger,Beast,,UA-18
 Ranger,Hunter,,UA-18
 Ranger,Deep Stalker,,UA-18
+Rogue,Phantom,,TCoE
+Rogue,Soulknife,,TCoE
 Rogue,Thief,,PHB
 Rogue,Assassin,,PHB
 Rogue,Arcane Trickster,,PHB
@@ -88,6 +112,10 @@ Sorcerer,Shadow,,XGtE
 Sorcerer,Phoenix,,UA-29
 Sorcerer,Sea,,UA-29
 Sorcerer,Stone,,UA-29
+Sorcerer,Aberrant Mind,,TCoE
+Sorcerer,Clockwork Soul,,TCoE
+Warlock,The Genie,,TCoE
+Warlock,The Fathomless,,TCoE
 Warlock,Arch-fey,,PHB
 Warlock,Fiend,,PHB
 Warlock,Great Old One,,PHB
@@ -105,11 +133,10 @@ Wizard,Evocation,,PHB
 Wizard,Illusion,,PHB
 Wizard,Necromancy,,PHB
 Wizard,Transmutation,,PHB
-Wizard,Bladesinging,Bladesinger,SCAG
+Wizard,Bladesinging,Bladesinger,SCAG/TCoE
 Wizard,War Magic,War Mage,XGtE
 Wizard,Artificer,Artificer,UA-01
+Wizard,Order of Scribes,Order of Scribes,TCoE
 Wizard,Technomancy,,UA-07
 Wizard,Theurgy,,UA-34
 Wizard,Lore,,UA-30
-Artificer,Alchemist,,UA-27
-Artificer,Gunsmith,,UA-27
