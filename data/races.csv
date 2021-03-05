@@ -1,20 +1,22 @@
 Aarakocra,,,EEPC
-Aasimar,,Fallen,VGtM/FC5E
-Aasimar,,Protector,VGtM/FC5E
-Aasimar,,Scourge,VGtM/FC5E
-Bugbear,,,FC5E
+Aasimar,,Variant,DMG
+Aasimar,Protector,,VGtM
+Aasimar,Scourge,,VGtM
+Aasimar,Fallen,,VGtM
+Bugbear,,,VGtM
 Centaur,,,GGtR
-Changeling,,,WGtE
+Changeling,,,ERftLW
 Dragonborn,,,PHB
-Dwarf,Grey,Duergar,MToF/SCAG
 Dwarf,Hill,,PHB
 Dwarf,Mountain,,PHB
-Elf,Dark,Drow,PHB
+Dwarf,Gray,Duergar,SCAG/MToF
+Elf,High,,PHB/GGtR
+Elf,Wood,,PHB/GGtR
+Elf,Dark,Drow,PHB/GGtR
+Elf,,Eladrin,DMG
 Elf,,Eladrin,MToF
-Elf,High,,PHB
 Elf,Sea,,MToF
-Elf,,Shadar-Kai,MToF
-Elf,Wood,,PHB
+Elf,,Shadar Kai,MToF
 Firbolg,,,VGtM
 Genasi,Air,,EEPC
 Genasi,Earth,,EEPC
@@ -22,37 +24,52 @@ Genasi,Fire,,EEPC
 Genasi,Water,,EEPC
 Gith,,Githyanki,MToF
 Gith,,Githzerai,MToF
-Gnome,Deep,Svirfneblin,EEPC/MToF/SCAG
 Gnome,Forest,,PHB
 Gnome,Rock,,PHB
-Goblin,,,FC5E
-Goliath,,,EEPC/VGtM
-Half-Elf,,,PHB/SCAG+
-Half-Elf,,Aquatic Elf Descent,FC5E
-Half-Elf,,Drow Descent,FC5E
-Half-Elf,,Moon/Sun Elf Descent,FC5E
-Half-Elf,,Wood Elf Descent,FC5E
-Half-Orc,,,PHB
+Gnome,Deep,Svirfneblin,SCAG/MToF
+Goblin,,,VGtM
+Goliath,,,VGtM/EEPC
 Halfling,Lightfoot,,PHB
-Halfling,Ghostwise,,FC5E
 Halfling,Stout,,PHB
-Hobgoblin,,,FC5E
-Human,,,PHB
-Kalashtar,,,WGtE
+Halfling,Ghostwise,,SCAG
+Half-Elf,,,PHB
+Half-Elf,,Wood Elf Descent,SCAG
+Half-Elf,,Moon/Sun Elf Descent,SCAG
+Half-Elf,,Drow Descent,SCAG
+Half-Elf,,Aquatic Elf Descent,SCAG
+Half-Orc,,,PHB
+Hobgoblin,,,VGtM
+Human,,,PHB/GGtR
+Human,,Variant,PHB/GGtR
+Kalashtar,,,ERftLW
 Kenku,,,VGtM
-Kobold,,,FC5E
+Kobold,,,VGtM
 Lizardfolk,,,VGtM
 Loxodon,,,GGtR
 Minotaur,,,GGtR
-Orc,,,FC5E
-Shifter,Razorclaw,,WGtE/FC5E
-Shifter,Wildhunt,,WGtE/FC5E
+Orc,,,VGtM
+Shifter,Beasthide,,ERftLW
+Shifter,Longtooth,,ERftLW
+Shifter,Swiftstride,,ERftLW
+Shifter,Wildhunt,,ERftLW
 Simic Hybrid,,,GGtR
 Tabaxi,,,VGtM
-Tiefling,,,PHB/SCAG+
-Tiefling,Infernal,,FC5E
+Tiefling,,,PHB
+Tiefling,,Variant,SCAG
+Tiefling,Feral,,SCAG
+Tiefling,Asmodeus,,MToF
+Tiefling,Baalzebul,,MToF
+Tiefling,Dispater,,MToF
+Tiefling,Fierna,,MToF
+Tiefling,Glasya,,MToF
+Tiefling,Levistus,,MToF
+Tiefling,Mammon,,MToF
+Tiefling,Mephistopheles,,MToF
+Tiefling,Zariel,,MToF
 Tortle,,,tTP
 Triton,,,VGtM
 Vedalken,,,GGtR
-Warforged,,,WGtE
-Yuan-ti Pureblood,,,FC5E
+Warforged,Envoy,,ERftLW
+Warforged,Juggernaut,,ERftLW
+Warforged,Skirmisher,,ERftLW
+Yuan-Ti Pureblood,,,VGtM
