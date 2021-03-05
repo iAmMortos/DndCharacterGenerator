@@ -71,6 +71,8 @@ class Randomizer(object):
       if rsrc.endswith('+'):
         rsrc = rsrc[:-1]
         additional = True
+      if rsrc.startswith('UA'):
+        rsrc = 'UA'
       full_src = self.sources[rsrc]
       if additional:
         full_src = "%s [additional variations]" % full_src
