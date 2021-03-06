@@ -18,7 +18,7 @@
           "font_size" : 24,
           "font_name" : "HoeflerText-Black"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -37,7 +37,7 @@
           "name" : "lbl_spec_name",
           "font_size" : 18
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -73,7 +73,7 @@
           "name" : "lbl_spec",
           "font_name" : "HoeflerText-Regular"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -114,7 +114,7 @@
               "name" : "label1",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -130,7 +130,7 @@
               "name" : "sw_race",
               "uuid" : "98BE23BE-625E-4F6B-AC68-2D89A0765CC6"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -149,7 +149,7 @@
               "name" : "label2",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -165,7 +165,7 @@
               "name" : "sw_class",
               "uuid" : "BC071209-1E9D-41E9-9D42-973FB3097B50"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -184,7 +184,7 @@
               "name" : "label3",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -200,7 +200,7 @@
               "name" : "sw_spec",
               "uuid" : "BF394251-1A7A-4FC8-B09F-ED0FBCE6E970"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -220,7 +220,7 @@
               "name" : "label4",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -237,7 +237,7 @@
               "name" : "btn_sel_all",
               "font_size" : 15
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -254,7 +254,7 @@
               "name" : "btn_desel_all",
               "font_size" : 15
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -273,7 +273,7 @@
               "name" : "",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -289,7 +289,7 @@
               "name" : "sw_phb",
               "uuid" : "00C7969B-58EF-418B-9A40-9842CDF45C37"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -305,7 +305,7 @@
               "name" : "sw_dmg",
               "uuid" : "2C2548A8-0588-4B16-AC73-341289B17B70"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -321,7 +321,7 @@
               "name" : "sw_xgte",
               "uuid" : "76B8F8A9-700B-4577-BCCF-240498C04CC3"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -337,7 +337,7 @@
               "name" : "sw_vgtm",
               "uuid" : "A95E6617-35A4-46B8-8F80-68025AFA1637"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -353,7 +353,7 @@
               "name" : "sw_scag",
               "uuid" : "00F5900D-AB0F-46C4-8BB6-7513D48C2E68"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -369,7 +369,7 @@
               "name" : "sw_mtof",
               "uuid" : "0AC840B7-5582-4062-90E2-B34096EB4E69"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -401,7 +401,7 @@
               "name" : "sw_ggtr",
               "uuid" : "A73D6C69-620C-49FE-AC87-FFFCB2BE96B9"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -433,7 +433,7 @@
               "name" : "sw_erftlw",
               "uuid" : "DE01F573-B6FA-4A4D-9419-096ACB526C64"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -452,7 +452,7 @@
               "name" : "label",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -471,7 +471,7 @@
               "name" : "label7",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -490,7 +490,7 @@
               "name" : "label8",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -509,7 +509,7 @@
               "name" : "label9",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -528,7 +528,7 @@
               "name" : "label10",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -566,7 +566,7 @@
               "name" : "label13",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -604,7 +604,7 @@
               "name" : "label16",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -623,7 +623,7 @@
               "name" : "label5",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -639,7 +639,7 @@
               "name" : "sw_even",
               "uuid" : "F966E775-3A31-4077-B4A0-A18B2A98983A"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -677,7 +677,7 @@
               "name" : "label17",
               "font_name" : "<System>"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -709,7 +709,7 @@
               "name" : "sw_tcoe",
               "uuid" : "D56C18FE-6ED6-48C8-9A81-9EF35E31F86E"
             },
-            "selected" : false
+            "selected" : true
           },
           {
             "nodes" : [
@@ -744,7 +744,7 @@
               "name" : "sw_bg",
               "uuid" : "13F7C667-62BF-4661-8A0F-BAA451699840"
             },
-            "selected" : false
+            "selected" : true
           }
         ],
         "frame" : "{{0, 200}, {331, 298}}",
@@ -777,7 +777,7 @@
           "font_size" : 20,
           "name" : "lbl_bg"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -797,7 +797,7 @@
           "font_size" : 14,
           "font_name" : "HoeflerText-Italic"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -817,7 +817,7 @@
           "name" : "lbl_class_src",
           "text_color" : "RGBA(0.723270,0.723270,0.723270,1.000000)"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -837,7 +837,7 @@
           "font_size" : 14,
           "font_name" : "HoeflerText-Italic"
         },
-        "selected" : true
+        "selected" : false
       }
     ],
     "frame" : "{{0, 0}, {331, 550}}",
