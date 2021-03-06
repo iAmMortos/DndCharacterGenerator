@@ -10,8 +10,10 @@ class MainView(ui.View):
     self.summary_lbl.text = '%s %s' % (self.rand.cur_race, self.rand.cur_class)
     self.spec_name_lbl.text = '%s:' % self.rand.cur_spec_name
     self.spec_lbl.text = self.rand.cur_spec
+    self.bg_lbl.text = 'Background: %s' % self.rand.cur_bg
     self.race_src_lbl.text = 'Race Source: %s' % self.rand.cur_race_src_short
     self.class_src_lbl.text = 'Class Source: %s' % self.rand.cur_class_src_short
+    self.bg_src_lbl.text = 'Background Source: %s' % self.rand.cur_bg_src_short
     
   def did_load(self):
     self.summary_lbl = self['lbl_summary']
@@ -19,6 +21,8 @@ class MainView(ui.View):
     self.class_src_lbl = self['lbl_class_src']
     self.spec_lbl = self['lbl_spec']
     self.spec_name_lbl = self['lbl_spec_name']
+    self.bg_lbl = self['lbl_bg']
+    self.bg_src_lbl = self['lbl_bg_src']
     
     sv = self['sv']
     self.race_sw = sv['sw_race']
@@ -26,6 +30,7 @@ class MainView(ui.View):
     self.class_sw.action = self.handle_class_sw
     self.spec_sw = sv['sw_spec']
     self.spec_sw.action = self.handle_spec_sw
+    self.bg_sw = sv['sw_bg']
     self.even_sw = sv['sw_even']
     
     self.phb_sw = sv['sw_phb']
@@ -52,7 +57,7 @@ class MainView(ui.View):
     self.shuffle_btn.action = self.handle_shuffle
     
   def handle_shuffle(self, target):
-    self.rand.pick(self.even_sw.value, self.race_sw.value, self.class_sw.value, self.spec_sw.value, self.get_selected_sources())
+    self.rand.pick(self.even_sw.value, self.race_sw.value, self.class_sw.value, self.spec_sw.value, self.bg_sw.value, self.get_selected_sources())
     self.update_labels()
   
   def handle_sel_all(self, target):

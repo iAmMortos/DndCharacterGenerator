@@ -9,36 +9,16 @@
         "class" : "Label",
         "attributes" : {
           "flex" : "WB",
-          "font_size" : 24,
+          "name" : "lbl_summary",
           "frame" : "{{71, 150}, {150, 32}}",
           "uuid" : "53573D4D-2312-4688-877C-EC9E738F4DBF",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Label",
-          "name" : "lbl_summary",
+          "font_size" : 24,
           "font_name" : "HoeflerText-Black"
         },
-        "selected" : true
-      },
-      {
-        "nodes" : [
-
-        ],
-        "frame" : "{{6, 101}, {319, 26}}",
-        "class" : "Label",
-        "attributes" : {
-          "flex" : "WB",
-          "name" : "lbl_race_src",
-          "text_color" : "RGBA(0.723270,0.723270,0.723270,1.000000)",
-          "frame" : "{{71, 150}, {150, 32}}",
-          "uuid" : "48B143A0-6788-41AD-A83C-233DE97E282F",
-          "class" : "Label",
-          "alignment" : "left",
-          "text" : "Label",
-          "font_size" : 14,
-          "font_name" : "HoeflerText-Italic"
-        },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
@@ -54,36 +34,16 @@
           "class" : "Label",
           "alignment" : "left",
           "text" : "Label",
-          "font_size" : 18,
-          "name" : "lbl_spec_name"
+          "name" : "lbl_spec_name",
+          "font_size" : 18
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
 
         ],
-        "frame" : "{{6, 121}, {319, 26}}",
-        "class" : "Label",
-        "attributes" : {
-          "flex" : "WB",
-          "font_size" : 14,
-          "font_name" : "HoeflerText-Italic",
-          "frame" : "{{71, 150}, {150, 32}}",
-          "uuid" : "48B143A0-6788-41AD-A83C-233DE97E282F",
-          "class" : "Label",
-          "alignment" : "left",
-          "text" : "Label",
-          "name" : "lbl_class_src",
-          "text_color" : "RGBA(0.723270,0.723270,0.723270,1.000000)"
-        },
-        "selected" : true
-      },
-      {
-        "nodes" : [
-
-        ],
-        "frame" : "{{6, 382}, {319, 47}}",
+        "frame" : "{{6, 497}, {319, 47}}",
         "class" : "Button",
         "attributes" : {
           "flex" : "WT",
@@ -104,22 +64,22 @@
         "class" : "Label",
         "attributes" : {
           "flex" : "WB",
-          "name" : "lbl_spec",
+          "font_size" : 24,
           "frame" : "{{71, 150}, {150, 32}}",
           "uuid" : "53573D4D-2312-4688-877C-EC9E738F4DBF",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Label",
-          "font_size" : 24,
+          "name" : "lbl_spec",
           "font_name" : "HoeflerText-Regular"
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
 
         ],
-        "frame" : "{{6, 144}, {319, 32}}",
+        "frame" : "{{6, 175.66665649414062}, {319, 32}}",
         "class" : "Label",
         "attributes" : {
           "flex" : "W",
@@ -133,7 +93,7 @@
           "font_size" : 12,
           "font_name" : "<System>"
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
@@ -145,13 +105,13 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "label1",
+              "font_size" : 18,
               "frame" : "{{85, 144}, {150, 32}}",
               "uuid" : "7465BA86-787C-43ED-BED4-650B767A83D3",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Lock Race",
-              "font_size" : 18,
+              "name" : "label1",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -180,13 +140,13 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "W",
-              "name" : "label2",
+              "font_size" : 18,
               "frame" : "{{85, 144}, {150, 32}}",
               "uuid" : "36BF41CC-C477-46EF-B86E-73939216B53D",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Lock Class",
-              "font_size" : 18,
+              "name" : "label2",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -215,13 +175,13 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "label3",
+              "font_size" : 18,
               "frame" : "{{85, 144}, {150, 32}}",
               "uuid" : "A1A9E4D3-2344-459B-B60F-20743C3181CC",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Lock Subclass",
-              "font_size" : 18,
+              "name" : "label3",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -246,7 +206,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 167}, {319, 23}}",
+            "frame" : "{{6, 207}, {319, 23}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "W",
@@ -266,7 +226,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 198}, {156, 32}}",
+            "frame" : "{{6, 238}, {156, 32}}",
             "class" : "Button",
             "attributes" : {
               "flex" : "WRB",
@@ -283,7 +243,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{170, 198}, {155, 32}}",
+            "frame" : "{{170, 238}, {155, 32}}",
             "class" : "Button",
             "attributes" : {
               "flex" : "WLB",
@@ -300,17 +260,17 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 238}, {260, 32}}",
+            "frame" : "{{6, 278}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "",
+              "font_size" : 18,
               "frame" : "{{91, 184}, {150, 32}}",
               "uuid" : "C9473F59-C12A-446F-9C88-65B0D5B99806",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Player’s Handbook",
-              "font_size" : 18,
+              "name" : "",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -319,7 +279,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 239}, {51, 31}}",
+            "frame" : "{{274, 279}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -335,7 +295,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 278}, {51, 31}}",
+            "frame" : "{{274, 318}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -351,7 +311,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 317}, {51, 31}}",
+            "frame" : "{{274, 357}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -367,7 +327,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 356}, {51, 31}}",
+            "frame" : "{{274, 396}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -383,7 +343,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 395}, {51, 31}}",
+            "frame" : "{{274, 435}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -399,7 +359,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 434}, {51, 31}}",
+            "frame" : "{{274, 474}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -415,7 +375,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 591}, {51, 31}}",
+            "frame" : "{{274, 631}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -431,7 +391,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 514}, {51, 31}}",
+            "frame" : "{{274, 554}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -447,7 +407,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 631}, {51, 31}}",
+            "frame" : "{{274, 671}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -463,7 +423,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 551}, {51, 31}}",
+            "frame" : "{{274, 591}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -479,17 +439,17 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 317}, {260, 32}}",
+            "frame" : "{{6, 357}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "label",
+              "font_size" : 18,
               "frame" : "{{91, 317}, {150, 32}}",
               "uuid" : "D8E7BC40-D111-45C6-82E8-1FC30D871031",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Xanathar's Guide to Everything",
-              "font_size" : 18,
+              "name" : "label",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -498,17 +458,17 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 278}, {260, 32}}",
+            "frame" : "{{6, 318}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "label7",
+              "font_size" : 18,
               "frame" : "{{91, 317}, {150, 32}}",
               "uuid" : "702B094D-A8A5-4B2A-B502-04F7B8177AE0",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Dungeon Master's Guide",
-              "font_size" : 18,
+              "name" : "label7",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -517,17 +477,17 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 356}, {260, 32}}",
+            "frame" : "{{6, 396}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "label8",
+              "font_size" : 18,
               "frame" : "{{91, 317}, {150, 32}}",
               "uuid" : "7AA1E23E-0FDC-4C78-8C66-25C078203BE8",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Volo's Guide to Monsters",
-              "font_size" : 18,
+              "name" : "label8",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -536,17 +496,17 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 395}, {260, 32}}",
+            "frame" : "{{6, 435}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "label9",
+              "font_size" : 18,
               "frame" : "{{91, 317}, {150, 32}}",
               "uuid" : "F6ECEB1E-1455-4B18-A943-C10674479B55",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Sword Coast Adventurer's Guide",
-              "font_size" : 18,
+              "name" : "label9",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -555,55 +515,17 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 434}, {260, 32}}",
+            "frame" : "{{6, 474}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "label10",
+              "font_size" : 18,
               "frame" : "{{91, 317}, {150, 32}}",
               "uuid" : "0F87FADE-CF04-4089-8A3D-28DFFFF1BBEA",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Mordenkainen's Tome of Foes",
-              "font_size" : 18,
-              "font_name" : "<System>"
-            },
-            "selected" : false
-          },
-          {
-            "nodes" : [
-
-            ],
-            "frame" : "{{6, 591}, {260, 32}}",
-            "class" : "Label",
-            "attributes" : {
-              "flex" : "WB",
-              "name" : "label11",
-              "frame" : "{{91, 317}, {150, 32}}",
-              "uuid" : "5837A844-9CB1-494F-A57C-6A01B5ECCA9B",
-              "class" : "Label",
-              "alignment" : "left",
-              "text" : "Elemental Evil Player's Companion",
-              "font_size" : 18,
-              "font_name" : "<System>"
-            },
-            "selected" : false
-          },
-          {
-            "nodes" : [
-
-            ],
-            "frame" : "{{6, 514}, {260, 32}}",
-            "class" : "Label",
-            "attributes" : {
-              "flex" : "WB",
-              "name" : "label13",
-              "frame" : "{{91, 317}, {150, 32}}",
-              "uuid" : "81D0E1F5-DA01-4224-A140-ABBEDD91C5F6",
-              "class" : "Label",
-              "alignment" : "left",
-              "text" : "Guildmasters' Guide to Ravnica",
-              "font_size" : 18,
+              "name" : "label10",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -616,13 +538,51 @@
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "label14",
+              "font_size" : 18,
+              "frame" : "{{91, 317}, {150, 32}}",
+              "uuid" : "5837A844-9CB1-494F-A57C-6A01B5ECCA9B",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "Elemental Evil Player's Companion",
+              "name" : "label11",
+              "font_name" : "<System>"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 554}, {260, 32}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "WB",
+              "font_size" : 18,
+              "frame" : "{{91, 317}, {150, 32}}",
+              "uuid" : "81D0E1F5-DA01-4224-A140-ABBEDD91C5F6",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "Guildmasters' Guide to Ravnica",
+              "name" : "label13",
+              "font_name" : "<System>"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 671}, {260, 32}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "WB",
+              "font_size" : 18,
               "frame" : "{{91, 317}, {150, 32}}",
               "uuid" : "553FDE65-5734-4E75-8F3D-D83D675CD0E0",
               "class" : "Label",
               "alignment" : "left",
               "text" : "The Tortle Package",
-              "font_size" : 18,
+              "name" : "label14",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -631,17 +591,17 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 551}, {260, 32}}",
+            "frame" : "{{6, 591}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "label16",
+              "font_size" : 18,
               "frame" : "{{91, 317}, {150, 32}}",
               "uuid" : "268E06C2-09E7-4503-BD28-C65F7575F86C",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Eberron: Rising from the Last War",
-              "font_size" : 18,
+              "name" : "label16",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -650,17 +610,17 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 128}, {260, 32}}",
+            "frame" : "{{6, 168}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "label5",
+              "font_size" : 18,
               "frame" : "{{91, 337}, {150, 32}}",
               "uuid" : "C0B53E72-2818-4C28-9F02-9B82E2F17434",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Evenly distribute base classes\/races",
-              "font_size" : 18,
+              "name" : "label5",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -669,7 +629,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 128}, {51, 31}}",
+            "frame" : "{{274, 168}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -685,17 +645,17 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 671}, {260, 32}}",
+            "frame" : "{{6, 711}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "label6",
+              "font_size" : 18,
               "frame" : "{{91, 389}, {150, 32}}",
               "uuid" : "B646FCB6-98A0-4032-8089-0A10EB4F682C",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Unearthed Arcana",
-              "font_size" : 18,
+              "name" : "label6",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -704,17 +664,17 @@
             "nodes" : [
 
             ],
-            "frame" : "{{6, 474}, {260, 32}}",
+            "frame" : "{{6, 514}, {260, 32}}",
             "class" : "Label",
             "attributes" : {
               "flex" : "WB",
-              "name" : "label17",
+              "font_size" : 18,
               "frame" : "{{91, 484}, {150, 32}}",
               "uuid" : "1E052312-CFFE-4F02-A8AD-A337FD2A0021",
               "class" : "Label",
               "alignment" : "left",
               "text" : "Tasha's Cauldron of Everything",
-              "font_size" : 18,
+              "name" : "label17",
               "font_name" : "<System>"
             },
             "selected" : false
@@ -723,7 +683,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 672}, {51, 31}}",
+            "frame" : "{{274, 712}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -739,7 +699,7 @@
             "nodes" : [
 
             ],
-            "frame" : "{{274, 474}, {51, 31}}",
+            "frame" : "{{274, 514}, {51, 31}}",
             "class" : "Switch",
             "attributes" : {
               "flex" : "LB",
@@ -750,31 +710,146 @@
               "uuid" : "D56C18FE-6ED6-48C8-9A81-9EF35E31F86E"
             },
             "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 126}, {260, 32}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "WB",
+              "font_size" : 18,
+              "frame" : "{{91, 360}, {150, 32}}",
+              "uuid" : "3D9B6A9C-67A7-4A19-97DF-4826062E5CED",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "Lock Background",
+              "name" : "label12",
+              "font_name" : "<System>"
+            },
+            "selected" : true
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{274, 126}, {51, 31}}",
+            "class" : "Switch",
+            "attributes" : {
+              "flex" : "LB",
+              "frame" : "{{140, 360}, {51, 31}}",
+              "value" : false,
+              "class" : "Switch",
+              "name" : "sw_bg",
+              "uuid" : "13F7C667-62BF-4661-8A0F-BAA451699840"
+            },
+            "selected" : false
           }
         ],
-        "frame" : "{{0, 176}, {331, 207}}",
+        "frame" : "{{0, 200}, {331, 298}}",
         "class" : "ScrollView",
         "attributes" : {
           "flex" : "WH",
           "frame" : "{{6, 58}, {320, 320}}",
           "uuid" : "1FB7AED1-3F37-48BA-B4E2-7AC1FE24E8D9",
-          "content_height" : 711,
+          "content_height" : 751,
           "class" : "ScrollView",
           "content_width" : 331,
           "name" : "sv"
         },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 96.666656494140625}, {307, 34}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WB",
+          "font_name" : "HoeflerText-Regular",
+          "frame" : "{{71, 150}, {150, 32}}",
+          "uuid" : "53573D4D-2312-4688-877C-EC9E738F4DBF",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Label",
+          "font_size" : 20,
+          "name" : "lbl_bg"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 123}, {319, 26}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WB",
+          "name" : "lbl_race_src",
+          "text_color" : "RGBA(0.723270,0.723270,0.723270,1.000000)",
+          "frame" : "{{71, 150}, {150, 32}}",
+          "uuid" : "48B143A0-6788-41AD-A83C-233DE97E282F",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Label",
+          "font_size" : 14,
+          "font_name" : "HoeflerText-Italic"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 138.66665649414062}, {319, 26}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WB",
+          "font_size" : 14,
+          "font_name" : "HoeflerText-Italic",
+          "frame" : "{{71, 150}, {150, 32}}",
+          "uuid" : "48B143A0-6788-41AD-A83C-233DE97E282F",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Label",
+          "name" : "lbl_class_src",
+          "text_color" : "RGBA(0.723270,0.723270,0.723270,1.000000)"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 157}, {319, 26}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WB",
+          "name" : "lbl_bg_src",
+          "text_color" : "RGBA(0.723270,0.723270,0.723270,1.000000)",
+          "frame" : "{{71, 150}, {150, 32}}",
+          "uuid" : "48B143A0-6788-41AD-A83C-233DE97E282F",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Label",
+          "font_size" : 14,
+          "font_name" : "HoeflerText-Italic"
+        },
         "selected" : true
       }
     ],
-    "frame" : "{{0, 0}, {331, 435}}",
+    "frame" : "{{0, 0}, {331, 550}}",
     "class" : "View",
     "attributes" : {
-      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "flex" : "",
       "enabled" : true,
-      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
       "custom_class" : "MainView",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
       "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
-      "flex" : ""
+      "name" : ""
     },
     "selected" : false
   }

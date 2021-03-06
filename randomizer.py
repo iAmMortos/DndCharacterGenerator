@@ -7,6 +7,7 @@ class Randomizer(object):
   def __init__(self):
     self.classes = []
     self.races = []
+    self.backgrounds =[]
     self.sources = {}
     self.specializations = {}
 
@@ -18,12 +19,15 @@ class Randomizer(object):
     self.cur_spec = None
     self.cur_class_src = None
     self.cur_class_src_short = None
+    self.cur_bg = None
+    self.cur_bg_src_short = None
 
     self.load_data()
 
   def load_data(self):
     self.classes = self._load_csv('data/classes.csv')
     self.races = self._load_csv('data/races.csv')
+    self.backgrounds = self._load_csv('data/backgrounds.csv')
 
     temp_sources = self._load_csv('data/sources.csv')
     temp_specs = self._load_csv('data/class_specializations.csv')
@@ -47,7 +51,7 @@ class Randomizer(object):
 
   def _load_csv(self, file):
     with open(file) as f:
-      lines = [l.strip().split(',') for l in f.readlines()]
+      lines = [l.strip().split(',') for l in list(filter(lambda a: not a.startswith('#') and a.strip() != '', f.readlines()))]
     return lines
 
   def _get_short_source_text(self, srctext):
@@ -141,10 +145,20 @@ class Randomizer(object):
     self.cur_spec_name = spec_name
     self.cur_class_src = self._get_source_text(srcs)
     self.cur_class_src_short = self._get_short_source_text(srcs)
+    
+  def _shuffle_bg(self, skip_bgs=False, sources=None):
+    bgs = self._get_filtered_list(self.backgrounds, sources)
+    if skip_bgs or bgs == []:
+      return
+    bg = random.choice(bgs)
+    self.cur_bg = bg[0]
+    self.cur_bg_src_short = self._get_short_source_text(bg[1])
+    
 
-  def pick(self, even=False, skip_race=False, skip_class=False, skip_spec=False, sources=None):
+  def pick(self, even=False, skip_race=False, skip_class=False, skip_spec=False, skip_bg=False, sources=None):
     self._shuffle_race(even, skip_race, sources)
     self._shuffle_class(even, skip_class, skip_spec, sources)
+    self._shuffle_bg(skip_bg, sources)
     # self.print_race_class_with_short_sources()
 
   def print_race_class(self):
