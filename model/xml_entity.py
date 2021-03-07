@@ -6,6 +6,8 @@ class XmlEntity (object):
       if len(c.getchildren()) == 0:
         # child is a text leaf
         if c.tag in self._data:
+          if c.tag == 'stealth':
+            print(c.text)
           if type(self._data[c.tag]) is not list:
             self._data[c.tag] = [self._data[c.tag]]
           self._data[c.tag] += [c.text]

@@ -35,7 +35,7 @@ class CastTime(object):
     self.units = ' '.join(ps[1:])
 
   def __repr__(self):
-    return '%s (%s)' % (self.value, self.units)
+    return '%s %s' % (self.value, self.units)
 
 
 class MagicSchools(Enum):

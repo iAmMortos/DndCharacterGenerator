@@ -87,7 +87,7 @@ class Item (XmlEntity):
     self.value = self._get_as_obj('value', float, 0)
     self.weight = self._get_as_obj('weight', float, 0)
     self.text = self._get('text', '')
-    self.ac = self._get_as_obj('ac', int, 0)
+    self.armor_class = self._get_as_obj('ac', int, 0)
     self.strength = self._get_as_obj('strength', int, 0)
     self.stealth = self._get_as_bool('stealth',False)
     self.dmg1 = self._get_as_obj('dmg1', Roll)
@@ -97,6 +97,9 @@ class Item (XmlEntity):
     self.range = self._get_as_obj('range', Range)
     self.modifier = self._get_as_obj('modifier', Attribute)
     self.roll = self._get_as_obj('roll', Roll)
+    
+    if False and self.type == ItemCategory.HA:
+      print('{0.name}: {0.armor_class}AC, Stealth disadvantage: {0.stealth}'.format(self))
 
   def __repr__(self):
     return 'Name: {0.name}\nType: {0.type}\nValue: {0.value} gold\nWeight: {0.weight} pounds\nAC: {0.ac}\n' \
