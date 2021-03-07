@@ -4,7 +4,9 @@ class XmlEntity (object):
     self._data = {}
     for c in xml_node.getchildren():
       if c.tag in self._data:
-        print(c.tag)
+        if type(self._data[c.tag] is not list):
+          self._data[c.tag] = [self._data[c.tag]]
+        self._data[c.tag] += [c.text]
       elif c.text is not None:
         self._data[c.tag] = c.text
 

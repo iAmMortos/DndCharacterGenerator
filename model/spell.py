@@ -62,8 +62,6 @@ class Spell (XmlEntity):
     self.roll = self._get_as_obj('roll', Roll, None)
     self.classes = self._get_as_list('classes')
 
-    print(self, end='\n\n\n')
-
   def __repr__(self):
     return 'Spell Name: {0.name}\nLevel: {0.level}\nSchool: {0.school}\nRitual: {0.ritual}\nTime: {0.time}\n' \
            'Range: {0.range}\nComponents: {0.components}\nDuration: {0.duration}\nRoll: {0.roll}\n' \
