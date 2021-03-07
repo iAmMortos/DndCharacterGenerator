@@ -1,6 +1,5 @@
-
 # TODO: flesh out class
-class Range(object):
+class Speed(object):
   def __init__(self, s):
     self.s = s
 

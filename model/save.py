@@ -1,6 +1,5 @@
-
-# TODO: flesh out class
-class Range(object):
+# TODO: Flesh out class
+class Save(object):
   def __init__(self, s):
     self.s = s
 

@@ -83,6 +83,7 @@ class Item (XmlEntity):
   def __init__(self, xml_node):
     super().__init__(xml_node)
     self.name = self._get('name')
+    self.type = self._get_as_obj('type', ItemCategory.of_value)
     self.value = self._get_as_obj('value', float, 0)
     self.weight = self._get_as_obj('weight', float, 0)
     self.text = self._get('text', '')
@@ -97,13 +98,11 @@ class Item (XmlEntity):
     self.modifier = self._get_as_obj('modifier', Attribute)
     self.roll = self._get_as_obj('roll', Roll)
 
-    print(self._get('roll'))
-
   def __repr__(self):
-    return 'Name: {0.name}\nValue: {0.value} gold\nWeight: {0.weight} pounds\nAC: {0.ac}\nStrength: {0.strength}\n' \
-           'Stealth: {0.stealth}\n1-handed damage: {0.dmg1}\n2-handed damage: {0.dmg2}\nDamage Type: {0.dmgType}\n' \
-           'Properties: {0.properties}\nRange: {0.range}\nModifier: {0.modifier}\nRoll: {0.roll}\n' \
-           'Text: {0.text}'.format(self)
+    return 'Name: {0.name}\nType: {0.type}\nValue: {0.value} gold\nWeight: {0.weight} pounds\nAC: {0.ac}\n' \
+           'Strength: {0.strength}\nStealth: {0.stealth}\n1-handed damage: {0.dmg1}\n2-handed damage: '\
+           '{0.dmg2}\nDamage Type: {0.dmgType}\nProperties: {0.properties}\nRange: {0.range}\nModifier: '\
+           '{0.modifier}\nRoll: {0.roll}\nText: {0.text}'.format(self)
 
 """
 modifier (ABC [+/-]##) Modifiers. This element takes an attribute named "category". The category can be set to one of the following: bonus, ability score, ability modifier, saving throw, or skill. The value for this element is the modifier name, followed by the its value. For example, "weapon attack +1", "strength -1", or "ac +5". See the modifiers lists in the app for more valid values.

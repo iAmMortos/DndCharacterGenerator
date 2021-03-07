@@ -1,4 +1,5 @@
 
+# TODO: flesh out class
 from enum import Enum
 
 
@@ -15,5 +16,5 @@ class Attribute(object):
     self.s = s
 
   def __repr__(self):
-    return s
+    return self.s
 

@@ -1,4 +1,5 @@
 
+# TODO: flesh out class
 class Roll (object):
   def __init__(self, s):
     self.s = s

@@ -3,8 +3,10 @@ from enum import Enum
 from model.range import Range
 from model.roll import Roll
 from model.xml_entity import XmlEntity
+import re
 
 
+# TODO: Flesh out class
 class Duration(object):
   def __init__(self, s):
     self.s = s
@@ -15,18 +17,25 @@ class Duration(object):
 
 class Components(object):
   def __init__(self, s):
-    self.s = s
+    m = re.search(r'^(V?)(?:, )?(S?)(?:, )?(M \(.*\))?', s)
+    gs = m.groups()
+
+    self.verbal = gs[0] == 'V'
+    self.somatic = gs[1] == 'S'
+    self.material = gs[2][3:-1] if gs[2] is not None else None
 
   def __repr__(self):
-    return self.s
+    return 'Verbal: {0.verbal}\nSomatic: {0.somatic}\nMaterial: {0.material}'.format(self)
 
 
 class CastTime(object):
   def __init__(self, s):
-    self.s = s
+    ps = s.split(' ')
+    self.value = int(ps[0])
+    self.units = ' '.join(ps[1:])
 
   def __repr__(self):
-    return self.s
+    return '%s (%s)' % (self.value, self.units)
 
 
 class MagicSchools(Enum):

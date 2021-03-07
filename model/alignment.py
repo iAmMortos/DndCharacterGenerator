@@ -1,6 +1,6 @@
 
 # TODO: flesh out class
-class Range(object):
+class Alignment (object):
   def __init__(self, s):
     self.s = s
 
