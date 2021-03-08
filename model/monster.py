@@ -6,7 +6,7 @@ from model.alignment import Alignment
 from model.armor_class import ArmorClass
 from model.hit_points import HitPoints
 from model.speed import Speed
-from model.ability_score import AbilityScore
+from model.ability_scores import AbilityScores
 from model.saves import Saves
 from model.skill import Skill
 from model.challenge_rating import ChallengeRating
@@ -40,12 +40,7 @@ class Monster (XmlEntity):
     self.armor_class = self._get_as_obj('ac', ArmorClass)
     self.hit_points = self._get_as_obj('hp', HitPoints)
     self.speed = self._get_as_obj('speed', Speed)
-    self.str = self._get_as_obj('str', AbilityScore)
-    self.dex = self._get_as_obj('dex', AbilityScore)
-    self.con = self._get_as_obj('con', AbilityScore)
-    self.int = self._get_as_obj('int', AbilityScore)
-    self.wis = self._get_as_obj('wis', AbilityScore)
-    self.cha = self._get_as_obj('cha', AbilityScore)
+    self.ability_scores = AbilityScores(self._get('str'), self._get('dex'), self._get('con'), self._get('int'), self._get('wis'), self._get('cha'))
     self.saves = self._get_as_obj('save', Saves)
     self.skill = self._get_as_obj('skill', Skill)
     self.vulnerable = self._get('vulnerable')
@@ -61,4 +56,9 @@ class Monster (XmlEntity):
     self.actions = self._get_as_obj_list('action', Action)
     self.reactions = self._get_as_obj_list('reaction', Action)
     self.legendaries = self._get_as_obj_list('legendary', Action)
+    
+    print(self)
+    
+  def __repr__(self):
+    return 'Name: {0.name}\nSize: {0.size}\nType: {0.type}\nAlignment: {0.alignment}\nAC: {0.armor_class}\nHP: {0.hit_points}\nSpeed: {0.speed}\nAbility Scores: {0.ability_scores}'.format(self)
 
