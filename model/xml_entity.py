@@ -1,4 +1,7 @@
 
+import xml.etree.ElementTree as ET
+
+
 class XmlEntity (object):
   def __init__(self, xml_node):
     self._data = {}
@@ -44,6 +47,9 @@ class XmlEntity (object):
       return [fn(a.strip() if strip else a) for a in self._data[key].split(sep)]
     else:
       return default_value
+
+  def _get_xml(self):
+    return ET.tostring(self._node, encoding='utf8')
 
   @property
   def _keys(self):

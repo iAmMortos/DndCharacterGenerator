@@ -7,7 +7,7 @@ from model.armor_class import ArmorClass
 from model.hit_points import HitPoints
 from model.speed import Speed
 from model.ability_score import AbilityScore
-from model.save import Save
+from model.saves import Saves
 from model.skill import Skill
 from model.challenge_rating import ChallengeRating
 from model.action import Action
@@ -46,7 +46,7 @@ class Monster (XmlEntity):
     self.int = self._get_as_obj('int', AbilityScore)
     self.wis = self._get_as_obj('wis', AbilityScore)
     self.cha = self._get_as_obj('cha', AbilityScore)
-    self.save = self._get_as_obj('save', Save)
+    self.saves = self._get_as_obj('save', Saves)
     self.skill = self._get_as_obj('skill', Skill)
     self.vulnerable = self._get('vulnerable')
     self.resist = self._get('resist')
@@ -62,5 +62,5 @@ class Monster (XmlEntity):
     self.reactions = self._get_as_obj('reaction', Action)
     self.legendaries = self._get_as_obj('legendary', Action)
 
-    if self.hit_points is not None:
-      print(self.hit_points)
+    if self.saves is not None:
+      print(self.saves)
