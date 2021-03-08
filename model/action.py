@@ -7,7 +7,7 @@ class Action(XmlEntity):
     super().__init__(xml_node)
     self.name = self._get('name')
     self.text = self._get('text')
-    self.attack = self._get_as_obj('action', Attack)
+    self.attack = self._get_as_obj('attack', Attack)
 
   def __repr__(self):
     return 'Name: {0.name}\nAttack: {0.attack}\nText: {0.text}'.format(self)

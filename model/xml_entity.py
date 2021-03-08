@@ -35,6 +35,13 @@ class XmlEntity (object):
         return cls(self._data[key])
     else:
       return default_value
+      
+  def _get_as_obj_list(self, key, cls, default_value=[]):
+    obj = self._get_as_obj(key, cls, default_value)
+    if type(obj) is list:
+      return obj
+    else:
+      return [obj]
 
   def _get_as_bool(self, key, default_value=False):
     if key in self._keys:

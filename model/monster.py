@@ -57,10 +57,8 @@ class Monster (XmlEntity):
     self.languages = self._get('languages')
     self.challenge_rating = self._get_as_obj('cr', ChallengeRating)
 
-    self.traits = self._get_as_obj('trait', Action)
-    self.actions = self._get_as_obj('action', Action)
-    self.reactions = self._get_as_obj('reaction', Action)
-    self.legendaries = self._get_as_obj('legendary', Action)
+    self.traits = self._get_as_obj_list('trait', Action)
+    self.actions = self._get_as_obj_list('action', Action)
+    self.reactions = self._get_as_obj_list('reaction', Action)
+    self.legendaries = self._get_as_obj_list('legendary', Action)
 
-    if self.saves is not None:
-      print(self.saves)
