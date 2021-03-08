@@ -60,5 +60,9 @@ class Monster (XmlEntity):
     print(self)
     
   def __repr__(self):
-    return 'Name: {0.name}\nSize: {0.size}\nType: {0.type}\nAlignment: {0.alignment}\nAC: {0.armor_class}\nHP: {0.hit_points}\nSpeed: {0.speed}\nAbility Scores: {0.ability_scores}'.format(self)
+    return 'Name: {0.name}\nSize: {0.size}\nType: {0.type}\nAlignment: {0.alignment}\nAC: {0.armor_class}\nHP: {0.hit_points}\nSpeed: {0.speed}\nAbility Scores: {0.ability_scores}\nSaves: {0.saves}\nSkill: {0.skill}\nVulnerable: {0.vulnerable}+\nResist: {0.resist}\nImmunities: {0.immune}\nConditional Immunities: {0.conditionImmune}\nSenses: {0.senses}\nPassive: {0.passive}\nLanguages: {0.languages}\nCR: {0.challenge_rating}\nTraits: {1}\nActions: {2}\nReactions: {3}\nLegendary Actions: {4}'.format(self,
+    ', '.join([t.name for t in self.traits]),
+    ', '.join([a.name for a in self.actions]),
+    ', '.join([r.name for r in self.reactions]),
+    ', '.join([l.name for l in self.legendaries]))
 
