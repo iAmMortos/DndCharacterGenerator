@@ -1,5 +1,6 @@
 
 from enum import Enum
+
 from model.roll import Roll
 from model.range import Range
 from model.attribute import Attribute
@@ -89,7 +90,7 @@ class Item (XmlEntity):
     self.text = self._get('text', '')
     self.armor_class = self._get_as_obj('ac', int, 0)
     self.strength = self._get_as_obj('strength', int, 0)
-    self.stealth = self._get_as_bool('stealth',False)
+    self.stealth = self._get_as_bool('stealth', False)
     self.dmg1 = self._get_as_obj('dmg1', Roll)
     self.dmg2 = self._get_as_obj('dmg2', Roll)
     self.dmgType = self._get_as_obj('dmgType', DamageType.of_value)
@@ -97,17 +98,9 @@ class Item (XmlEntity):
     self.range = self._get_as_obj('range', Range)
     self.modifier = self._get_as_obj('modifier', Attribute)
     self.roll = self._get_as_obj('roll', Roll)
-    
-    if False and self.type == ItemCategory.HA:
-      print('{0.name}: {0.armor_class}AC, Stealth disadvantage: {0.stealth}'.format(self))
 
   def __repr__(self):
     return 'Name: {0.name}\nType: {0.type}\nValue: {0.value} gold\nWeight: {0.weight} pounds\nAC: {0.ac}\n' \
            'Strength: {0.strength}\nStealth: {0.stealth}\n1-handed damage: {0.dmg1}\n2-handed damage: '\
            '{0.dmg2}\nDamage Type: {0.dmgType}\nProperties: {0.properties}\nRange: {0.range}\nModifier: '\
            '{0.modifier}\nRoll: {0.roll}\nText: {0.text}'.format(self)
-
-"""
-modifier (ABC [+/-]##) Modifiers. This element takes an attribute named "category". The category can be set to one of the following: bonus, ability score, ability modifier, saving throw, or skill. The value for this element is the modifier name, followed by the its value. For example, "weapon attack +1", "strength -1", or "ac +5". See the modifiers lists in the app for more valid values.
-roll (D20) Dice roll formulas. Ability modifiers can be inputted using STR, DEX, CON, INT, WIS, and CHA.
-"""

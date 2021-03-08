@@ -61,3 +61,6 @@ class Monster (XmlEntity):
     self.actions = self._get_as_obj('action', Action)
     self.reactions = self._get_as_obj('reaction', Action)
     self.legendaries = self._get_as_obj('legendary', Action)
+
+    if self.hit_points is not None:
+      print(self.hit_points)

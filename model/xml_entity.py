@@ -2,12 +2,11 @@
 class XmlEntity (object):
   def __init__(self, xml_node):
     self._data = {}
+    self._node = xml_node
     for c in xml_node.getchildren():
       if len(c.getchildren()) == 0:
         # child is a text leaf
         if c.tag in self._data:
-          if c.tag == 'stealth':
-            print(c.text)
           if type(self._data[c.tag]) is not list:
             self._data[c.tag] = [self._data[c.tag]]
           self._data[c.tag] += [c.text]
@@ -36,7 +35,7 @@ class XmlEntity (object):
 
   def _get_as_bool(self, key, default_value=False):
     if key in self._keys:
-      return bool(self._data[key] == "YES")
+      return bool(self._data[key] in ["YES", "1"])
     else:
       return default_value
 
