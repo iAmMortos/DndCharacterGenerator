@@ -8,6 +8,8 @@ class _X (object):
     self.d = d
 
 
+# TODO: each individual c from xml_node should technically be wrapped in an _X object to preserve the attribute
+# of each.
 class XmlEntity (object):
   def __init__(self, xml_node):
     self._data = {}
