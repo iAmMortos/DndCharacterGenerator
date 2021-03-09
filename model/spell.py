@@ -48,6 +48,9 @@ class MagicSchools(Enum):
   N = 'Necromancy'
   T = 'Transmutation'
 
+  def __str__(self):
+    return self.value
+
   @staticmethod
   def of_value(s):
     try:

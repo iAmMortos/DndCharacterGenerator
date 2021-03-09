@@ -19,6 +19,9 @@ class WeaponProperty (Enum):
   TH = 'two-handed'
   V = 'versatile'
   M = 'martial weapon'
+
+  def __str__(self):
+    return self.value
   
   @staticmethod
   def of_value(s):
@@ -43,6 +46,9 @@ class DamageType (Enum):
   PS = 'poison'
   R = 'radiant'
   T = 'thunder'
+
+  def __str__(self):
+    return self.value
   
   @staticmethod
   def of_value(s):
@@ -69,6 +75,9 @@ class ItemCategory (Enum):
   W = "wondrous item"
   G = "adventuring gear"
   MON = "money"
+
+  def __str__(self):
+    return self.value
   
   @staticmethod
   def of_value(s):

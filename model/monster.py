@@ -1,7 +1,7 @@
 
-from enum import Enum
 from model.xml_entity import XmlEntity
 from model.creature_type import CreatureType
+from model.creature_size import CreatureSize
 from model.alignment import Alignment
 from model.armor_class import ArmorClass
 from model.hit_points import HitPoints
@@ -11,22 +11,6 @@ from model.saves import Saves
 from model.skill import Skill
 from model.challenge_rating import ChallengeRating
 from model.action import Action
-
-
-class CreatureSize (Enum):
-  T = 'tiny'
-  S = 'small'
-  M = 'medium'
-  L = 'large'
-  H = 'huge'
-  G = 'gargantuan'
-
-  @staticmethod
-  def of_value(s):
-    try:
-      return CreatureSize.__getitem__(s)
-    except Exception as ex:
-      raise ValueError("No enum value available for string [%s]" % s)
 
 
 class Monster (XmlEntity):
@@ -56,13 +40,13 @@ class Monster (XmlEntity):
     self.actions = self._get_as_obj_list('action', Action)
     self.reactions = self._get_as_obj_list('reaction', Action)
     self.legendaries = self._get_as_obj_list('legendary', Action)
-    
-    print(self)
-    
+
   def __repr__(self):
-    return 'Name: {0.name}\nSize: {0.size}\nType: {0.type}\nAlignment: {0.alignment}\nAC: {0.armor_class}\nHP: {0.hit_points}\nSpeed: {0.speed}\nAbility Scores: {0.ability_scores}\nSaves: {0.saves}\nSkill: {0.skill}\nVulnerable: {0.vulnerable}+\nResist: {0.resist}\nImmunities: {0.immune}\nConditional Immunities: {0.conditionImmune}\nSenses: {0.senses}\nPassive: {0.passive}\nLanguages: {0.languages}\nCR: {0.challenge_rating}\nTraits: {1}\nActions: {2}\nReactions: {3}\nLegendary Actions: {4}'.format(self,
-    ', '.join([t.name for t in self.traits]),
-    ', '.join([a.name for a in self.actions]),
-    ', '.join([r.name for r in self.reactions]),
-    ', '.join([l.name for l in self.legendaries]))
+    return 'Name: {0.name}\nSize: {0.size}\nType: {0.type}\nAlignment: {0.alignment}\nAC: {0.armor_class}\n' \
+           'HP: {0.hit_points}\nSpeed: {0.speed}\nAbility Scores: {0.ability_scores}\nSaves: {0.saves}\n' \
+           'Skill: {0.skill}\nVulnerable: {0.vulnerable}+\nResist: {0.resist}\nImmunities: {0.immune}\n' \
+           'Conditional Immunities: {0.conditionImmune}\nSenses: {0.senses}\nPassive: {0.passive}\n' \
+           'Languages: {0.languages}\nCR: {0.challenge_rating}\n' \
+           'Traits: {1}\nActions: {2}\nReactions: {3}\nLegendary Actions: {4}'.format(
+      self, len(self.traits), len(self.actions), len(self.reactions), len(self.legendaries))
 
