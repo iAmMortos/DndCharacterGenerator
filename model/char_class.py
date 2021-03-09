@@ -5,6 +5,7 @@ from model.roll import Roll
 from model.ability_type import AbilityType
 from model.auto_level import AutoLevel
 from model.xml_entity import XmlEntity
+from model.attribute import Attribute
 
 
 class RestType (Enum):
@@ -37,6 +38,7 @@ class CharClass (XmlEntity):
     self.spell_ability = self._get_as_obj('spellAbility', AbilityType.of_value)
     self.slots_reset = self._get_as_obj('slotReset', RestType.of_value)
     self.auto_levels = self._get_as_obj_list('autolevel', AutoLevel)
+    self.modifiers = self._get_as_obj('modifier', Attribute)
 
   def __repr__(self):
     return ''.format(self)

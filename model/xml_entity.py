@@ -4,7 +4,6 @@ import xml.etree.ElementTree as ET
 
 class XmlEntity (object):
   def __init__(self, xml_node):
-    global test
     self._data = {}
     self._node = xml_node
     for c in list(xml_node):

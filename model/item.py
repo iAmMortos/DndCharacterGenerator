@@ -109,7 +109,7 @@ class Item (XmlEntity):
     self.roll = self._get_as_obj('roll', Roll)
 
   def __repr__(self):
-    return 'Name: {0.name}\nType: {0.type}\nValue: {0.value} gold\nWeight: {0.weight} pounds\nAC: {0.ac}\n' \
+    return 'Name: {0.name}\nType: {0.type}\nValue: {0.value} gold\nWeight: {0.weight} pounds\nAC: {0.armor_class}\n' \
            'Strength: {0.strength}\nStealth: {0.stealth}\n1-handed damage: {0.dmg1}\n2-handed damage: '\
            '{0.dmg2}\nDamage Type: {0.dmgType}\nProperties: {0.properties}\nRange: {0.range}\nModifier: '\
            '{0.modifier}\nRoll: {0.roll}\nText: {0.text}'.format(self)
