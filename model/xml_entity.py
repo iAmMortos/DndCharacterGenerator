@@ -14,26 +14,47 @@ class XmlEntity (object):
   def __init__(self, xml_node):
     self._data = {}
     self._node = xml_node
-    self._attrib = xml_node.attrib
-    for c in xml_node.getchildren():
-      if len(c.getchildren()) == 0:
-        # child is a text leaf
-        if c.tag in self._data:
-          if type(self._data[c.tag].d) is not list:
-            self._data[c.tag].d = [self._data[c.tag].d]
-          self._data[c.tag].d += [c.text]
-        elif c.text is not None:
-          self._data[c.tag] = _X(c.attrib,c.text)
+    for c in list(xml_node):
+      if c.tag in self._data:
+        if type(self._data[c.tag]) is not list:
+          self._data[c.tag] = [self._data[c.tag]]
+        self._data[c.tag] += [c]
       else:
-        # child is another XmlEntity
-        if c.tag in self._data:
-          if type(self._data[c.tag].d) is not list:
-            self._data[c.tag].d = [self._data[c.tag].d]
-          self._data[c.tag].d += [c]
-        elif c.text is not None:
-          self._data[c.tag] = _X(c.attrib, c)
+        self._data[c.tag] = c
+
+  # def __init__(self, xml_node):
+  #   self._data = {}
+  #   self._node = xml_node
+  #   self._attrib = xml_node.attrib
+  #   for c in xml_node.getchildren():
+  #     if len(c.getchildren()) == 0:
+  #       # child is a text leaf
+  #       if c.tag in self._data:
+  #         if type(self._data[c.tag].d) is not list:
+  #           self._data[c.tag].d = [self._data[c.tag].d]
+  #         self._data[c.tag].d += [c.text]
+  #       elif c.text is not None:
+  #         self._data[c.tag] = _X(c.attrib,c.text)
+  #     else:
+  #       # child is another XmlEntity
+  #       if c.tag in self._data:
+  #         if type(self._data[c.tag].d) is not list:
+  #           self._data[c.tag].d = [self._data[c.tag].d]
+  #         self._data[c.tag].d += [c]
+  #       elif c.text is not None:
+  #         self._data[c.tag] = _X(c.attrib, c)
 
   def _get(self, key, default_value=None):
+    if key in self._data:
+      if type(self._data[key]) is list:
+        if len(list(self._data[key][0])) == 0:
+          # leaf
+          pass
+        else:
+          # node
+          pass
+      else:
+        pass
     return default_value if key not in self._data else self._data[key].d
     
   def _get_attrib(self, key):
