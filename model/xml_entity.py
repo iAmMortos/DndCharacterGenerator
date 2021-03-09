@@ -84,11 +84,10 @@ class XmlEntity (object):
 
   def _get_as_list(self, key, sep=',', strip=True, fn=lambda a: a, default_value=[]):
     if key in self._keys:
-      return [fn(a.strip() if strip else a) for a in self._data[key].text
-      .split(sep)]
+      return [fn(a.strip() if strip else a) for a in self._data[key].text.split(sep)]
     else:
       return default_value
-      
+
   @property
   def _keys(self):
     return self._data.keys()

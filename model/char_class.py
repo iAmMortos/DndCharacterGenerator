@@ -1,26 +1,10 @@
 
-from enum import Enum
-
 from model.roll import Roll
 from model.ability_type import AbilityType
 from model.auto_level import AutoLevel
 from model.xml_entity import XmlEntity
 from model.attribute import Attribute
-
-
-class RestType (Enum):
-  S = "short rest"
-  L = "long rest"
-
-  def __str__(self):
-    return self.value
-
-  @staticmethod
-  def of_value(val):
-    try:
-      return RestType.__getitem__(val)
-    except Exception as ex:
-      raise ValueError("No enum value available for string [%s]" % val)
+from model.rest_type import RestType
 
 
 class CharClass (XmlEntity):
