@@ -45,5 +45,5 @@ class DataLoader (object):
     print("Feats: %s item(s)" % len(self.feats))
     print("Items: %s item(s)" % len(self.items))
     print("Monsters: %s item(s)" % len(self.monsters))
-    print("Races: %s item(s)" % len(self.items))
+    print("Races: %s item(s)" % len(self.races))
     print("Spells: %s item(s)" % len(self.spells))
