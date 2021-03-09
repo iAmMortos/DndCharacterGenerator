@@ -67,11 +67,25 @@ for bg in dl.backgrounds:
     sources += [src]
   else:
     print('Background: {0.name} - No source detected'.format(bg))
-
-
-
-print(len(sources))
+ 
+unique = []   
+for src in [s[8:] for s in sources]:
+  src = [s.strip() for s in src.split(',')]
+  for s in src:
+    ps = s.split(' p. ')
+    if len(ps) > 1:
+      if ps[0] not in unique:
+        unique += [ps[0]]
+    else:
+      if s not in unique:
+        unique += [s]
+for u in sorted(unique):
+  print(u)
+  
+  
+print()
 dl.print_stats()
+
 # prints memory usage in mb
 # import os, psutil
 # print(psutil.Process(os.getpid()).memory_info().rss / 1024 ** 2)
