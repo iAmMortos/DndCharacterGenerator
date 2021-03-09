@@ -7,5 +7,4 @@ class AutoLevel (XmlEntity):
     super().__init__(xml_node)
 
     self.slots = self._get_as_list('slots', fn=int)
-
-    print(self.slots)
+    
