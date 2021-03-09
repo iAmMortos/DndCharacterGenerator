@@ -8,6 +8,8 @@ class Action(XmlEntity):
     self.name = self._get('name')
     self.text = self._get('text')
     self.attack = self._get_as_obj('attack', Attack)
+    if type(self.text) is list:
+      self.text = '\n'.join(self.text)
 
   def __repr__(self):
     return 'Name: {0.name}\nAttack: {0.attack}\nText: {0.text}'.format(self)

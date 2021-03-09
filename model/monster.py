@@ -35,6 +35,7 @@ class Monster (XmlEntity):
     self.passive = self._get_as_obj('passive', int)
     self.languages = self._get('languages')
     self.challenge_rating = self._get_as_obj('cr', ChallengeRating)
+    self.description = self._get('description')
 
     self.traits = self._get_as_obj_list('trait', Action)
     self.actions = self._get_as_obj_list('action', Action)

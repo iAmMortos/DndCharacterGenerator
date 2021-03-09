@@ -25,4 +25,7 @@ class CharClass (XmlEntity):
     self.modifiers = self._get_as_obj('modifier', Attribute)
 
   def __repr__(self):
-    return ''.format(self)
+    return 'Name: {0.name}\nHit Dice: {0.hit_die}\nProficiencies: {0.proficiencies}\nNum Skills: {0.num_skills}\n' \
+           'Armor: {0.armor}\nWeapons: {0.weapons}\nTools: {0.tools}\nWealth: {0.wealth}\n' \
+           'Spell Ability: {0.spell_ability}\nSlots Reset: {0.slots_reset}\nAuto Level Configs: {1}\n' \
+           'Modifiers: {0.modifiers}'.format(self, len(self.auto_levels))
