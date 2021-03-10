@@ -8,12 +8,15 @@ from model.die_table import DieTable
 
 dl = DataLoader('data/xml/CoreOnly.xml')
 
-background = 'Inheritor'
+background = 'Folk Hero'
 
-tbls = get_tables_for_bg(dl.backgrounds, background)
-print("Found %s tables for %s" % (len(tbls), background))
-d_tables = []
-for tbl in tbls:
-  dt = DieTable(tbl)
-  d_tables += [dt]
-  print(dt)
+for bg in dl.backgrounds:
+  if bg.name == background:
+    tbls = get_tables_for_bg(bg)
+    print("Found %s tables for %s" % (len(tbls), background))
+    d_tables = []
+    for tbl in tbls:
+      dt = DieTable(tbl)
+      d_tables += [dt]
+      print(dt, end='\n\n\n')
+    break
