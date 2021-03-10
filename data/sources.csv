@@ -1,21 +1,124 @@
+# Core
 PHB,Player's Handbook
 DMG,Dungeon Master's Guide
 VGtM,Volo's Guide to Monsters
 XGtE,Xanathar's Guide to Everything
 SCAG,Sword Coast Adventurer's Guide
 TCoE,Tasha's Cauldron of Everything
-ERftLW,Eberron- Rising from the Last War
+ERftLW,Eberron: Rising from the Last War
 GGtR,Guildmasters' Guide to Ravnica
 MToF,Mordenkainen's Tome of Foes
 EEPC,Elemental Evil Player's Companion
 tTP,The Tortle Package
 UA,Unearthed Arcana
-# Sources for just additional backgrounds
-EGtW,Explorer's Guide to Wildermount
-BGDiA,Baldur's Gate: Descent into Avernums
+# Additional Backgrounds
+EGtW,Explorer's Guide to Wildemount
+BGDiA,Baldur's Gate: Descent Into Avernus
 ToA,Tomb of Annihilation
 MOoT,Mythic Odysseys of Theros
 WGtE,Wayfinder's Guide to Eberron
 AI,Acquisitions Incorporated
 GoS,Ghosts of Saltmarsh
 CoS,Curse of Strahd
+# The rest
+AwM,Adventure with Muk
+ALCoS,Adventurers League: Curse Of Strahd
+ALEE,Adventurers League: Elemental Evil
+ALRoD,Adventurers League: Rage Of Demons
+CC,CCodex
+DM,Dragon Magazine
+EET,Elemental Evil: Trinkets
+EK,Essentials Kit
+EKDC,Essentials Kit: Divine Contention
+EKDoIP,Essentials Kit: Dragon of Icespire Peak
+EKSDW,Essentials Kit: Sleeping Dragon's Wake
+EKSLW,Essentials Kit: Storm Lord's Wrath
+HotDQ,Hoard of the Dragon Queen
+HftT,Hunt for the Thessalhydra
+IDRotF,Icewind Dale: Rime of the Frostmaiden
+IMR,Infernal Machine Rebuild
+KW,Krenko's Way
+LR,Locathah Rising
+LLoK,Lost Laboratory of Kwalish
+LMoP,Lost Mine of Phandelver
+MMG,Matthew Mercer - Gunslinger 1.3
+MMGMA,Matthew Mercer - Gunslinger Martial Archetype 1.2
+MMz,Monster Manual
+MFF,Mordenkainen’s Fiendish Folio
+OGA,One Grung Above
+OotA,Out of the Abyss
+PSA,Plane Shift: Amonkhet
+PSD,Plane Shift: Dominaria
+PSIn,Plane Shift: Innistrad
+PSIx,Plane Shift: Ixalan
+PSK,Plane Shift: Kaladesh
+PSZ,Plane Shift: Zendikar
+PotA,Princes of the Apocalypse
+RoT,Rise of Tiamat
+SADS,Sapphire Anniversary Dice Set
+SKT,Storm King's Thunder
+TftYP,Tales from the Yawning Portal
+TLDoR,The Lost Dungeon of Rickedness: Big Rick Energy
+TOotW,The Orrery of the Wanderer
+TRoTOS,The Rise of Tiamat Online Supplement
+UA20F,Unearthed Arcana: 2020 Feats
+UA20POR,Unearthed Arcana: 2020 Psionic Options Revisited
+UA20SaMT,Unearthed Arcana: 2020 Spells And Magic Tattoos
+UA20Sc1,Unearthed Arcana: 2020 Subclasses Pt1
+UA20Sc2,Unearthed Arcana: 2020 Subclasses Pt2
+UA20Sc3,Unearthed Arcana: 2020 Subclasses Pt3
+UA20Sc4,Unearthed Arcana: 2020 Subclasses Pt4
+UA20Sc5,Unearthed Arcana: 2020 Subclasses Pt5
+UA20ScR,Unearthed Arcana: 2020 Subclasses Revisited
+UAaToS,Unearthed Arcana: A Trio Of Subclasses
+UAArt,Unearthed Arcana: Artificer
+UAArR,Unearthed Arcana: Artificer Revisited
+UABaM,Unearthed Arcana: Barbarian And Monk
+UABPP,Unearthed Arcana: Barbarian Primal Paths
+UABaP,Unearthed Arcana: Bard And Paladin
+UABBC,Unearthed Arcana: Bard Bard Colleges
+UACaM,Unearthed Arcana: Centaurs Minotaur (UA)s
+UACFV,Unearthed Arcana: Class Feature Variants
+UACDD,Unearthed Arcana: Cleric Divine Domains
+UACDW,Unearthed Arcana: Cleric Druid Wizard
+UADru,Unearthed Arcana: Druid
+UAEb,Unearthed Arcana: Eberron
+UAEaGy,Unearthed Arcana: Eladrin And Gith (UA) (Githyanki)
+UAEaGz,Unearthed Arcana: Eladrin And Gith (UA) (Githzerai)
+UAFfR,Unearthed Arcana: Feats For Races
+UAFfS,Unearthed Arcana: Feats For Skills
+UAFts,Unearthed Arcana: Feats
+UAFtr,Unearthed Arcana: Fighter
+UAFRR,Unearthed Arcana: Fighter Ranger Rogue
+UAFRW,Unearthed Arcana: Fighter Rogue Wizard
+UAGSS,Unearthed Arcana: Giant Soul Sorcerer
+UAGH,Unearthed Arcana: Gothic Heroes
+UAKoO,Unearthed Arcana: Kits Of Old
+UALDU,Unearthed Arcana: Light Dark Underdark
+UAMM,Unearthed Arcana: Modern Magic
+UAMC,Unearthed Arcana: Modifying Classes
+UAMnk,Unearthed Arcana: Monk
+UAoSaS,Unearthed Arcana: Of Ships And Sea
+UAOD,Unearthed Arcana: Order Domain
+UAPal,Unearthed Arcana: Paladin
+UAPCRM,Unearthed Arcana: Prestige Classes Run Magic
+UARoE,Unearthed Arcana: Races Of Eberron
+UARoR,Unearthed Arcana: Races Of Ravnica
+UARaR,Unearthed Arcana: Ranger And Rogue
+UARng,Unearthed Arcana: Ranger
+UARCO,Unearthed Arcana: Revised Class Options
+UARSc,Unearthed Arcana: Revised Subclasses
+UASaW,Unearthed Arcana: Sorcerer And Warlock
+UASrc,Unearthed Arcana: Sorcerer
+UASS,Unearthed Arcana: Starter Spells
+UATOBM,Unearthed Arcana: That Old Black Magic
+UAtF,Unearthed Arcana: The Faithful
+UAtMC,Unearthed Arcana: The Mystic Class
+UAtRR,Unearthed Arcana: The Ranger Revised
+UA3Sc,Unearthed Arcana: Three Subclasses
+UAWaW,Unearthed Arcana: Warlock And Wizard
+UAWA,Unearthed Arcana: Waterborne Adventures
+UAWR,Unearthed Arcana: Wizard Revisited
+WDH,Waterdeep: Dragon Heist
+WDotMM,Waterdeep: Dungeon of the Mad Mage
+WDD,Wildemount: Dangerous Designs

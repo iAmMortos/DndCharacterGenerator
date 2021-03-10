@@ -22,7 +22,7 @@ class DataLoader (object):
 
     tree = ET.parse(file)
     root = tree.getroot()
-    for c in root.getchildren():
+    for c in list(root):
       t = c.tag
       if t == 'background':
         self.backgrounds += [Background(c)]
