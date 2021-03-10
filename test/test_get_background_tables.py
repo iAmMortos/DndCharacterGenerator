@@ -6,16 +6,18 @@ from model.data_loader import DataLoader
 from model.die_table import DieTable
 
 
-# for each background in the loader, get
-# the tables, roll them, and print results
+import console
+console.clear()
 dl = DataLoader('data/xml/CoreOnly.xml')
 
+# with open('data/background_traits.csv', 'w') as f:
+ss = []
 for bg in dl.backgrounds:
+  s = '\n'.join([t.text for t in bg.traits])
+  ss += [find_source(s)]
   tbls = get_tables_for_bg(bg)
-  print("Found %s tables for %s" % (len(tbls), bg.name))
-  d_tables = []
   for tbl in tbls:
     dt = DieTable(tbl)
-    d_tables += [dt]
-    print('{0.name}: {0.die} - {1}'.format(dt, dt.roll()))
-  print('\n\n')
+    #print('{0.name}: {0.die} - {1}'.format(dt, dt.roll()))
+  #print('\n\n')
+print(ss)
