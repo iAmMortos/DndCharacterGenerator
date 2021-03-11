@@ -1,4 +1,5 @@
 
+import csv
 import random
 from views.main_view import MainView
 
@@ -29,7 +30,7 @@ class Randomizer(object):
     self.races = self._load_csv('data/races.csv')
     self.backgrounds = self._load_csv('data/backgrounds.csv')
 
-    temp_sources = self._load_csv('data/sources.csv')
+    temp_sources = self._load_csv('data/sources.csv', delimiter='\t')
     temp_specs = self._load_csv('data/class_specializations.csv')
 
     for tsrc in temp_sources:
@@ -49,10 +50,13 @@ class Randomizer(object):
           break
     return filtered_set
 
-  def _load_csv(self, file):
-    with open(file) as f:
-      lines = [l.strip().split(',') for l in list(filter(lambda a: not a.startswith('#') and a.strip() != '', f.readlines()))]
-    return lines
+  def _load_csv(self, file, delimiter=',', quotechar='"'):
+    out = []
+    with open(file, newline='') as csvfile:
+      rdr = csv.reader(csvfile, delimiter=delimiter, quotechar=quotechar)
+      for row in rdr:
+        out += [row]
+    return out
 
   def _get_short_source_text(self, srctext):
     src_texts = []
