@@ -1,5 +1,6 @@
 
 import csv
+import io
 import random
 from views.main_view import MainView
 
@@ -30,7 +31,7 @@ class Randomizer(object):
     self.races = self._load_csv('data/races.csv')
     self.backgrounds = self._load_csv('data/backgrounds.csv')
 
-    temp_sources = self._load_csv('data/sources.csv', delimiter='\t')
+    temp_sources = self._load_csv('data/sources.csv')
     temp_specs = self._load_csv('data/class_specializations.csv')
 
     for tsrc in temp_sources:
@@ -52,7 +53,7 @@ class Randomizer(object):
 
   def _load_csv(self, file, delimiter=',', quotechar='"'):
     out = []
-    with open(file, newline='') as csvfile:
+    with io.open(file, mode='r', newline='', encoding='utf-8') as csvfile:
       rdr = csv.reader(csvfile, delimiter=delimiter, quotechar=quotechar)
       for row in rdr:
         out += [row]
