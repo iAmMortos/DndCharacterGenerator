@@ -9,7 +9,7 @@ class Randomizer(object):
   def __init__(self):
     self.classes = []
     self.races = []
-    self.backgrounds =[]
+    self.backgrounds = []
     self.sources = {}
     self.specializations = {}
 
@@ -182,4 +182,4 @@ class Randomizer(object):
 if __name__ == '__main__':
   rnd = Randomizer()
   v = MainView.load_view(rnd)
-  v.present()
+  v.present(style='fullscreen')
