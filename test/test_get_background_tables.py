@@ -4,6 +4,7 @@ from utils.find_table import find_tables, get_tables_for_bg
 from utils.find_source import find_source
 from model.data_loader import DataLoader
 from model.die_table import DieTable
+import io
 
 
 # import console
@@ -11,7 +12,7 @@ from model.die_table import DieTable
 dl = DataLoader('data/xml/CoreOnly.xml')
 sources = {}
 
-with open('data/sources.csv') as f:
+with io.open('data/sources.csv', mode='r', encoding='utf-8') as f:
   lines = [l.strip().split(',') for l in list(filter(lambda a: not a.startswith('#') and a.strip() != '', f.readlines()))]
   for line in lines:
     sources[line[0]] = line[1]
@@ -36,7 +37,7 @@ for bg in dl.backgrounds:
     for v in dt.values:
       lines += ['{}\t{}\t{}\t{}\t{}'.format(bg.name, n, d, '|'.join(v), '/'.join(keys))]
 
-with open('data/background_traits.csv', 'w') as f:
+with io.open('data/background_traits.csv', mode='w', encoding='utf-8') as f:
   f.write('\n'.join(lines))
 
     #print('{0.name}: {0.die} - {1}'.format(dt, dt.roll()))

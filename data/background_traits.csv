@@ -38,14 +38,14 @@ Charlatan	Personality Trait	8	5|I lie about almost everything, even when there's
 Charlatan	Personality Trait	8	6|Sarcasm and insults are my weapons of choice.	PHB
 Charlatan	Personality Trait	8	7|I keep multiple holy symbols on me and invoke whatever deity might come in useful at any given moment.	PHB
 Charlatan	Personality Trait	8	8|I pocket anything I see that might have some value.	PHB
-Charlatan	Ideal	6	1|Independence. I am a free spirit�no one tells me what to do. (Chaotic)	PHB
+Charlatan	Ideal	6	1|Independence. I am a free spirit—no one tells me what to do. (Chaotic)	PHB
 Charlatan	Ideal	6	2|Fairness. I never target people who can't afford to lose a few coins. (Lawful)	PHB
 Charlatan	Ideal	6	3|Charity. I distribute the money I acquire to the people who really need it. (Good)	PHB
 Charlatan	Ideal	6	4|Creativity. I never run the same con twice. (Chaotic)	PHB
 Charlatan	Ideal	6	5|Friendship. Material goods come and go. Bonds of friendship last forever. (Good)	PHB
 Charlatan	Ideal	6	6|Aspiration. I'm determined to make something of myself. (Any)	PHB
 Charlatan	Bond	6	1|I fleeced the wrong person and must work to ensure that this individual never crosses paths with me or those I care about.	PHB
-Charlatan	Bond	6	2|I owe everything to my mentor�a horrible person who's probably rotting in jail somewhere.	PHB
+Charlatan	Bond	6	2|I owe everything to my mentor—a horrible person who's probably rotting in jail somewhere.	PHB
 Charlatan	Bond	6	3|Somewhere out there, I have a child who doesn't know me. I'm making the world better for him or her.	PHB
 Charlatan	Bond	6	4|I come from a noble family, and one day I'll reclaim my lands and title from those who stole them from me.	PHB
 Charlatan	Bond	6	5|A powerful person killed someone I love. Some day soon, I'll have my revenge.	PHB
@@ -66,7 +66,7 @@ Criminal	Specialty	8	7|Pickpocket	PHB
 Criminal	Specialty	8	8|Smuggler	PHB
 Criminal	Personality Trait	8	1|I always have a plan for when things go wrong.	PHB
 Criminal	Personality Trait	8	2|I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.	PHB
-Criminal	Personality Trait	8	3|The first thing I do in a new place is note the locations of everything valuable�or where such things could be hidden.	PHB
+Criminal	Personality Trait	8	3|The first thing I do in a new place is note the locations of everything valuable—or where such things could be hidden.	PHB
 Criminal	Personality Trait	8	4|I would rather make a new friend than a new enemy.	PHB
 Criminal	Personality Trait	8	5|I am incredibly slow to trust. Those who seem the fairest often have the most to hide.	PHB
 Criminal	Personality Trait	8	6|I don't pay attention to the risks in a situation. Never tell me the odds.	PHB
@@ -102,7 +102,7 @@ Entertainer	Routines	10	9|Storyteller	PHB
 Entertainer	Routines	10	10|Tumbler	PHB
 Entertainer	Personality Trait	8	1|I know a story relevant to almost every situation.	PHB
 Entertainer	Personality Trait	8	2|Whenever I come to a new place, I collect local rumors and spread gossip.	PHB
-Entertainer	Personality Trait	8	"3|I'm a hopeless romantic, always searching for that ""special someone""."	PHB
+Entertainer	Personality Trait	8	3|I'm a hopeless romantic, always searching for that "special someone".	PHB
 Entertainer	Personality Trait	8	4|Nobody stays angry at me or around me for long, since I can defuse any amount of tension.	PHB
 Entertainer	Personality Trait	8	5|I love a good insult, even one directed at me.	PHB
 Entertainer	Personality Trait	8	6|I get bitter if I'm not the center of attention.	PHB
@@ -147,7 +147,7 @@ Folk Hero	Personality Trait	8	8|I get bored easily. When am I going to get on wi
 Folk Hero	Ideal	6	1|Respect. People deserve to be treated with dignity and respect. (Good)	PHB
 Folk Hero	Ideal	6	2|Fairness. No one should get preferential treatment before the law, and no one is above the law. (Lawful)	PHB
 Folk Hero	Ideal	6	3|Freedom. Tyrants must not be allowed to oppress the people. (Chaotic)	PHB
-Folk Hero	Ideal	6	4|Might. If I become strong, I can take what I want�what I deserve. (Evil)	PHB
+Folk Hero	Ideal	6	4|Might. If I become strong, I can take what I want—what I deserve. (Evil)	PHB
 Folk Hero	Ideal	6	5|Sincerity. There's no good in pretending to be something I'm not. (Neutral)	PHB
 Folk Hero	Ideal	6	6|Destiny. Nothing and no one can steer me away from my higher calling. (Any)	PHB
 Folk Hero	Bond	6	1|I have a family, but I have no idea where they are. One day, I hope to see them again.	PHB
@@ -182,7 +182,7 @@ Guild Artisan	Guild Business	20	17|Tinkers, pewterers, and casters	PHB
 Guild Artisan	Guild Business	20	18|Wagon-makers and wheelwrights	PHB
 Guild Artisan	Guild Business	20	19|Weavers and dyers	PHB
 Guild Artisan	Guild Business	20	20|Woodcarvers, coopers, and bowyers	PHB
-Guild Artisan	Personality Trait	8	1|I believe that anything worth doing is worth doing right. I can't help it�I'm a perfectionist.	PHB
+Guild Artisan	Personality Trait	8	1|I believe that anything worth doing is worth doing right. I can't help it—I'm a perfectionist.	PHB
 Guild Artisan	Personality Trait	8	2|I'm a snob who looks down on those who can't appreciate fine art.	PHB
 Guild Artisan	Personality Trait	8	3|I always want to know how things work and what makes people tick.	PHB
 Guild Artisan	Personality Trait	8	4|I'm full of witty aphorisms and have a proverb for every occasion.	PHB
@@ -205,7 +205,7 @@ Guild Artisan	Bond	6	6|I will get revenge on the evil forces that destroyed my p
 Guild Artisan	Flaw	6	1|I'll do anything to get my hands on something rare or priceless.	PHB
 Guild Artisan	Flaw	6	2|I'm quick to assume that someone is trying to cheat me.	PHB
 Guild Artisan	Flaw	6	3|No one must ever learn that I once stole money from guild coffers.	PHB
-Guild Artisan	Flaw	6	4|I'm never satisfied with what I have�I always want more.	PHB
+Guild Artisan	Flaw	6	4|I'm never satisfied with what I have—I always want more.	PHB
 Guild Artisan	Flaw	6	5|I would kill to acquire a noble title.	PHB
 Guild Artisan	Flaw	6	6|I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals.	PHB
 Hermit	Life of Seclusion	8	1|I was searching for spiritual enlightenment.	PHB
@@ -313,7 +313,7 @@ Sage	Field of Study	8	6|Researcher	PHB
 Sage	Field of Study	8	7|Wizard's apprentice	PHB
 Sage	Field of Study	8	8|Scribe	PHB
 Sage	Personality Trait	8	1|I use polysyllabic words that convey the impression of great erudition.	PHB
-Sage	Personality Trait	8	2|I've read every book in the world's greatest libraries�or I like to boast that I have.	PHB
+Sage	Personality Trait	8	2|I've read every book in the world's greatest libraries—or I like to boast that I have.	PHB
 Sage	Personality Trait	8	3|I'm used to helping out those who aren't as smart as I am, and I patiently explain anything and everything to others.	PHB
 Sage	Personality Trait	8	4|There's nothing I like more than a good mystery.	PHB
 Sage	Personality Trait	8	5|I'm willing to listen to every side of an argument before I make my own judgment.	PHB
@@ -348,12 +348,12 @@ Sailor	Personality Trait	8	7|My language is as foul as an otyugh nest.	PHB
 Sailor	Personality Trait	8	8|I like a job well done, especially if I can convince someone else to do it.	PHB
 Sailor	Ideal	6	1|Respect. The thing that keeps a ship together is mutual respect between captain and crew. (Good)	PHB
 Sailor	Ideal	6	2|Fairness. We all do the work, so we all share in the rewards. (Lawful)	PHB
-Sailor	Ideal	6	3|Freedom. The sea is freedom�the freedom to go anywhere and do anything. (Chaotic)	PHB
+Sailor	Ideal	6	3|Freedom. The sea is freedom—the freedom to go anywhere and do anything. (Chaotic)	PHB
 Sailor	Ideal	6	4|Mastery. I'm a predator, and the other ships on the sea are my prey. (Evil)	PHB
 Sailor	Ideal	6	5|People. I'm committed to my crewmates, not to ideals. (Neutral)	PHB
 Sailor	Ideal	6	6|Aspiration. Someday, I'll own my own ship and chart my own destiny. (Any)	PHB
 Sailor	Bond	6	1|I'm loyal to my captain first, everything else second.	PHB
-Sailor	Bond	6	2|The ship is most important�crewmates and captains come and go.	PHB
+Sailor	Bond	6	2|The ship is most important—crewmates and captains come and go.	PHB
 Sailor	Bond	6	3|I'll always remember my first ship.	PHB
 Sailor	Bond	6	4|In a harbor town, I have a paramour whose eyes nearly stole me from the sea.	PHB
 Sailor	Bond	6	5|I was cheated out of my fair share of the profits, and I want to get my due.	PHB
@@ -394,7 +394,7 @@ Soldier	Bond	6	5|Those who fight beside me are those worth dying for.	PHB
 Soldier	Bond	6	6|I fight for those who cannot fight for themselves.	PHB
 Soldier	Flaw	6	1|The monstrous enemy we faced in battle still leaves me quivering with fear.	PHB
 Soldier	Flaw	6	2|I have little respect for anyone who is not a proven warrior.	PHB
-Soldier	Flaw	6	3|I made a terrible mistake in battle that cost many lives�and I would do anything to keep that mistake secret.	PHB
+Soldier	Flaw	6	3|I made a terrible mistake in battle that cost many lives—and I would do anything to keep that mistake secret.	PHB
 Soldier	Flaw	6	4|My hatred of my enemies is blinding and unreasoning.	PHB
 Soldier	Flaw	6	5|I obey the law, even if the law causes misery.	PHB
 Soldier	Flaw	6	6|I'd rather eat my armor than admit when I'm wrong.	PHB
@@ -410,7 +410,7 @@ Urchin	Ideal	6	1|Respect. All people, rich or poor, deserve respect. (Good)	PHB
 Urchin	Ideal	6	2|Community. We have to take care of each other, because no one else is going to do it. (Lawful)	PHB
 Urchin	Ideal	6	3|Change. The low are lifted up, and the high and mighty are brought down. Change is the nature of things. (Chaotic)	PHB
 Urchin	Ideal	6	4|Retribution. The rich need to be shown what life and death are like in the gutters. (Evil)	PHB
-Urchin	Ideal	6	5|People. I help the people who help me�that's what keeps us alive. (Neutral)	PHB
+Urchin	Ideal	6	5|People. I help the people who help me—that's what keeps us alive. (Neutral)	PHB
 Urchin	Ideal	6	6|Aspiration. I'm going to prove that I'm worthy of a better life. (Any)	PHB
 Urchin	Bond	6	1|My town or city is my home, and I'll fight to defend it.	PHB
 Urchin	Bond	6	2|I sponsor an orphanage to keep others from enduring what I was forced to endure.	PHB
@@ -434,7 +434,7 @@ Criminal / Spy	Specialty	8	7|Pickpocket	PHB
 Criminal / Spy	Specialty	8	8|Smuggler	PHB
 Criminal / Spy	Personality Trait	8	1|I always have a plan for when things go wrong.	PHB
 Criminal / Spy	Personality Trait	8	2|I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.	PHB
-Criminal / Spy	Personality Trait	8	3|The first thing I do in a new place is note the locations of everything valuable�or where such things could be hidden.	PHB
+Criminal / Spy	Personality Trait	8	3|The first thing I do in a new place is note the locations of everything valuable—or where such things could be hidden.	PHB
 Criminal / Spy	Personality Trait	8	4|I would rather make a new friend than a new enemy.	PHB
 Criminal / Spy	Personality Trait	8	5|I am incredibly slow to trust. Those who seem the fairest often have the most to hide.	PHB
 Criminal / Spy	Personality Trait	8	6|I don't pay attention to the risks in a situation. Never tell me the odds.	PHB
@@ -470,7 +470,7 @@ Entertainer / Gladiator	Routines	10	9|Storyteller	PHB
 Entertainer / Gladiator	Routines	10	10|Tumbler	PHB
 Entertainer / Gladiator	Personality Trait	8	1|I know a story relevant to almost every situation.	PHB
 Entertainer / Gladiator	Personality Trait	8	2|Whenever I come to a new place, I collect local rumors and spread gossip.	PHB
-Entertainer / Gladiator	Personality Trait	8	"3|I'm a hopeless romantic, always searching for that ""special someone""."	PHB
+Entertainer / Gladiator	Personality Trait	8	3|I'm a hopeless romantic, always searching for that "special someone".	PHB
 Entertainer / Gladiator	Personality Trait	8	4|Nobody stays angry at me or around me for long, since I can defuse any amount of tension.	PHB
 Entertainer / Gladiator	Personality Trait	8	5|I love a good insult, even one directed at me.	PHB
 Entertainer / Gladiator	Personality Trait	8	6|I get bitter if I'm not the center of attention.	PHB
@@ -514,7 +514,7 @@ Guild Artisan / Guild Merchant	Guild Business	20	17|Tinkers, pewterers, and cast
 Guild Artisan / Guild Merchant	Guild Business	20	18|Wagon-makers and wheelwrights	PHB
 Guild Artisan / Guild Merchant	Guild Business	20	19|Weavers and dyers	PHB
 Guild Artisan / Guild Merchant	Guild Business	20	20|Woodcarvers, coopers, and bowyers	PHB
-Guild Artisan / Guild Merchant	Personality Trait	8	1|I believe that anything worth doing is worth doing right. I can't help it�I'm a perfectionist.	PHB
+Guild Artisan / Guild Merchant	Personality Trait	8	1|I believe that anything worth doing is worth doing right. I can't help it—I'm a perfectionist.	PHB
 Guild Artisan / Guild Merchant	Personality Trait	8	2|I'm a snob who looks down on those who can't appreciate fine art.	PHB
 Guild Artisan / Guild Merchant	Personality Trait	8	3|I always want to know how things work and what makes people tick.	PHB
 Guild Artisan / Guild Merchant	Personality Trait	8	4|I'm full of witty aphorisms and have a proverb for every occasion.	PHB
@@ -537,7 +537,7 @@ Guild Artisan / Guild Merchant	Bond	6	6|I will get revenge on the evil forces th
 Guild Artisan / Guild Merchant	Flaw	6	1|I'll do anything to get my hands on something rare or priceless.	PHB
 Guild Artisan / Guild Merchant	Flaw	6	2|I'm quick to assume that someone is trying to cheat me.	PHB
 Guild Artisan / Guild Merchant	Flaw	6	3|No one must ever learn that I once stole money from guild coffers.	PHB
-Guild Artisan / Guild Merchant	Flaw	6	4|I'm never satisfied with what I have�I always want more.	PHB
+Guild Artisan / Guild Merchant	Flaw	6	4|I'm never satisfied with what I have—I always want more.	PHB
 Guild Artisan / Guild Merchant	Flaw	6	5|I would kill to acquire a noble title.	PHB
 Guild Artisan / Guild Merchant	Flaw	6	6|I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals.	PHB
 Noble / Knight	Personality Trait	8	1|My eloquent flattery makes everyone I talk to feel like the most wonderful and important person in the world.	PHB
@@ -576,12 +576,12 @@ Sailor / Pirate	Personality Trait	8	7|My language is as foul as an otyugh nest.	
 Sailor / Pirate	Personality Trait	8	8|I like a job well done, especially if I can convince someone else to do it.	PHB
 Sailor / Pirate	Ideal	6	1|Respect. The thing that keeps a ship together is mutual respect between captain and crew. (Good)	PHB
 Sailor / Pirate	Ideal	6	2|Fairness. We all do the work, so we all share in the rewards. (Lawful)	PHB
-Sailor / Pirate	Ideal	6	3|Freedom. The sea is freedom�the freedom to go anywhere and do anything. (Chaotic)	PHB
+Sailor / Pirate	Ideal	6	3|Freedom. The sea is freedom—the freedom to go anywhere and do anything. (Chaotic)	PHB
 Sailor / Pirate	Ideal	6	4|Mastery. I'm a predator, and the other ships on the sea are my prey. (Evil)	PHB
 Sailor / Pirate	Ideal	6	5|People. I'm committed to my crewmates, not to ideals. (Neutral)	PHB
 Sailor / Pirate	Ideal	6	6|Aspiration. Someday, I'll own my own ship and chart my own destiny. (Any)	PHB
 Sailor / Pirate	Bond	6	1|I'm loyal to my captain first, everything else second.	PHB
-Sailor / Pirate	Bond	6	2|The ship is most important�crewmates and captains come and go.	PHB
+Sailor / Pirate	Bond	6	2|The ship is most important—crewmates and captains come and go.	PHB
 Sailor / Pirate	Bond	6	3|I'll always remember my first ship.	PHB
 Sailor / Pirate	Bond	6	4|In a harbor town, I have a paramour whose eyes nearly stole me from the sea.	PHB
 Sailor / Pirate	Bond	6	5|I was cheated out of my fair share of the profits, and I want to get my due.	PHB
@@ -623,7 +623,7 @@ Far Traveler	Flaw	6	4|I don't take kindly to some of the actions and motivations
 Far Traveler	Flaw	6	5|I consider the adherents of other gods to be deluded innocents at best, or ignorant fools at worst.	SCAG
 Far Traveler	Flaw	6	6|I have a weakness for the exotic beauty of the people of these lands.	SCAG
 Inheritor	Object or item:	8	1|A document such as a map, a letter, or a journal	SCAG
-Inheritor	Object or item:	8	"2-3|a trinket (see ""Trinkets"" in chapter 5 of the Player's Handbook)"	SCAG
+Inheritor	Object or item:	8	2-3|a trinket (see "Trinkets" in chapter 5 of the Player's Handbook)	SCAG
 Inheritor	Object or item:	8	4|an article of clothing	SCAG
 Inheritor	Object or item:	8	5|a piece of jewelry	SCAG
 Inheritor	Object or item:	8	6|an arcane book or formulary	SCAG
@@ -696,7 +696,7 @@ Boros Legionnaire	Bond	6	6|I do what I can to help out the spouse of a comrade w
 Boros Legionnaire	Flaw	6	1|I act bravely when I'm in a group, but I'm a coward when I'm alone.	GGtR
 Boros Legionnaire	Flaw	6	2|I see everything in clear-cut black and white.	GGtR
 Boros Legionnaire	Flaw	6	3|I'm just a little fascinated by the ways of the Gruul.	GGtR
-Boros Legionnaire	Flaw	6	4|I trust the chain of command more than anything�more even than my closest friends.	GGtR
+Boros Legionnaire	Flaw	6	4|I trust the chain of command more than anything—more even than my closest friends.	GGtR
 Boros Legionnaire	Flaw	6	5|I'm slow to trust members of other guilds.	GGtR
 Boros Legionnaire	Flaw	6	6|I've been known to turn a blind eye to injustice, with the help of a modest bribe.	GGtR
 Boros Legionnaire	Contact	8	1|A former comrade in arms was promoted into the prestigious Sunhome Guard.	GGtR
@@ -739,7 +739,7 @@ Dimir Operative	Ideal	6	3|Secrets. I collect secrets and never reveal them. (Any
 Dimir Operative	Ideal	6	4|Knowledge. I want to know as much as I can about this city and how it works. (Any)	GGtR
 Dimir Operative	Ideal	6	5|Independence. I value the freedom to pursue my own goals without interference. (Chaotic)	GGtR
 Dimir Operative	Ideal	6	6|Nihilism. I don't believe in anything, and anyone who does is a fool. (Neutral)	GGtR
-Dimir Operative	Bond	6	1|I discovered a secret I can't let anyone else uncover�including my guild superiors.	GGtR
+Dimir Operative	Bond	6	1|I discovered a secret I can't let anyone else uncover—including my guild superiors.	GGtR
 Dimir Operative	Bond	6	2|I formed a close friendship or romance with someone in the guild I'm infiltrating.	GGtR
 Dimir Operative	Bond	6	3|The Dimir agent who recruited me was unmasked and killed. My revenge on the killers will be thorough and painful.	GGtR
 Dimir Operative	Bond	6	4|I spend as much time as I can in the Ismeri Library because I'm certain an information hub operates behind its facade. I want its secrets!	GGtR
@@ -766,7 +766,7 @@ Golgari Agent	Personality Trait	8	4|I do my best to discourage anyone from appro
 Golgari Agent	Personality Trait	8	5|I have accepted my death. Hence, I don't fear it.	GGtR
 Golgari Agent	Personality Trait	8	6|Like roots growing through stone, I am relentless and determined in my action.	GGtR
 Golgari Agent	Personality Trait	8	7|I put my knowledge of anatomy to use by narrating the injuries my enemies suffer in grisly detail.	GGtR
-Golgari Agent	Personality Trait	8	8|Like a wild animal, I lash out viciously when I'm provoked�and I'm easily provoked.	GGtR
+Golgari Agent	Personality Trait	8	8|Like a wild animal, I lash out viciously when I'm provoked—and I'm easily provoked.	GGtR
 Golgari Agent	Ideal	6	1|Guild. My guild is all that really matters. (Any)	GGtR
 Golgari Agent	Ideal	6	2|Stoicism. All of us are part of the cyclical march of nature, which will continue with or without us. (Neutral)	GGtR
 Golgari Agent	Ideal	6	3|Nature. The natural world is more important than the edifices of the city and civilization. (Neutral)	GGtR
@@ -789,7 +789,7 @@ Golgari Agent	Contact	8	1|One of my parents is an elite assassin, a member of th
 Golgari Agent	Contact	8	2|I learned combat from a kraul.	GGtR
 Golgari Agent	Contact	8	3|I know a medusa who is stationed in the guildhall.	GGtR
 Golgari Agent	Contact	8	4|I had a torrid romance with a spore druid responsible for a large rot farm.	GGtR
-Golgari Agent	Contact	8	5|There's a troll in a remote area of the undercity who seems to find me interesting�and who knows more than you'd think.	GGtR
+Golgari Agent	Contact	8	5|There's a troll in a remote area of the undercity who seems to find me interesting—and who knows more than you'd think.	GGtR
 Golgari Agent	Contact	8	6|An elf lich is determined to see me become a lich someday, too.	GGtR
 Golgari Agent	Contact	8	7|A medusa decided it would be more fun to recruit me into the guild than to kill me.	GGtR
 Golgari Agent	Contact	8	8|I know a findbroker who can locate just about anything, for the right price.	GGtR
@@ -804,7 +804,7 @@ Golgari Agent	Contact	10	8|I found a baby beast and sold it to a Rakdos wrangler
 Golgari Agent	Contact	10	9|A Selesnya druid and I share an interest in the same garden, and we have enjoyable arguments there.	GGtR
 Golgari Agent	Contact	10	10|I regularly pick up refuse from beneath a Simic laboratory, and sometimes I talk to the researcher who dumps it there.	GGtR
 Gruul Anarch	Personality Trait	8	1|Unlike people, the beasts of the wild are friends who won't stab me in the back.	GGtR
-Gruul Anarch	Personality Trait	8	2|Go ahead and insult me�I dare you.	GGtR
+Gruul Anarch	Personality Trait	8	2|Go ahead and insult me—I dare you.	GGtR
 Gruul Anarch	Personality Trait	8	3|I scorn those who can't survive away from the comforts of the city.	GGtR
 Gruul Anarch	Personality Trait	8	4|Don't tell me I'm not allowed to do something.	GGtR
 Gruul Anarch	Personality Trait	8	5|Laws are for people who are afraid to face their inner beasts.	GGtR
@@ -817,7 +817,7 @@ Gruul Anarch	Ideal	6	3|Nature. We weren't born tame or domesticated, so we shoul
 Gruul Anarch	Ideal	6	4|Might. The strongest are meant to dominate the weak. (Evil)	GGtR
 Gruul Anarch	Ideal	6	5|Rage. AAAAAARRRRggggh! [To live is to feel and express the rage burning in your belly.] (Chaotic)	GGtR
 Gruul Anarch	Ideal	6	6|Tradition. The Old Ways must be preserved and upheld. (Any)	GGtR
-Gruul Anarch	Bond	6	1|I am determined that one day I will lead my clan�or a new one.	GGtR
+Gruul Anarch	Bond	6	1|I am determined that one day I will lead my clan—or a new one.	GGtR
 Gruul Anarch	Bond	6	2|I would give my life for my clan chieftain.	GGtR
 Gruul Anarch	Bond	6	3|The chieftain of another clan has a grudge against me.	GGtR
 Gruul Anarch	Bond	6	4|I am devoted to a sacred site in the midst of the rubblebelt.	GGtR
@@ -849,7 +849,7 @@ Gruul Anarch	Contact	10	9|A distant relative is trying to recruit me into the Se
 Gruul Anarch	Contact	10	10|I stopped a Simic biomancer from trapping wild beasts to perform vile experiments on them.	GGtR
 Izzet Engineer	Personality Trait	8	1|I have a hard time staying focused on... oh, and my brain tends to jump from one... did I mention focus?	GGtR
 Izzet Engineer	Personality Trait	8	2|I get really excited about my ideas and I can't wait to talk about them and start putting them into practice and tinkering with them and I want to tell you about how exciting it all is!	GGtR
-Izzet Engineer	Personality Trait	8	3|It's not magic�or anything, really�if you do it only halfway. Whatever I do, I give it all I've got.	GGtR
+Izzet Engineer	Personality Trait	8	3|It's not magic—or anything, really—if you do it only halfway. Whatever I do, I give it all I've got.	GGtR
 Izzet Engineer	Personality Trait	8	4|I do what my gut tells me.	GGtR
 Izzet Engineer	Personality Trait	8	5|Life's an experiment, and I can't wait to see what happens.	GGtR
 Izzet Engineer	Personality Trait	8	6|I pepper my speech with the incomprehensible jargon of my trade, like mizzium droplets inserted into a weird-field suspension.	GGtR
@@ -904,14 +904,14 @@ Orzhov Representative	Ideal	6	2|Wealth. I will do whatever it takes to become as
 Orzhov Representative	Ideal	6	3|Power. One day, I will be the one giving orders. (Evil)	GGtR
 Orzhov Representative	Ideal	6	4|Prestige. I want to be admired, respected, feared, or even hated for my position and wealth. (Evil)	GGtR
 Orzhov Representative	Ideal	6	5|Stability. The economy functions best when chaos is kept under control and everyone knows their place. (Lawful)	GGtR
-Orzhov Representative	Ideal	6	6|Eternity. I want to live forever�in the flesh as long as possible, and as a spirit afterward. (Any)	GGtR
+Orzhov Representative	Ideal	6	6|Eternity. I want to live forever—in the flesh as long as possible, and as a spirit afterward. (Any)	GGtR
 Orzhov Representative	Bond	6	1|The unbearable weight of my debt has driven me to desperation.	GGtR
 Orzhov Representative	Bond	6	2|I'm duty-bound to obey the dictates of an ancestor on the Ghost Council.	GGtR
 Orzhov Representative	Bond	6	3|I value my worldly goods more highly than my mortal life.	GGtR
 Orzhov Representative	Bond	6	4|An oligarch publicly humiliated me, and I will exact revenge on that whole family.	GGtR
 Orzhov Representative	Bond	6	5|My faith in the Obzedat never wavers.	GGtR
 Orzhov Representative	Bond	6	6|I want to prove myself more worthy than an older sibling and thereby ensure that I inherit a greater share of my parents' wealth.	GGtR
-Orzhov Representative	Flaw	6	1|I hold a scandalous secret that could ruin my family forever�but could also earn me the favor of the Ghost Council.	GGtR
+Orzhov Representative	Flaw	6	1|I hold a scandalous secret that could ruin my family forever—but could also earn me the favor of the Ghost Council.	GGtR
 Orzhov Representative	Flaw	6	2|I'm convinced that everyone I know is plotting against me.	GGtR
 Orzhov Representative	Flaw	6	3|I'll brave any risk if the monetary reward is great enough.	GGtR
 Orzhov Representative	Flaw	6	4|I am convinced that I am far more important than anyone else is willing to acknowledge.	GGtR
@@ -953,7 +953,7 @@ Rakdos Cultist	Personality Trait	8	7|I throw my weight around to make sure I get
 Rakdos Cultist	Personality Trait	8	8|I enjoy breaking delicate works of art. And fingers, which are sort of the same.	GGtR
 Rakdos Cultist	Ideal	6	1|Guild. My guild is all that really matters. (Any)	GGtR
 Rakdos Cultist	Ideal	6	2|Hedonism. Death comes for everyone, so take as much pleasure as you can from every moment of life. (Neutral)	GGtR
-Rakdos Cultist	Ideal	6	3|Creativity. I strive to find more ways to express my art through pain�my own as well as others'. (Chaotic)	GGtR
+Rakdos Cultist	Ideal	6	3|Creativity. I strive to find more ways to express my art through pain—my own as well as others'. (Chaotic)	GGtR
 Rakdos Cultist	Ideal	6	4|Freedom. No one tells me what to do. (Chaotic)	GGtR
 Rakdos Cultist	Ideal	6	5|Equality. I want to see Ravnica remade, with no guilds and no hierarchies. (Chaotic)	GGtR
 Rakdos Cultist	Ideal	6	6|Spectacle. People are inspired by the greatness they see in art. (Any)	GGtR
@@ -978,7 +978,7 @@ Rakdos Cultist	Contact	8	6|The master of ceremonies in my troupe is well connect
 Rakdos Cultist	Contact	8	7|I had a romance with a pain artist in another troupe.	GGtR
 Rakdos Cultist	Contact	8	8|Rakdos himself has witnessed me perform.	GGtR
 Rakdos Cultist	Contact	10	1|I know an Azorius elocutor who has a very amusing dark side.	GGtR
-Rakdos Cultist	Contact	10	"2|A Boros captain really wants to ""redeem"" me."	GGtR
+Rakdos Cultist	Contact	10	2|A Boros captain really wants to "redeem" me.	GGtR
 Rakdos Cultist	Contact	10	3|I think a member of my troupe is a Dimir agent.	GGtR
 Rakdos Cultist	Contact	10	4|I once convinced a Golgari medusa to participate in a show. We've been on good terms ever since.	GGtR
 Rakdos Cultist	Contact	10	5|I came from the Gruul and still have relatives there.	GGtR
@@ -1046,14 +1046,14 @@ Simic Scientist	Personality Trait	8	6|I am insatiably curious about the seemingl
 Simic Scientist	Personality Trait	8	7|I can't resist prying into anything forbidden, since it must be terribly interesting.	GGtR
 Simic Scientist	Personality Trait	8	8|I employ a highly technical vocabulary to avoid imprecision and ambiguity in my communication.	GGtR
 Simic Scientist	Ideal	6	1|Guild. My guild is all that really matters. (Any)	GGtR
-Simic Scientist	Ideal	6	2|Change. All life is meant to progress toward perfection, and our work is to hurry it along�no matter what must be upended along the way. (Chaotic)	GGtR
+Simic Scientist	Ideal	6	2|Change. All life is meant to progress toward perfection, and our work is to hurry it along—no matter what must be upended along the way. (Chaotic)	GGtR
 Simic Scientist	Ideal	6	3|Knowledge. Understanding the world is more important than what you do with your knowledge. (Neutral)	GGtR
 Simic Scientist	Ideal	6	4|Greater Good. I want to reshape the world into higher forms of life so that all can enjoy evolution. (Good)	GGtR
 Simic Scientist	Ideal	6	5|Logic. It's foolish to let emotions and principles interfere with the conclusions of logic. (Lawful)	GGtR
 Simic Scientist	Ideal	6	6|Superiority. My vast intellect and strength are directed toward increasing my sway over others. (Evil)	GGtR
 Simic Scientist	Bond	6	1|I helped create a krasis that I love like a pet and would carry with me everywhere... except it's the size of a building, and it might eat me.	GGtR
 Simic Scientist	Bond	6	2|In my laboratory, I discovered something that I think could eliminate half the life on Ravnica.	GGtR
-Simic Scientist	Bond	6	3|The other researchers in my clade are my family�a big, eccentric family including members and parts of many species.	GGtR
+Simic Scientist	Bond	6	3|The other researchers in my clade are my family—a big, eccentric family including members and parts of many species.	GGtR
 Simic Scientist	Bond	6	4|The laboratory where I did my research contains everything that is precious to me.	GGtR
 Simic Scientist	Bond	6	5|I will get revenge on the shortsighted fool who killed my precious krasis creation.	GGtR
 Simic Scientist	Bond	6	6|Everything I do is an attempt to impress someone I love.	GGtR
@@ -1079,7 +1079,7 @@ Simic Scientist	Contact	10	5|I can't fathom what could have made my childhood fr
 Simic Scientist	Contact	10	6|I love comparing notes with my friend in the Izzet, though our fields of research are very different.	GGtR
 Simic Scientist	Contact	10	7|I borrowed a lot of money from an Orzhov syndic to help finance my research.	GGtR
 Simic Scientist	Contact	10	8|A Rakdos ringmaster has taken an interest in my research which, come to think of it, might make a nice sideshow act.	GGtR
-Simic Scientist	Contact	10	9|I left the Selesnya�and a lover�behind when I joined the Simic.	GGtR
+Simic Scientist	Contact	10	9|I left the Selesnya—and a lover—behind when I joined the Simic.	GGtR
 Simic Scientist	Contact	10	10|Roll an additional Simic contact; you can decide if the contact is an ally or a rival.	GGtR
 House Agent	Role	8	1|Acquisition	ERftLW/WGtE
 House Agent	Role	8	2|Investigation	ERftLW/WGtE
@@ -1124,7 +1124,7 @@ Celebrity Adventurer's Scion	Personality Trait	8	8|No risk is too great for the 
 Celebrity Adventurer's Scion	Ideal	6	1|Power. The only way to get ahead in this world is to attain power and hold onto it with all your might. (Evil)	AI
 Celebrity Adventurer's Scion	Ideal	6	2|Peace. Those who can find or make peace in the chaotic world around them have everything. (Lawful)	AI
 Celebrity Adventurer's Scion	Ideal	6	3|Fame. I've seen what fame can bring. And I'll do anything to get all that for myself. (Neutral)	AI
-Celebrity Adventurer's Scion	Ideal	6	4|Training. Hard work, sacrifice, and training lead to success�and eventually to perfection. (Any)	AI
+Celebrity Adventurer's Scion	Ideal	6	4|Training. Hard work, sacrifice, and training lead to success—and eventually to perfection. (Any)	AI
 Celebrity Adventurer's Scion	Ideal	6	5|Anonymity. I want to be successful. And alone. With lots of guards and wards between me and everyone else in the world. (Any)	AI
 Celebrity Adventurer's Scion	Ideal	6	6|Wisdom. Material wealth is an illusion. Wisdom is the real treasure. (Good)	AI
 Celebrity Adventurer's Scion	Bond	6	1|While my parent was out adventuring, a servant raised me, and I care about that person more than anyone.	AI
@@ -1144,7 +1144,7 @@ Failed Merchant	Personality Trait	8	2|Even my competitors said I was affable and
 Failed Merchant	Personality Trait	8	3|To prosper, you have to be in control.	AI
 Failed Merchant	Personality Trait	8	4|The customer is always right.	AI
 Failed Merchant	Personality Trait	8	5|I was cutting corners and breaking deals to maximize profit. That's why I failed.	AI
-Failed Merchant	Personality Trait	8	6|When I get an idea, I am single-minded in its execution�even if it's a terrible idea.	AI
+Failed Merchant	Personality Trait	8	6|When I get an idea, I am single-minded in its execution—even if it's a terrible idea.	AI
 Failed Merchant	Personality Trait	8	7|If I can be everyone's friend, I'll always have support.	AI
 Failed Merchant	Personality Trait	8	8|My heart wasn't in being a merchant, so I failed. I'm not all that keen on adventuring either, but I need the money.	AI
 Failed Merchant	Ideal	6	1|Survival. Where there's life, there's hope. If I remain alive and flexible, I can succeed. (Any)	AI
@@ -1176,7 +1176,7 @@ Gambler	Personality Trait	8	8|I have beaten my addiction, but all it takes is on
 Gambler	Ideal	6	1|Knowledge. Knowledge is power, and knowing which horse to back is the key to success. (Any)	AI
 Gambler	Ideal	6	2|Fate. Whatever happens is fated, regardless of any planning or striving. (Lawful)	AI
 Gambler	Ideal	6	3|Bravery. If you want to succeed, you have to take risks. (Chaotic)	AI
-Gambler	Ideal	6	4|Survival. You can't win if you're dead. Live to fight another day�when the odds might be more in your favor. (Any)	AI
+Gambler	Ideal	6	4|Survival. You can't win if you're dead. Live to fight another day—when the odds might be more in your favor. (Any)	AI
 Gambler	Ideal	6	5|Reliability. When I was in need, I was able to rely on others. Now I want to be the one others rely on. (Good)	AI
 Gambler	Ideal	6	6|Victory. Winning is the real measure of a person. In the end, the only thing that matters is the scoreboard. (Evil)	AI
 Gambler	Bond	6	1|One person in particular owes me a lot of money, and I need to keep them alive if I want to be repaid.	AI
@@ -1252,7 +1252,7 @@ Cobalt Scholar (Sage)	Field of Study	8	6|Researcher	EGtW
 Cobalt Scholar (Sage)	Field of Study	8	7|Wizard's apprentice	EGtW
 Cobalt Scholar (Sage)	Field of Study	8	8|Scribe	EGtW
 Cobalt Scholar (Sage)	Personality Trait	8	1|I use polysyllabic words that convey the impression of great erudition.	EGtW
-Cobalt Scholar (Sage)	Personality Trait	8	2|I've read every book in the world's greatest libraries�or I like to boast that I have.	EGtW
+Cobalt Scholar (Sage)	Personality Trait	8	2|I've read every book in the world's greatest libraries—or I like to boast that I have.	EGtW
 Cobalt Scholar (Sage)	Personality Trait	8	3|I'm used to helping out those who aren't as smart as I am, and I patiently explain anything and everything to others.	EGtW
 Cobalt Scholar (Sage)	Personality Trait	8	4|There's nothing I like more than a good mystery.	EGtW
 Cobalt Scholar (Sage)	Personality Trait	8	5|I'm willing to listen to every side of an argument before I make my own judgment.	EGtW
@@ -1345,7 +1345,7 @@ Myriad Operative (Criminal)	Specialty	8	7|Pickpocket	EGtW
 Myriad Operative (Criminal)	Specialty	8	8|Smuggler	EGtW
 Myriad Operative (Criminal)	Personality Trait	8	1|I always have a plan for when things go wrong.	EGtW
 Myriad Operative (Criminal)	Personality Trait	8	2|I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.	EGtW
-Myriad Operative (Criminal)	Personality Trait	8	3|The first thing I do in a new place is note the locations of everything valuable�or where such things could be hidden.	EGtW
+Myriad Operative (Criminal)	Personality Trait	8	3|The first thing I do in a new place is note the locations of everything valuable—or where such things could be hidden.	EGtW
 Myriad Operative (Criminal)	Personality Trait	8	4|I would rather make a new friend than a new enemy.	EGtW
 Myriad Operative (Criminal)	Personality Trait	8	5|I am incredibly slow to trust. Those who seem the fairest often have the most to hide.	EGtW
 Myriad Operative (Criminal)	Personality Trait	8	6|I don't pay attention to the risks in a situation. Never tell me the odds.	EGtW
@@ -1379,12 +1379,12 @@ Revelry Pirate (Sailor)	Personality Trait	8	7|My language is as foul as an otyug
 Revelry Pirate (Sailor)	Personality Trait	8	8|I like a job well done, especially if I can convince someone else to do it.	EGtW
 Revelry Pirate (Sailor)	Ideal	6	1|Respect. The thing that keeps a ship together is mutual respect between captain and crew. (Good)	EGtW
 Revelry Pirate (Sailor)	Ideal	6	2|Fairness. We all do the work, so we all share in the rewards. (Lawful)	EGtW
-Revelry Pirate (Sailor)	Ideal	6	3|Freedom. The sea is freedom�the freedom to go anywhere and do anything. (Chaotic)	EGtW
+Revelry Pirate (Sailor)	Ideal	6	3|Freedom. The sea is freedom—the freedom to go anywhere and do anything. (Chaotic)	EGtW
 Revelry Pirate (Sailor)	Ideal	6	4|Mastery. I'm a predator, and the other ships on the sea are my prey. (Evil)	EGtW
 Revelry Pirate (Sailor)	Ideal	6	5|People. I'm committed to my crewmates, not to ideals. (Neutral)	EGtW
 Revelry Pirate (Sailor)	Ideal	6	6|Aspiration. Someday, I'll own my own ship and chart my own destiny. (Any)	EGtW
 Revelry Pirate (Sailor)	Bond	6	1|I'm loyal to my captain first, everything else second.	EGtW
-Revelry Pirate (Sailor)	Bond	6	2|The ship is most important�crewmates and captains come and go.	EGtW
+Revelry Pirate (Sailor)	Bond	6	2|The ship is most important—crewmates and captains come and go.	EGtW
 Revelry Pirate (Sailor)	Bond	6	3|I'll always remember my first ship.	EGtW
 Revelry Pirate (Sailor)	Bond	6	4|In a harbor town, I have a paramour whose eyes nearly stole me from the sea.	EGtW
 Revelry Pirate (Sailor)	Bond	6	5|I was cheated out of my fair share of the profits, and I want to get my due.	EGtW
@@ -1405,7 +1405,7 @@ Volstrucker Agent	Personality Trait	6	1|I prefer to keep my thoughts to myself.	
 Volstrucker Agent	Personality Trait	6	2|I indulge vice in excess to quiet my conscience.	EGtW
 Volstrucker Agent	Personality Trait	6	3|I've left emotion behind me. I'm now perfectly placid.	EGtW
 Volstrucker Agent	Personality Trait	6	4|Some event from the past keeps worming its way into my mind, making me restless.	EGtW
-Volstrucker Agent	Personality Trait	6	5|I always keep my word�except when I'm commanded to break it.	EGtW
+Volstrucker Agent	Personality Trait	6	5|I always keep my word—except when I'm commanded to break it.	EGtW
 Volstrucker Agent	Personality Trait	6	6|I laugh off insults and never take them personally.	EGtW
 Volstrucker Agent	Ideal	6	1|Order. The will of the crown is absolute. (Law)	EGtW
 Volstrucker Agent	Ideal	6	2|True Loyalty. The Cerberus Assembly is greater than any power, even the crown. (Law)	EGtW
@@ -1574,7 +1574,7 @@ Fisher	Personality Trait	8	6|I work hard; nature offers no handouts.	GoS
 Fisher	Personality Trait	8	7|I dislike bargaining; state your price and mean it.	GoS
 Fisher	Personality Trait	8	8|Luck favors me, and I take risks others might not.	GoS
 Fisher	Ideal	6	1|Camaraderie. Good people make even the longest voyage bearable. (Good)	GoS
-Fisher	Ideal	6	2|Luck. Our luck depends on respecting its rules�now throw this salt over your shoulder. (Lawful)	GoS
+Fisher	Ideal	6	2|Luck. Our luck depends on respecting its rules—now throw this salt over your shoulder. (Lawful)	GoS
 Fisher	Ideal	6	3|Daring. The richest bounty goes to those who risk everything. (Chaotic)	GoS
 Fisher	Ideal	6	4|Plunder. Take all that you can and leave nothing for the scavengers. (Evil)	GoS
 Fisher	Ideal	6	5|Balance. Do not fish the same spot twice in a row; suppress your greed, and nature will reward you. (Neutral)	GoS
@@ -1609,7 +1609,7 @@ Marine	Ideal	6	1|Teamwork. Success depends on cooperation and communication. (Go
 Marine	Ideal	6	2|Code. The marines' code provides a solution for every problem, and following it is imperative. (Lawful)	GoS
 Marine	Ideal	6	3|Embracing. Life is messy. Throwing yourself into the worst of it is necessary to get the job done. (Chaotic)	GoS
 Marine	Ideal	6	4|Might. The strong train so that they might rule those who are weak. (Evil)	GoS
-Marine	Ideal	6	5|Bravery. To act when others quake in fear�this is the essence of the warrior. (Any)	GoS
+Marine	Ideal	6	5|Bravery. To act when others quake in fear—this is the essence of the warrior. (Any)	GoS
 Marine	Ideal	6	6|Perseverance. No injury or obstacle can turn me from my goal. (Any)	GoS
 Marine	Bond	6	1|I face danger and evil to offset an unredeemable act in my past.	GoS
 Marine	Bond	6	2|I. Will. Finish. The. Job.	GoS
@@ -1633,7 +1633,7 @@ Shipwright	Personality Trait	8	1|I love talking and being heard more than I like
 Shipwright	Personality Trait	8	2|I'm extremely fond of puzzles.	GoS
 Shipwright	Personality Trait	8	3|I thrive under pressure.	GoS
 Shipwright	Personality Trait	8	4|I love sketching and designing objects, especially boats.	GoS
-Shipwright	Personality Trait	8	5|I'm not afraid of hard work�in fact, I prefer it.	GoS
+Shipwright	Personality Trait	8	5|I'm not afraid of hard work—in fact, I prefer it.	GoS
 Shipwright	Personality Trait	8	6|A pipe, an ale, and the smell of the sea: paradise.	GoS
 Shipwright	Personality Trait	8	7|I have an endless supply of cautionary tales related to the sea.	GoS
 Shipwright	Personality Trait	8	8|I don't mind getting my hands dirty.	GoS
@@ -1727,14 +1727,14 @@ Baldur's Gate Charlatan	Personality Trait	8	5|I lie about almost everything, eve
 Baldur's Gate Charlatan	Personality Trait	8	6|Sarcasm and insults are my weapons of choice.	BGDiA
 Baldur's Gate Charlatan	Personality Trait	8	7|I keep multiple holy symbols on me and invoke whatever deity might come in useful at any given moment.	BGDiA
 Baldur's Gate Charlatan	Personality Trait	8	8|I pocket anything I see that might have some value.	BGDiA
-Baldur's Gate Charlatan	Ideal	6	1|Independence. I am a free spirit�no one tells me what to do. (Chaotic)	BGDiA
+Baldur's Gate Charlatan	Ideal	6	1|Independence. I am a free spirit—no one tells me what to do. (Chaotic)	BGDiA
 Baldur's Gate Charlatan	Ideal	6	2|Fairness. I never target people who can't afford to lose a few coins. (Lawful)	BGDiA
 Baldur's Gate Charlatan	Ideal	6	3|Charity. I distribute the money I acquire to the people who really need it. (Good)	BGDiA
 Baldur's Gate Charlatan	Ideal	6	4|Creativity. I never run the same con twice. (Chaotic)	BGDiA
 Baldur's Gate Charlatan	Ideal	6	5|Friendship. Material goods come and go. Bonds of friendship last forever. (Good)	BGDiA
 Baldur's Gate Charlatan	Ideal	6	6|Aspiration. I'm determined to make something of myself. (Any)	BGDiA
 Baldur's Gate Charlatan	Bond	6	1|I fleeced the wrong person and must work to ensure that this individual never crosses paths with me or those I care about.	BGDiA
-Baldur's Gate Charlatan	Bond	6	2|I owe everything to my mentor�a horrible person who's probably rotting in jail somewhere.	BGDiA
+Baldur's Gate Charlatan	Bond	6	2|I owe everything to my mentor—a horrible person who's probably rotting in jail somewhere.	BGDiA
 Baldur's Gate Charlatan	Bond	6	3|Somewhere out there, I have a child who doesn't know me. I'm making the world better for him or her.	BGDiA
 Baldur's Gate Charlatan	Bond	6	4|I come from a noble family, and one day I'll reclaim my lands and title from those who stole them from me.	BGDiA
 Baldur's Gate Charlatan	Bond	6	5|A powerful person killed someone I love. Some day soon, I'll have my revenge.	BGDiA
@@ -1747,7 +1747,7 @@ Baldur's Gate Charlatan	Flaw	6	5|I can't resist swindling people who are more po
 Baldur's Gate Charlatan	Flaw	6	6|I hate to admit it and will hate myself for it, but I'll run and preserve my own hide if the going gets tough.	BGDiA
 Baldur's Gate Criminal	Origin	8	1|You crippled a Guild kingpin's cousin without realizing the connection. You got the Guild to back off demands for your death by offering to make amends by working for the criminals, but even so the kingpin still plots a personal revenge.	BGDiA
 Baldur's Gate Criminal	Origin	8	2|The Guild took over your family business, ran it into the ground, and burned the building for insurance money. You were driven into crime yourself, but you'll never work for the Guild. You take special joy in hitting its targets first, tipping off its con victims and otherwise frustrating its schemes.	BGDiA
-Baldur's Gate Criminal	Origin	8	3|It's always been about money. You're not paid what you're worth, working for someone who has more than they deserve. But the Guild offered you a way to fix that. You keep doing what you've always done�guard work, dock labor, business accounting�but what you learn you pass on to the Guild.	BGDiA
+Baldur's Gate Criminal	Origin	8	3|It's always been about money. You're not paid what you're worth, working for someone who has more than they deserve. But the Guild offered you a way to fix that. You keep doing what you've always done—guard work, dock labor, business accounting—but what you learn you pass on to the Guild.	BGDiA
 Baldur's Gate Criminal	Origin	8	4|The inequality of Baldur's Gate has driven you to take matters into your own hands. You steal from patriars and rich Lower City residents, funneling the money through charitable fronts to help the needy.	BGDiA
 Baldur's Gate Criminal	Origin	8	5|You got into crime as a bored patriar looking for excitement. Your family has no idea of your activities, and neither does the Guild. If either of them ever finds out, your life as you know it will be over.	BGDiA
 Baldur's Gate Criminal	Origin	8	6|A close friend or relative joined the Guild and vanished mysteriously. You've worked your way into the lower ranks hoping to find out what happened to them.	BGDiA
@@ -1763,7 +1763,7 @@ Baldur's Gate Criminal	Specialty	8	7|Pickpocket	BGDiA
 Baldur's Gate Criminal	Specialty	8	8|Smuggler	BGDiA
 Baldur's Gate Criminal	Personality Trait	8	1|I always have a plan for when things go wrong.	BGDiA
 Baldur's Gate Criminal	Personality Trait	8	2|I am always calm, no matter what the situation. I never raise my voice or let my emotions control me.	BGDiA
-Baldur's Gate Criminal	Personality Trait	8	3|The first thing I do in a new place is note the locations of everything valuable�or where such things could be hidden.	BGDiA
+Baldur's Gate Criminal	Personality Trait	8	3|The first thing I do in a new place is note the locations of everything valuable—or where such things could be hidden.	BGDiA
 Baldur's Gate Criminal	Personality Trait	8	4|I would rather make a new friend than a new enemy.	BGDiA
 Baldur's Gate Criminal	Personality Trait	8	5|I am incredibly slow to trust. Those who seem the fairest often have the most to hide.	BGDiA
 Baldur's Gate Criminal	Personality Trait	8	6|I don't pay attention to the risks in a situation. Never tell me the odds.	BGDiA
@@ -1799,7 +1799,7 @@ Baldur's Gate Entertainer	Routines	10	9|Storyteller	BGDiA
 Baldur's Gate Entertainer	Routines	10	10|Tumbler	BGDiA
 Baldur's Gate Entertainer	Personality Trait	8	1|I know a story relevant to almost every situation.	BGDiA
 Baldur's Gate Entertainer	Personality Trait	8	2|Whenever I come to a new place, I collect local rumors and spread gossip.	BGDiA
-Baldur's Gate Entertainer	Personality Trait	8	"3|I'm a hopeless romantic, always searching for that ""special someone""."	BGDiA
+Baldur's Gate Entertainer	Personality Trait	8	3|I'm a hopeless romantic, always searching for that "special someone".	BGDiA
 Baldur's Gate Entertainer	Personality Trait	8	4|Nobody stays angry at me or around me for long, since I can defuse any amount of tension.	BGDiA
 Baldur's Gate Entertainer	Personality Trait	8	5|I love a good insult, even one directed at me.	BGDiA
 Baldur's Gate Entertainer	Personality Trait	8	6|I get bitter if I'm not the center of attention.	BGDiA
@@ -1850,7 +1850,7 @@ Baldur's Gate Folk Hero	Personality Trait	8	8|I get bored easily. When am I goin
 Baldur's Gate Folk Hero	Ideal	6	1|Respect. People deserve to be treated with dignity and respect. (Good)	BGDiA
 Baldur's Gate Folk Hero	Ideal	6	2|Fairness. No one should get preferential treatment before the law, and no one is above the law. (Lawful)	BGDiA
 Baldur's Gate Folk Hero	Ideal	6	3|Freedom. Tyrants must not be allowed to oppress the people. (Chaotic)	BGDiA
-Baldur's Gate Folk Hero	Ideal	6	4|Might. If I become strong, I can take what I want�what I deserve. (Evil)	BGDiA
+Baldur's Gate Folk Hero	Ideal	6	4|Might. If I become strong, I can take what I want—what I deserve. (Evil)	BGDiA
 Baldur's Gate Folk Hero	Ideal	6	5|Sincerity. There's no good in pretending to be something I'm not. (Neutral)	BGDiA
 Baldur's Gate Folk Hero	Ideal	6	6|Destiny. Nothing and no one can steer me away from my higher calling. (Any)	BGDiA
 Baldur's Gate Folk Hero	Bond	6	1|I have a family, but I have no idea where they are. One day, I hope to see them again.	BGDiA
@@ -1885,7 +1885,7 @@ Baldur's Gate Guild Artisan	Guild Business	20	17|Tinkers, pewterers, and casters
 Baldur's Gate Guild Artisan	Guild Business	20	18|Wagon-makers and wheelwrights	BGDiA
 Baldur's Gate Guild Artisan	Guild Business	20	19|Weavers and dyers	BGDiA
 Baldur's Gate Guild Artisan	Guild Business	20	20|Woodcarvers, coopers, and bowyers	BGDiA
-Baldur's Gate Guild Artisan	Personality Trait	8	1|I believe that anything worth doing is worth doing right. I can't help it�I'm a perfectionist.	BGDiA
+Baldur's Gate Guild Artisan	Personality Trait	8	1|I believe that anything worth doing is worth doing right. I can't help it—I'm a perfectionist.	BGDiA
 Baldur's Gate Guild Artisan	Personality Trait	8	2|I'm a snob who looks down on those who can't appreciate fine art.	BGDiA
 Baldur's Gate Guild Artisan	Personality Trait	8	3|I always want to know how things work and what makes people tick.	BGDiA
 Baldur's Gate Guild Artisan	Personality Trait	8	4|I'm full of witty aphorisms and have a proverb for every occasion.	BGDiA
@@ -1908,7 +1908,7 @@ Baldur's Gate Guild Artisan	Bond	6	6|I will get revenge on the evil forces that 
 Baldur's Gate Guild Artisan	Flaw	6	1|I'll do anything to get my hands on something rare or priceless.	BGDiA
 Baldur's Gate Guild Artisan	Flaw	6	2|I'm quick to assume that someone is trying to cheat me.	BGDiA
 Baldur's Gate Guild Artisan	Flaw	6	3|No one must ever learn that I once stole money from guild coffers.	BGDiA
-Baldur's Gate Guild Artisan	Flaw	6	4|I'm never satisfied with what I have�I always want more.	BGDiA
+Baldur's Gate Guild Artisan	Flaw	6	4|I'm never satisfied with what I have—I always want more.	BGDiA
 Baldur's Gate Guild Artisan	Flaw	6	5|I would kill to acquire a noble title.	BGDiA
 Baldur's Gate Guild Artisan	Flaw	6	6|I'm horribly jealous of anyone who can outshine my handiwork. Everywhere I go, I'm surrounded by rivals.	BGDiA
 Baldur's Gate Hermit	Origin	6	1|You led an ill-fated expedition into the Riverveins. Your friends were swept away by flooding, and you've never been able to shake the guilt of causing their deaths over a frivolous lark. You've maintained a solitary vigil outside the cavern entrance ever since.	BGDiA
@@ -1916,7 +1916,7 @@ Baldur's Gate Hermit	Origin	6	2|You crossed the Guild in a bad way. Fortunately,
 Baldur's Gate Hermit	Origin	6	3|You study the puzzles of mortal natures. You've seen followers of evil deities perform miracles for the helpless at Twin Songs, and you've seen patriars who worship good deities turn their backs on the poor daily. Bearing witness to such things, and meditating on their contradictions, fills your hours.	BGDiA
 Baldur's Gate Hermit	Origin	6	4|You tend to some part of the city's forgotten history: the unmarked graves in Cliffside Cemetery, the crumbling remains of dead patriar families' manors, or a collection of religious texts stuffed into an attic and forgotten when a believer's patron deity died. In this solitary work, you've learned secrets no one else knows.	BGDiA
 Baldur's Gate Hermit	Origin	6	5|You killed a patriar's scion in an illegal duel. The family swore revenge, and you fled to the slums rather than risk bringing their wrath down on your kin.	BGDiA
-Baldur's Gate Hermit	Origin	6	6|You aren't originally from Baldur's Gate. You came here seeking something else, only to learn that the quest that drove you had become impossible to fulfill�its object was destroyed or its purpose was negated by some superseding event. Suddenly directionless and unable to return to your homeland, you have lingered, adrift, in this wretched city.	BGDiA
+Baldur's Gate Hermit	Origin	6	6|You aren't originally from Baldur's Gate. You came here seeking something else, only to learn that the quest that drove you had become impossible to fulfill—its object was destroyed or its purpose was negated by some superseding event. Suddenly directionless and unable to return to your homeland, you have lingered, adrift, in this wretched city.	BGDiA
 Baldur's Gate Hermit	Life of Seclusion	8	1|I was searching for spiritual enlightenment.	BGDiA
 Baldur's Gate Hermit	Life of Seclusion	8	2|I was partaking of communal living in accordance with the dictates of a religious order.	BGDiA
 Baldur's Gate Hermit	Life of Seclusion	8	3|I was exiled for a crime I didn't commit.	BGDiA
@@ -1982,7 +1982,7 @@ Baldur's Gate Outlander	Origin	6	2|You've always been fascinated by the glitter 
 Baldur's Gate Outlander	Origin	6	3|War, plague, famine, or a marauding monster ravaged your home, forcing you to flee for your life. You don't even know how many of your people survived or where to find them. Alone or accompanied by a handful of equally bereft survivors, you must navigate a new life that you never asked for.	BGDiA
 Baldur's Gate Outlander	Origin	6	4|You were captured by kidnappers and taken far from your home. The Knights of the Unicorn freed you and brought you here, but now you're on your own.	BGDiA
 Baldur's Gate Outlander	Origin	6	5|You were exiled for breaking a trivial-seeming taboo. For this seemingly minor transgression, you lost your friends, family, and homeland in one fell swoop, and were given little choice but to strike out on your own.	BGDiA
-Baldur's Gate Outlander	Origin	6	6|A peddler once brought something astonishing to your homeland�a Gondan clockwork, shimmering cloth of gold, a trained speaking bird, or some other small wonder�and told you that it came from Baldur's Gate. You've come to see the source of such wonders, and perhaps learn to create them.	BGDiA
+Baldur's Gate Outlander	Origin	6	6|A peddler once brought something astonishing to your homeland—a Gondan clockwork, shimmering cloth of gold, a trained speaking bird, or some other small wonder—and told you that it came from Baldur's Gate. You've come to see the source of such wonders, and perhaps learn to create them.	BGDiA
 Baldur's Gate Outlander	Origin	10	1|Forester	BGDiA
 Baldur's Gate Outlander	Origin	10	2|Trapper	BGDiA
 Baldur's Gate Outlander	Origin	10	3|Homesteader	BGDiA
@@ -2028,7 +2028,7 @@ Baldur's Gate Sage	Field of Study	8	6|Researcher	BGDiA
 Baldur's Gate Sage	Field of Study	8	7|Wizard's apprentice	BGDiA
 Baldur's Gate Sage	Field of Study	8	8|Scribe	BGDiA
 Baldur's Gate Sage	Personality Trait	8	1|I use polysyllabic words that convey the impression of great erudition.	BGDiA
-Baldur's Gate Sage	Personality Trait	8	2|I've read every book in the world's greatest libraries�or I like to boast that I have.	BGDiA
+Baldur's Gate Sage	Personality Trait	8	2|I've read every book in the world's greatest libraries—or I like to boast that I have.	BGDiA
 Baldur's Gate Sage	Personality Trait	8	3|I'm used to helping out those who aren't as smart as I am, and I patiently explain anything and everything to others.	BGDiA
 Baldur's Gate Sage	Personality Trait	8	4|There's nothing I like more than a good mystery.	BGDiA
 Baldur's Gate Sage	Personality Trait	8	5|I'm willing to listen to every side of an argument before I make my own judgment.	BGDiA
@@ -2063,12 +2063,12 @@ Baldur's Gate Sailor	Personality Trait	8	7|My language is as foul as an otyugh n
 Baldur's Gate Sailor	Personality Trait	8	8|I like a job well done, especially if I can convince someone else to do it.	BGDiA
 Baldur's Gate Sailor	Ideal	6	1|Respect. The thing that keeps a ship together is mutual respect between captain and crew. (Good)	BGDiA
 Baldur's Gate Sailor	Ideal	6	2|Fairness. We all do the work, so we all share in the rewards. (Lawful)	BGDiA
-Baldur's Gate Sailor	Ideal	6	3|Freedom. The sea is freedom�the freedom to go anywhere and do anything. (Chaotic)	BGDiA
+Baldur's Gate Sailor	Ideal	6	3|Freedom. The sea is freedom—the freedom to go anywhere and do anything. (Chaotic)	BGDiA
 Baldur's Gate Sailor	Ideal	6	4|Mastery. I'm a predator, and the other ships on the sea are my prey. (Evil)	BGDiA
 Baldur's Gate Sailor	Ideal	6	5|People. I'm committed to my crewmates, not to ideals. (Neutral)	BGDiA
 Baldur's Gate Sailor	Ideal	6	6|Aspiration. Someday, I'll own my own ship and chart my own destiny. (Any)	BGDiA
 Baldur's Gate Sailor	Bond	6	1|I'm loyal to my captain first, everything else second.	BGDiA
-Baldur's Gate Sailor	Bond	6	2|The ship is most important�crewmates and captains come and go.	BGDiA
+Baldur's Gate Sailor	Bond	6	2|The ship is most important—crewmates and captains come and go.	BGDiA
 Baldur's Gate Sailor	Bond	6	3|I'll always remember my first ship.	BGDiA
 Baldur's Gate Sailor	Bond	6	4|In a harbor town, I have a paramour whose eyes nearly stole me from the sea.	BGDiA
 Baldur's Gate Sailor	Bond	6	5|I was cheated out of my fair share of the profits, and I want to get my due.	BGDiA
@@ -2109,7 +2109,7 @@ Baldur's Gate Soldier	Bond	6	5|Those who fight beside me are those worth dying f
 Baldur's Gate Soldier	Bond	6	6|I fight for those who cannot fight for themselves.	BGDiA
 Baldur's Gate Soldier	Flaw	6	1|The monstrous enemy we faced in battle still leaves me quivering with fear.	BGDiA
 Baldur's Gate Soldier	Flaw	6	2|I have little respect for anyone who is not a proven warrior.	BGDiA
-Baldur's Gate Soldier	Flaw	6	3|I made a terrible mistake in battle that cost many lives�and I would do anything to keep that mistake secret.	BGDiA
+Baldur's Gate Soldier	Flaw	6	3|I made a terrible mistake in battle that cost many lives—and I would do anything to keep that mistake secret.	BGDiA
 Baldur's Gate Soldier	Flaw	6	4|My hatred of my enemies is blinding and unreasoning.	BGDiA
 Baldur's Gate Soldier	Flaw	6	5|I obey the law, even if the law causes misery.	BGDiA
 Baldur's Gate Soldier	Flaw	6	6|I'd rather eat my armor than admit when I'm wrong.	BGDiA
@@ -2125,7 +2125,7 @@ Baldur's Gate Urchin	Ideal	6	1|Respect. All people, rich or poor, deserve respec
 Baldur's Gate Urchin	Ideal	6	2|Community. We have to take care of each other, because no one else is going to do it. (Lawful)	BGDiA
 Baldur's Gate Urchin	Ideal	6	3|Change. The low are lifted up, and the high and mighty are brought down. Change is the nature of things. (Chaotic)	BGDiA
 Baldur's Gate Urchin	Ideal	6	4|Retribution. The rich need to be shown what life and death are like in the gutters. (Evil)	BGDiA
-Baldur's Gate Urchin	Ideal	6	5|People. I help the people who help me�that's what keeps us alive. (Neutral)	BGDiA
+Baldur's Gate Urchin	Ideal	6	5|People. I help the people who help me—that's what keeps us alive. (Neutral)	BGDiA
 Baldur's Gate Urchin	Ideal	6	6|Aspiration. I'm going to prove that I'm worthy of a better life. (Any)	BGDiA
 Baldur's Gate Urchin	Bond	6	1|My town or city is my home, and I'll fight to defend it.	BGDiA
 Baldur's Gate Urchin	Bond	6	2|I sponsor an orphanage to keep others from enduring what I was forced to endure.	BGDiA
@@ -2150,12 +2150,12 @@ Faceless	Faceless Persona	10	8|The embodiment of a school of magic	BGDiA
 Faceless	Faceless Persona	10	9|A warrior with distinctive armor	BGDiA
 Faceless	Faceless Persona	10	10|A disguise with animalistic or monstrous characteristics, meant to inspire fear	BGDiA
 Faceless	Personality Trait	8	1|I'm earnest and uncommonly direct.	BGDiA
-Faceless	Personality Trait	8	2|I strive to have no personality�it's easier to forget what's hardly there.	BGDiA
+Faceless	Personality Trait	8	2|I strive to have no personality—it's easier to forget what's hardly there.	BGDiA
 Faceless	Personality Trait	8	3|I treasure a memento of the person or instance that set me upon my path.	BGDiA
 Faceless	Personality Trait	8	4|I sleep just as much as I need to and on an unusual schedule.	BGDiA
 Faceless	Personality Trait	8	5|I think far ahead, a detachedness often mistaken for daydreaming.	BGDiA
 Faceless	Personality Trait	8	6|I cultivate a single obscure hobby or study and eagerly discuss it at length.	BGDiA
-Faceless	Personality Trait	8	7|I am ever learning how to be among others�when to stay quiet, when to laugh.	BGDiA
+Faceless	Personality Trait	8	7|I am ever learning how to be among others—when to stay quiet, when to laugh.	BGDiA
 Faceless	Personality Trait	8	8|I behave like an extreme opposite of my persona.	BGDiA
 Faceless	Ideal	6	1|Justice. Place in society shouldn't determine one's access to what is right. (Good)	BGDiA
 Faceless	Ideal	6	2|Security. Doing what must be done can't bring the innocent to harm. (Lawful)	BGDiA
