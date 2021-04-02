@@ -17,11 +17,11 @@ class Background (object):
     defaults = ['Personality Trait', 'Ideal', 'Bond', 'Flaw']
     for k in d.keys():
       if k not in defaults:
-        ss += [f'{k}\n  {d[k]}']
+        ss += [f'{k}:\n\n  {d[k]}']
     for k in defaults:
       if k in d:
-        ss += [f'{k}\n  {d[k]}']
-    return '\n'.join(ss)
+        ss += [f'{k}:\n\n  {d[k]}']
+    return '\n\n'.join(ss)
   
   def get_tbl(self, name):
     if name in self.tables:
