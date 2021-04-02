@@ -15,6 +15,7 @@ class MainView(ui.View):
     self.race_src_lbl.text = 'Race Source: %s' % self.rand.cur_race_src_short
     self.class_src_lbl.text = 'Class Source: %s' % self.rand.cur_class_src_short
     self.bg_src_lbl.text = 'Background Source: %s' % self.rand.cur_bg_src_short
+    self.traits_txt.text = self.rand.cur_traits
     
   def did_load(self):
     self.summary_lbl = self['lbl_summary']
@@ -24,6 +25,7 @@ class MainView(ui.View):
     self.spec_name_lbl = self['lbl_spec_name']
     self.bg_lbl = self['lbl_bg']
     self.bg_src_lbl = self['lbl_bg_src']
+    self.traits_txt = self['txt_traits']
     self.shuffle_btn = self['btn_shuffle']
     self.shuffle_btn.action = self.handle_shuffle
     self.filter_btn = self['btn_filter']

@@ -3,13 +3,14 @@ import csv
 import io
 import random
 from views.main_view import MainView
+from model.background_traits import BackgroundTraits
 
 
 class Randomizer(object):
   def __init__(self):
     self.classes = []
     self.races = []
-    self.backgrounds = []
+    self.bg_traits = None
     self.sources = {}
     self.specializations = {}
 
@@ -22,6 +23,7 @@ class Randomizer(object):
     self.cur_class_src = None
     self.cur_class_src_short = None
     self.cur_bg = None
+    self.cur_traits = ''
     self.cur_bg_src_short = None
 
     self.load_data()
@@ -29,7 +31,7 @@ class Randomizer(object):
   def load_data(self):
     self.classes = self._load_csv('data/classes.csv')
     self.races = self._load_csv('data/races.csv')
-    self.backgrounds = self._load_csv('data/backgrounds.csv')
+    self.bg_traits = BackgroundTraits('data/background_traits.csv')
 
     temp_sources = self._load_csv('data/sources.csv')
     temp_specs = self._load_csv('data/class_specializations.csv')
@@ -152,12 +154,12 @@ class Randomizer(object):
     self.cur_class_src_short = self._get_short_source_text(srcs)
     
   def _shuffle_bg(self, skip_bgs=False, sources=None):
-    bgs = self._get_filtered_list(self.backgrounds, sources)
-    if skip_bgs or bgs == []:
+    bg = self.bg_traits.get_random_bg(sources)
+    if skip_bgs or bg is None:
       return
-    bg = random.choice(bgs)
-    self.cur_bg = bg[0]
-    self.cur_bg_src_short = self._get_short_source_text(bg[1])
+    self.cur_bg = bg.name
+    self.cur_bg_src_short = bg.source
+    self.cur_traits = bg.get_traits_as_str()
     
 
   def pick(self, even=False, skip_race=False, skip_class=False, skip_spec=False, skip_bg=False, sources=None):

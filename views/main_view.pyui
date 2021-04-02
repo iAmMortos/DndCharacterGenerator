@@ -9,13 +9,13 @@
         "class" : "Label",
         "attributes" : {
           "flex" : "WB",
-          "name" : "lbl_summary",
+          "font_size" : 24,
           "frame" : "{{71, 150}, {150, 32}}",
           "uuid" : "53573D4D-2312-4688-877C-EC9E738F4DBF",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Label",
-          "font_size" : 24,
+          "name" : "lbl_summary",
           "font_name" : "HoeflerText-Black"
         },
         "selected" : false
@@ -34,8 +34,8 @@
           "class" : "Label",
           "alignment" : "left",
           "text" : "Label",
-          "name" : "lbl_spec_name",
-          "font_size" : 18
+          "font_size" : 18,
+          "name" : "lbl_spec_name"
         },
         "selected" : false
       },
@@ -64,13 +64,13 @@
         "class" : "Label",
         "attributes" : {
           "flex" : "WB",
-          "font_size" : 24,
+          "name" : "lbl_spec",
           "frame" : "{{71, 150}, {150, 32}}",
           "uuid" : "53573D4D-2312-4688-877C-EC9E738F4DBF",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Label",
-          "name" : "lbl_spec",
+          "font_size" : 24,
           "font_name" : "HoeflerText-Regular"
         },
         "selected" : false
@@ -79,7 +79,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 96.666656494140625}, {307, 34}}",
+        "frame" : "{{6, 112}, {319, 34}}",
         "class" : "Label",
         "attributes" : {
           "flex" : "WB",
@@ -89,8 +89,8 @@
           "class" : "Label",
           "alignment" : "left",
           "text" : "Label",
-          "font_size" : 20,
-          "name" : "lbl_bg"
+          "name" : "lbl_bg",
+          "font_size" : 20
         },
         "selected" : false
       },
@@ -98,10 +98,10 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 123}, {319, 26}}",
+        "frame" : "{{6, 409}, {319, 26}}",
         "class" : "Label",
         "attributes" : {
-          "flex" : "WB",
+          "flex" : "WT",
           "name" : "lbl_race_src",
           "text_color" : "RGBA(0.723270,0.723270,0.723270,1.000000)",
           "frame" : "{{71, 150}, {150, 32}}",
@@ -118,10 +118,10 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 138.66665649414062}, {319, 26}}",
+        "frame" : "{{6, 424.66665649414062}, {319, 26}}",
         "class" : "Label",
         "attributes" : {
-          "flex" : "WB",
+          "flex" : "WT",
           "font_size" : 14,
           "font_name" : "HoeflerText-Italic",
           "frame" : "{{71, 150}, {150, 32}}",
@@ -138,10 +138,10 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 157}, {319, 26}}",
+        "frame" : "{{6, 443}, {319, 26}}",
         "class" : "Label",
         "attributes" : {
-          "flex" : "WB",
+          "flex" : "WT",
           "name" : "lbl_bg_src",
           "text_color" : "RGBA(0.723270,0.723270,0.723270,1.000000)",
           "frame" : "{{71, 150}, {150, 32}}",
@@ -167,8 +167,8 @@
           "title" : "",
           "uuid" : "21523630-BEE6-4314-BCB0-0861A44BD6F5",
           "class" : "Button",
-          "name" : "btn_filter",
-          "font_size" : 15
+          "font_size" : 15,
+          "name" : "btn_filter"
         },
         "selected" : false
       },
@@ -179,9 +179,9 @@
         "frame" : "{{6, 477}, {319, 19}}",
         "class" : "Label",
         "attributes" : {
+          "flex" : "WT",
           "name" : "lbl_filter_summary",
           "text_color" : "RGBA(0.592593,0.772947,0.888889,1.000000)",
-          "flex" : "WT",
           "frame" : "{{91, 259}, {150, 32}}",
           "uuid" : "7CCD0949-A311-470E-9765-43900B52E732",
           "class" : "Label",
@@ -189,6 +189,27 @@
           "text" : "Filter Summary",
           "font_size" : 12,
           "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 140}, {319, 261}}",
+        "class" : "TextView",
+        "attributes" : {
+          "flex" : "WH",
+          "name" : "txt_traits",
+          "editable" : false,
+          "frame" : "{{66, 175}, {200, 200}}",
+          "spellchecking_type" : "default",
+          "class" : "TextView",
+          "uuid" : "7BDB355A-C9B7-4C21-BFBC-0EF3431B8F77",
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_size" : 14,
+          "font_name" : "HoeflerText-Regular"
         },
         "selected" : true
       }
