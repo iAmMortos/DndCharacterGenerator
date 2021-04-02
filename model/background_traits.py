@@ -31,7 +31,8 @@ class Background (object):
       
   def get_tbls(self):
     return sorted(list(self.tables.keys()))
-  
+
+
 class Table (object):
   def __init__(self, name, nvals):
     self.name = name
@@ -43,7 +44,8 @@ class Table (object):
     for v in self.values:
       if i <= v.hi:
         return v.val
-    
+
+
 class TblValue (object):
   def __init__(self, s):
     self.nval, self.val = s.split('|')
@@ -52,8 +54,10 @@ class TblValue (object):
     else:
       self.lo = 0
       self.hi = int(self.nval)
+
   def __repr__(self):
     return f'{self.nval}: {self.val}'
+
 
 class BackgroundTraits (object):
   def __init__(self, path):
