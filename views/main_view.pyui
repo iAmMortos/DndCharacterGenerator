@@ -9,13 +9,13 @@
         "class" : "Label",
         "attributes" : {
           "flex" : "WB",
-          "font_size" : 24,
+          "name" : "lbl_summary",
           "frame" : "{{71, 150}, {150, 32}}",
           "uuid" : "53573D4D-2312-4688-877C-EC9E738F4DBF",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Label",
-          "name" : "lbl_summary",
+          "font_size" : 24,
           "font_name" : "HoeflerText-Black"
         },
         "selected" : false
@@ -34,8 +34,8 @@
           "class" : "Label",
           "alignment" : "left",
           "text" : "Label",
-          "font_size" : 18,
-          "name" : "lbl_spec_name"
+          "name" : "lbl_spec_name",
+          "font_size" : 18
         },
         "selected" : false
       },
@@ -43,7 +43,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 497}, {264, 47}}",
+        "frame" : "{{61, 497}, {209, 47}}",
         "class" : "Button",
         "attributes" : {
           "flex" : "WT",
@@ -64,13 +64,13 @@
         "class" : "Label",
         "attributes" : {
           "flex" : "WB",
-          "name" : "lbl_spec",
+          "font_size" : 24,
           "frame" : "{{71, 150}, {150, 32}}",
           "uuid" : "53573D4D-2312-4688-877C-EC9E738F4DBF",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Label",
-          "font_size" : 24,
+          "name" : "lbl_spec",
           "font_name" : "HoeflerText-Regular"
         },
         "selected" : false
@@ -89,8 +89,8 @@
           "class" : "Label",
           "alignment" : "left",
           "text" : "Label",
-          "name" : "lbl_bg",
-          "font_size" : 20
+          "font_size" : 20,
+          "name" : "lbl_bg"
         },
         "selected" : false
       },
@@ -167,8 +167,8 @@
           "title" : "",
           "uuid" : "21523630-BEE6-4314-BCB0-0861A44BD6F5",
           "class" : "Button",
-          "font_size" : 15,
-          "name" : "btn_filter"
+          "name" : "btn_filter",
+          "font_size" : 15
         },
         "selected" : false
       },
@@ -186,11 +186,11 @@
           "uuid" : "7CCD0949-A311-470E-9765-43900B52E732",
           "class" : "Label",
           "alignment" : "left",
-          "text" : "Filter Summary",
+          "text" : "PHB",
           "font_size" : 12,
           "font_name" : "<System>"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -200,7 +200,7 @@
         "class" : "TextView",
         "attributes" : {
           "flex" : "WH",
-          "name" : "txt_traits",
+          "font_size" : 14,
           "editable" : false,
           "frame" : "{{66, 175}, {200, 200}}",
           "spellchecking_type" : "default",
@@ -208,10 +208,28 @@
           "uuid" : "7BDB355A-C9B7-4C21-BFBC-0EF3431B8F77",
           "alignment" : "left",
           "autocorrection_type" : "default",
-          "font_size" : 14,
+          "name" : "txt_traits",
           "font_name" : "HoeflerText-Regular"
         },
-        "selected" : true
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 497}, {47, 47}}",
+        "class" : "Button",
+        "attributes" : {
+          "flex" : "RT",
+          "font_size" : 15,
+          "frame" : "{{126, 259}, {80, 32}}",
+          "title" : "",
+          "uuid" : "21523630-BEE6-4314-BCB0-0861A44BD6F5",
+          "class" : "Button",
+          "name" : "btn_roll",
+          "image_name" : "iob:ios7_calculator_outline_32"
+        },
+        "selected" : false
       }
     ],
     "frame" : "{{0, 0}, {331, 550}}",

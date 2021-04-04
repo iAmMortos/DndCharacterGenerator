@@ -1,5 +1,6 @@
 import ui
 from views.filter_config_view import FilterConfigView
+from views.stat_roll_view import StatRollView
 
 class MainView(ui.View):
   def init(self, randomizer):
@@ -18,6 +19,7 @@ class MainView(ui.View):
     self.traits_txt.text = self.rand.cur_traits
     
   def did_load(self):
+    self.name = 'Character Randomizer'
     self.summary_lbl = self['lbl_summary']
     self.race_src_lbl = self['lbl_race_src']
     self.class_src_lbl = self['lbl_class_src']
@@ -30,8 +32,12 @@ class MainView(ui.View):
     self.shuffle_btn.action = self.handle_shuffle
     self.filter_btn = self['btn_filter']
     self.filter_btn.action = self.handle_filter
+    self.filter_summary_lbl = self['lbl_filter_summary']
+    self.roll_btn = self['btn_roll']
+    self.roll_btn.action = self.handle_roll
     
     self.filter_view = FilterConfigView.load_view()
+    self.roll_view = StatRollView.load_view()
     
   def handle_shuffle(self, target):
     self.rand.pick(self.filter_view.even_sw.value, self.filter_view.race_sw.value, self.filter_view.class_sw.value, self.filter_view.spec_sw.value, self.filter_view.bg_sw.value, self.filter_view.get_selected_sources())
@@ -39,6 +45,13 @@ class MainView(ui.View):
   
   def handle_filter(self, target):
     self.filter_view.present(style='fullscreen')
+    self.filter_view.wait_modal()
+    s = ', '.join(self
+    .filter_view.get_selected_sources())
+    self.filter_summary_lbl.text = s
+    
+  def handle_roll(self, target):
+    self.roll_view.present(style='fullscreen')
   
   @staticmethod
   def load_view(randomizer):

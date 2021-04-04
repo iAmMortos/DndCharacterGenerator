@@ -1,0 +1,688 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 46}, {64, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label1",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "81E920F9-C5CE-49C8-AC9B-B5DAA39EC17B",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "STR",
+          "font_size" : 24,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{78, 46}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d11",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{150, 46}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d12",
+          "flex" : "LB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{222, 46}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d13",
+          "flex" : "LB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{294, 46}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d14",
+          "flex" : "LB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 78}, {64, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{107, 226}, {150, 32}}",
+          "uuid" : "B551026D-D6CE-4BDB-91C0-3CB681C950FB",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "0",
+          "name" : "str",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 118}, {64, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "81E920F9-C5CE-49C8-AC9B-B5DAA39EC17B",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "DEX",
+          "name" : "label1",
+          "font_size" : 24
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{78, 118}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d21",
+          "flex" : "LB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{150, 118}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d22",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{222, 118}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d23",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{294, 118}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d24",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 150}, {64, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{107, 226}, {150, 32}}",
+          "uuid" : "B551026D-D6CE-4BDB-91C0-3CB681C950FB",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "0",
+          "font_size" : 18,
+          "name" : "dex"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 190}, {64, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "81E920F9-C5CE-49C8-AC9B-B5DAA39EC17B",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "CON",
+          "name" : "label1",
+          "font_size" : 24
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{78, 190}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d31",
+          "flex" : "LB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{150, 190}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d32",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{222, 190}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d33",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{294, 190}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d34",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 222}, {64, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{107, 226}, {150, 32}}",
+          "uuid" : "B551026D-D6CE-4BDB-91C0-3CB681C950FB",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "0",
+          "font_size" : 18,
+          "name" : "con"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 262}, {64, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "81E920F9-C5CE-49C8-AC9B-B5DAA39EC17B",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "INT",
+          "name" : "label1",
+          "font_size" : 24
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{78, 262}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d41",
+          "flex" : "LB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{150, 262}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d42",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{222, 262}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d43",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{294, 262}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d44",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 294}, {64, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{107, 226}, {150, 32}}",
+          "uuid" : "B551026D-D6CE-4BDB-91C0-3CB681C950FB",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "0",
+          "font_size" : 18,
+          "name" : "int"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 334}, {64, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "81E920F9-C5CE-49C8-AC9B-B5DAA39EC17B",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "WIS",
+          "name" : "label1",
+          "font_size" : 24
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{78, 334}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d51",
+          "flex" : "LB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{150, 334}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d52",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{222, 334}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d53",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{294, 334}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d54",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 366}, {64, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{107, 226}, {150, 32}}",
+          "uuid" : "B551026D-D6CE-4BDB-91C0-3CB681C950FB",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "0",
+          "font_size" : 18,
+          "name" : "wis"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 406}, {64, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "81E920F9-C5CE-49C8-AC9B-B5DAA39EC17B",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "CHA",
+          "name" : "label1",
+          "font_size" : 24
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{78, 406}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d61",
+          "flex" : "LB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{150, 406}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d62",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{222, 406}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d63",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{294, 406}, {64, 64}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "LB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "View",
+          "name" : "d64",
+          "uuid" : "1D36A2CE-801A-45A9-8F91-F44B7EFA83EA"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 438}, {64, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{107, 226}, {150, 32}}",
+          "uuid" : "B551026D-D6CE-4BDB-91C0-3CB681C950FB",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "0",
+          "font_size" : 18,
+          "name" : "cha"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 612}, {352, 64}}",
+        "class" : "Button",
+        "attributes" : {
+          "flex" : "WT",
+          "frame" : "{{142, 284}, {80, 32}}",
+          "title" : "ROLL",
+          "uuid" : "1192DE61-F9AD-4D67-B7B4-CA1426AC9793",
+          "class" : "Button",
+          "name" : "btn_roll",
+          "font_size" : 32
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 489}, {352, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "lbl_total",
+          "flex" : "WB",
+          "frame" : "{{107, 284}, {150, 32}}",
+          "uuid" : "325B4B3B-FCFC-467C-93FD-985A213A53D4",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 519}, {352, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "lbl_sorted",
+          "flex" : "WB",
+          "frame" : "{{107, 284}, {150, 32}}",
+          "uuid" : "7B0D451C-B19C-43B5-A669-49050701AEA9",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 6}, {352, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label2",
+          "text_color" : "RGBA(0.750545,0.750545,0.750545,1.000000)",
+          "flex" : "WB",
+          "frame" : "{{107, 306}, {150, 32}}",
+          "uuid" : "B0AAAB70-9B56-4EE1-B212-9D1900184B20",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Roll 4d6, drop lowest",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 559}, {352, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WB",
+          "font_name" : "<System>",
+          "text_color" : "RGBA(0.652505,0.652505,0.652505,1.000000)",
+          "frame" : "{{107, 284}, {150, 32}}",
+          "uuid" : "7B0D451C-B19C-43B5-A669-49050701AEA9",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Standard: 15(+2), 14(+2), 13(+1), 12(+1), 10(+0), 8(-1) = 72",
+          "name" : "lbl_sorted",
+          "font_size" : 12
+        },
+        "selected" : true
+      }
+    ],
+    "frame" : "{{0, 0}, {364, 682}}",
+    "class" : "View",
+    "attributes" : {
+      "custom_class" : "StatRollView",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]

@@ -63,6 +63,8 @@ class FilterConfigView(ui.View):
       srcs += ['XGtE']
     if self.vgtm_sw.value:
       srcs += ['VGtM']
+    if self.tcoe_sw.value:
+      srcs += ['TCoE']
     if self.scag_sw.value:
       srcs += ['SCAG']
     if self.mtof_sw.value:
@@ -77,8 +79,6 @@ class FilterConfigView(ui.View):
       srcs += ['ERftLW']
     if self.ua_sw.value:
       srcs += ['UA']
-    if self.tcoe_sw.value:
-      srcs += ['TCoE']
     return srcs
   
   @staticmethod
