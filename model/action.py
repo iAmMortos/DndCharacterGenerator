@@ -12,4 +12,11 @@ class Action(XmlEntity):
       self.text = '\n'.join(self.text)
 
   def __repr__(self):
-    return 'Name: {0.name}\nAttack: {0.attack}\nText: {0.text}'.format(self)
+    parts = []
+    if self.name:
+      parts += [f'Name: {self.name}']
+    if self.attack:
+      parts += [f'Attack: {self.attack}']
+    if self.text:
+      parts += [f'Text: {self.text}']
+    return '\t'.join(parts)

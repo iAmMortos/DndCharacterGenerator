@@ -5,6 +5,7 @@ from model.creature_size import CreatureSize
 from model.action import Action
 from model.attribute import Attribute
 from model.xml_entity import XmlEntity
+from utils.find_source import find_sources
 
 
 class Race (XmlEntity):
@@ -20,7 +21,12 @@ class Race (XmlEntity):
     self.traits = self._get_as_obj_list('trait', Action)
     self.modifiers = self._get_as_obj_list('modifier', Attribute)
 
+    self.sources = find_sources(self.get_trait_text())
+
   def __repr__(self):
     return 'Name: {0.name}\nAbility Bonuses: {0.abilities}\nSize: {0.size}\n' \
            'Speed: {0.speed}\nSpell Ability: {0.spellAbility}\nProficiencies: {0.proficiencies}\n' \
            'Traits: {0.traits}\nModifiers: {0.modifiers}'.format(self)
+
+  def get_trait_text(self):
+    return '\n'.join([str(t).strip() for t in self.traits])
