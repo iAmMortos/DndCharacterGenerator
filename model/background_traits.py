@@ -9,7 +9,16 @@ class Background (object):
     self.tables = {}
     
   def roll_all_tables(self):
-    return {k:t.roll() for k,t in self.tables.items()}
+    d = {k:t.roll() for k,t in self.tables.items()}
+    pts = 'Personality Trait'
+    if pts in d:
+      pt = d[pts]
+      pt2 = pt
+      while pt2 == pt:
+        pt2 = self.tables[pts].roll()
+      s = f'- {pt}\n  - {pt2}'
+      d[pts] = s
+    return d
  
   def get_traits_as_str(self):
     d = self.roll_all_tables()
@@ -20,7 +29,10 @@ class Background (object):
         ss += [f'{k}:\n\n  {d[k]}']
     for k in defaults:
       if k in d:
-        ss += [f'{k}:\n\n  {d[k]}']
+        if k == 'Personality Trait':
+          ss += [f'Personality Traits:\n\n  {d[k]}']
+        else:
+          ss += [f'{k}:\n\n  {d[k]}']
     return '\n\n'.join(ss)
   
   def get_tbl(self, name):

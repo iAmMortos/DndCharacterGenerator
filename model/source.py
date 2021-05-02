@@ -1,5 +1,5 @@
 
-
+import io
 
 
 class Source(object):
@@ -17,7 +17,7 @@ class Source(object):
 
 
   def lookup(self, s):
-    with open('data/sources.csv') as f:
+    with io.open('data/sources.csv', encoding='utf-8') as f:
       lines = [line.strip().split(',') for line in f.readlines()]
     for line in lines:
       if line[1] == s or line[2] == s:
