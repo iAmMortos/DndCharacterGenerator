@@ -1,0 +1,256 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 6}, {348, 36}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "W",
+              "font_size" : 24,
+              "frame" : "{{105, 234}, {150, 32}}",
+              "uuid" : "A31F8EC5-8E7D-4529-BDB1-3873D2FE0BC6",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "Label",
+              "name" : "lbl_creature_name",
+              "font_name" : "Rockwell-Bold"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 35}, {348, 24}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "W",
+              "font_size" : 14,
+              "frame" : "{{105, 234}, {150, 32}}",
+              "uuid" : "BE89C1E8-F288-452E-BD92-F6C4C87494B2",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "Label",
+              "name" : "lbl_size_type_alignment",
+              "font_name" : "GillSans-Italic"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 60}, {348, 2}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "W",
+              "font_size" : 18,
+              "frame" : "{{105, 234}, {150, 32}}",
+              "uuid" : "E441631B-F142-4D83-8F24-D687D77C77F8",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "",
+              "background_color" : "RGBA(0.600000,0.000000,0.000000,1.000000)",
+              "name" : "label1",
+              "font_name" : "<System>"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 62}, {26, 18}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "R",
+              "font_size" : 15,
+              "frame" : "{{105, 234}, {150, 32}}",
+              "uuid" : "DF4CE33C-58B8-40CA-BC09-13111087610B",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "AC:",
+              "name" : "label2",
+              "font_name" : "GillSans-SemiBold"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{36, 62}, {318, 18}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "W",
+              "font_size" : 16,
+              "frame" : "{{105, 234}, {150, 32}}",
+              "uuid" : "82AD5C84-07D1-4C87-AF4E-C5B92CE00167",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "15",
+              "name" : "lbl_ac",
+              "font_name" : "GillSans-Light"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 80}, {74, 18}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "",
+              "font_size" : 16,
+              "frame" : "{{105, 234}, {150, 32}}",
+              "uuid" : "DEE7A1E4-72AD-44EF-9E1E-442CA4C7B0F4",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "Hit Points:",
+              "name" : "label3",
+              "font_name" : "GillSans-SemiBold"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{84, 80}, {270, 18}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "W",
+              "font_size" : 16,
+              "frame" : "{{105, 234}, {150, 32}}",
+              "uuid" : "8AC8BE09-42BD-4FF5-B8C8-4B5833242FC2",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "19 (3d8 + 6)",
+              "name" : "lbl_hit_points",
+              "font_name" : "GillSans-Light"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 98}, {48, 18}}",
+            "class" : "Label",
+            "attributes" : {
+              "font_size" : 16,
+              "frame" : "{{105, 234}, {150, 32}}",
+              "uuid" : "91E4F4CF-2359-4886-BD7E-732B70980CBA",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "Speed:",
+              "name" : "label5",
+              "font_name" : "GillSans-SemiBold"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{58, 98}, {296, 18}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "W",
+              "font_size" : 16,
+              "frame" : "{{105, 234}, {150, 32}}",
+              "uuid" : "C8648506-63F0-497A-BA86-DD6D33BE170A",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "40 ft., climb 30 ft.",
+              "name" : "lbl_speed",
+              "font_name" : "GillSans-Light"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 118}, {348, 2}}",
+            "class" : "Label",
+            "attributes" : {
+              "flex" : "W",
+              "font_size" : 18,
+              "frame" : "{{105, 234}, {150, 32}}",
+              "uuid" : "AA96E6B9-C699-4205-B356-67A8A9A19383",
+              "class" : "Label",
+              "alignment" : "left",
+              "text" : "",
+              "background_color" : "RGBA(0.600000,0.000000,0.000000,1.000000)",
+              "name" : "label4",
+              "font_name" : "<System>"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 120}, {348, 40}}",
+            "class" : "View",
+            "attributes" : {
+              "flex" : "W",
+              "frame" : "{{130, 200}, {100, 100}}",
+              "class" : "View",
+              "name" : "cv_scores",
+              "uuid" : "436F0365-388C-41A7-95EF-779F95EFE4C8"
+            },
+            "selected" : false
+          },
+          {
+            "nodes" : [
+
+            ],
+            "frame" : "{{6, 168}, {348, 200}}",
+            "class" : "WebView",
+            "attributes" : {
+              "uuid" : "AC93C44F-B170-433D-9B49-EE5157C9A8D2",
+              "frame" : "{{80, 150}, {200, 200}}",
+              "scales_to_fit" : true,
+              "class" : "WebView",
+              "name" : "wv_skills",
+              "flex" : "WH"
+            },
+            "selected" : true
+          }
+        ],
+        "frame" : "{{0, 0}, {360, 417}}",
+        "class" : "ScrollView",
+        "attributes" : {
+          "flex" : "WH",
+          "frame" : "{{20, 49}, {320, 320}}",
+          "uuid" : "7E61D0DE-36B9-470C-8B63-6D6989BC66C4",
+          "content_height" : 500,
+          "class" : "ScrollView",
+          "content_width" : 360,
+          "name" : "sv"
+        },
+        "selected" : true
+      }
+    ],
+    "frame" : "{{0, 0}, {360, 417}}",
+    "class" : "View",
+    "attributes" : {
+      "flex" : "",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "custom_class" : "StatBlockView",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : ""
+    },
+    "selected" : false
+  }
+]

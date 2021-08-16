@@ -1,0 +1,245 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 0}, {60, 18}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WRB",
+          "name" : "label1",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "BE086F61-D2EE-4EC5-BAC2-DFEC18D97753",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "STR",
+          "font_size" : 16,
+          "font_name" : "GillSans-SemiBold"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{60, 0}, {60, 18}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WLR",
+          "font_name" : "GillSans-SemiBold",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "BE086F61-D2EE-4EC5-BAC2-DFEC18D97753",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "DEX",
+          "name" : "label1",
+          "font_size" : 16
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{120, 0}, {60, 17.999999999999993}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WLR",
+          "font_size" : 16,
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "BE086F61-D2EE-4EC5-BAC2-DFEC18D97753",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "CON",
+          "name" : "label1",
+          "font_name" : "GillSans-SemiBold"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{180, 0}, {60, 18}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WLR",
+          "font_size" : 16,
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "BE086F61-D2EE-4EC5-BAC2-DFEC18D97753",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "INT",
+          "name" : "label1",
+          "font_name" : "GillSans-SemiBold"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{240, 0}, {60, 18}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WLR",
+          "font_name" : "GillSans-SemiBold",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "BE086F61-D2EE-4EC5-BAC2-DFEC18D97753",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "WIS",
+          "font_size" : 16,
+          "name" : "label1"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{300, 0}, {60, 17.999999999999993}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WLR",
+          "name" : "label1",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "BE086F61-D2EE-4EC5-BAC2-DFEC18D97753",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "CHA",
+          "font_size" : 16,
+          "font_name" : "GillSans-SemiBold"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 18}, {60, 22}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WRB",
+          "font_name" : "GillSans-Light",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "BE086F61-D2EE-4EC5-BAC2-DFEC18D97753",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "12 (+1)",
+          "name" : "lbl_str",
+          "font_size" : 16
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{60, 18}, {60, 22}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WLRB",
+          "font_size" : 16,
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "BE086F61-D2EE-4EC5-BAC2-DFEC18D97753",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "12 (+1)",
+          "name" : "lbl_dex",
+          "font_name" : "GillSans-Light"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{120, 18}, {60, 22}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WLRB",
+          "font_name" : "GillSans-Light",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "BE086F61-D2EE-4EC5-BAC2-DFEC18D97753",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "12 (+1)",
+          "font_size" : 16,
+          "name" : "lbl_con"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{180, 18}, {60, 22}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WLRB",
+          "font_name" : "GillSans-Light",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "BE086F61-D2EE-4EC5-BAC2-DFEC18D97753",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "12 (+1)",
+          "font_size" : 16,
+          "name" : "lbl_int"
+        },
+        "selected" : true
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{240, 18}, {60, 22}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WLRB",
+          "font_name" : "GillSans-Light",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "BE086F61-D2EE-4EC5-BAC2-DFEC18D97753",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "12 (+1)",
+          "font_size" : 16,
+          "name" : "lbl_wis"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{300, 18}, {60, 22}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WLB",
+          "font_name" : "GillSans-Light",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "BE086F61-D2EE-4EC5-BAC2-DFEC18D97753",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "12 (+1)",
+          "font_size" : 16,
+          "name" : "lbl_cha"
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {360, 40}}",
+    "class" : "View",
+    "attributes" : {
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "custom_class" : "AbilityScoreBlockView",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]

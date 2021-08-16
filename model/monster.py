@@ -21,6 +21,7 @@ class Monster (XmlEntity):
     self.size = self._get_as_obj('size', CreatureSize.of_value)
     self.type = self._get_as_obj('type', CreatureType)
     self.alignment = self._get_as_obj('alignment', Alignment)
+    self.sta_txt = '%s %s, %s' % (str(self.size).capitalize(), self.type, self.alignment)
     self.armor_class = self._get_as_obj('ac', ArmorClass)
     self.hit_points = self._get_as_obj('hp', HitPoints)
     self.speed = self._get_as_obj('speed', Speed)

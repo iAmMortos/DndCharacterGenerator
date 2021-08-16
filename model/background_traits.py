@@ -2,7 +2,7 @@ import io
 import random
 
 
-class Background (object):
+class BG (object):
   def __init__(self, name, src):
     self.name = name
     self.source = src
@@ -79,7 +79,7 @@ class BackgroundTraits (object):
       for line in lines:
         bg, tb, n, v, src = line.split('\t')
         if bg not in self.bgs:
-          self.bgs[bg] = Background(bg, src)
+          self.bgs[bg] = BG(bg, src)
         b = self.bgs[bg]
         if tb not in b.tables:
           b.tables[tb] = Table(tb, n)

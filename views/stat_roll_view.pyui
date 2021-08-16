@@ -8,13 +8,13 @@
         "frame" : "{{6, 46}, {64, 32}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 24,
           "frame" : "{{85, 224}, {150, 32}}",
           "uuid" : "81E920F9-C5CE-49C8-AC9B-B5DAA39EC17B",
           "class" : "Label",
           "alignment" : "center",
           "text" : "STR",
-          "font_size" : 24,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -86,13 +86,13 @@
         "frame" : "{{6, 78}, {64, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "str",
           "frame" : "{{107, 226}, {150, 32}}",
           "uuid" : "B551026D-D6CE-4BDB-91C0-3CB681C950FB",
           "class" : "Label",
           "alignment" : "center",
           "text" : "0",
-          "name" : "str",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -110,8 +110,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "DEX",
-          "name" : "label1",
-          "font_size" : 24
+          "font_size" : 24,
+          "name" : "label1"
         },
         "selected" : false
       },
@@ -188,8 +188,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "0",
-          "font_size" : 18,
-          "name" : "dex"
+          "name" : "dex",
+          "font_size" : 18
         },
         "selected" : false
       },
@@ -206,8 +206,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "CON",
-          "name" : "label1",
-          "font_size" : 24
+          "font_size" : 24,
+          "name" : "label1"
         },
         "selected" : false
       },
@@ -284,8 +284,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "0",
-          "font_size" : 18,
-          "name" : "con"
+          "name" : "con",
+          "font_size" : 18
         },
         "selected" : false
       },
@@ -302,8 +302,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "INT",
-          "name" : "label1",
-          "font_size" : 24
+          "font_size" : 24,
+          "name" : "label1"
         },
         "selected" : false
       },
@@ -380,8 +380,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "0",
-          "font_size" : 18,
-          "name" : "int"
+          "name" : "int",
+          "font_size" : 18
         },
         "selected" : false
       },
@@ -398,8 +398,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "WIS",
-          "name" : "label1",
-          "font_size" : 24
+          "font_size" : 24,
+          "name" : "label1"
         },
         "selected" : false
       },
@@ -476,8 +476,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "0",
-          "font_size" : 18,
-          "name" : "wis"
+          "name" : "wis",
+          "font_size" : 18
         },
         "selected" : false
       },
@@ -494,8 +494,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "CHA",
-          "name" : "label1",
-          "font_size" : 24
+          "font_size" : 24,
+          "name" : "label1"
         },
         "selected" : false
       },
@@ -572,8 +572,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "0",
-          "font_size" : 18,
-          "name" : "cha"
+          "name" : "cha",
+          "font_size" : 18
         },
         "selected" : false
       },
@@ -601,14 +601,14 @@
         "frame" : "{{6, 489}, {352, 32}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "lbl_total",
           "flex" : "WB",
+          "font_size" : 18,
           "frame" : "{{107, 284}, {150, 32}}",
           "uuid" : "325B4B3B-FCFC-467C-93FD-985A213A53D4",
           "class" : "Label",
           "alignment" : "left",
           "text" : "",
-          "font_size" : 18,
+          "name" : "lbl_total",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -620,14 +620,14 @@
         "frame" : "{{6, 519}, {352, 32}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "lbl_sorted",
           "flex" : "WB",
+          "font_size" : 18,
           "frame" : "{{107, 284}, {150, 32}}",
           "uuid" : "7B0D451C-B19C-43B5-A669-49050701AEA9",
           "class" : "Label",
           "alignment" : "left",
           "text" : "",
-          "font_size" : 18,
+          "name" : "lbl_sorted",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -639,9 +639,9 @@
         "frame" : "{{6, 6}, {352, 32}}",
         "class" : "Label",
         "attributes" : {
+          "flex" : "WB",
           "name" : "label2",
           "text_color" : "RGBA(0.750545,0.750545,0.750545,1.000000)",
-          "flex" : "WB",
           "frame" : "{{107, 306}, {150, 32}}",
           "uuid" : "B0AAAB70-9B56-4EE1-B212-9D1900184B20",
           "class" : "Label",
@@ -650,7 +650,7 @@
           "font_size" : 18,
           "font_name" : "<System>"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
@@ -660,27 +660,27 @@
         "class" : "Label",
         "attributes" : {
           "flex" : "WB",
+          "name" : "lbl_sorted",
           "font_name" : "<System>",
-          "text_color" : "RGBA(0.652505,0.652505,0.652505,1.000000)",
           "frame" : "{{107, 284}, {150, 32}}",
           "uuid" : "7B0D451C-B19C-43B5-A669-49050701AEA9",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Standard: 15(+2), 14(+2), 13(+1), 12(+1), 10(+0), 8(-1) = 72",
-          "name" : "lbl_sorted",
-          "font_size" : 12
+          "font_size" : 12,
+          "text_color" : "RGBA(0.652505,0.652505,0.652505,1.000000)"
         },
-        "selected" : true
+        "selected" : false
       }
     ],
     "frame" : "{{0, 0}, {364, 682}}",
     "class" : "View",
     "attributes" : {
-      "custom_class" : "StatRollView",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "enabled" : true,
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "custom_class" : "StatRollView",
       "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
-      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "flex" : ""
     },
     "selected" : false
