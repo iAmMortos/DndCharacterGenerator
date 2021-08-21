@@ -24,6 +24,9 @@ class Source(object):
         return line[0]
     return None
 
+  def get_abbr(self):
+    return f'{self.abbr}{"" if self.p is None else f" (p. {self.p})"}'
+
 
   def __repr__(self):
     return f'{self.src}{"" if self.p is None else f" (p. {self.p})"}'

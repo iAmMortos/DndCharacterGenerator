@@ -1,12 +1,15 @@
 import test_context
 from model.data_loader import DataLoader
+from utils.find_source import find_sources
 import webbrowser
 import os
 import random
 
 
 def main():
-  monster = random.choice(DataLoader('data/xml/CoreOnly.xml').monsters)
+  monster = None
+  while not monster or not monster.senses:
+    monster = random.choice(DataLoader('data/xml/CoreOnly.xml').monsters)
 
   with open('views/html/templates/boilerplate.html') as f:
     html = f.read()
@@ -17,6 +20,9 @@ def main():
 
   block = block.replace('{creature-name}', monster.name)
   block = block.replace('{size-type-alignment}', monster.sta_txt)
+  sources = find_sources(monster.description)
+  if sources:
+    block = block.replace('{source}', '<p class="source">{}</p>'.format(', '.join([s.get_abbr() for s in sources])))
   block = block.replace('{armor-class}', str(monster.armor_class))
   block = block.replace('{hit-points}', str(monster.hit_points))
   block = block.replace('{speed}', str(monster.speed))
@@ -31,6 +37,12 @@ def main():
   profs = ''
   if monster.saves:
     profs += statline.replace('{name}', 'Saving Throws').replace('{value}', str(monster.saves))
+  if monster.skill:
+    profs += statline.replace('{name}', 'Skills').replace('{value}', str(monster.skill))
+  if monster.conditionImmune:
+    profs += statline.replace('{name}', 'Condition Immunities').replace('{value}', str(monster.conditionImmune))
+  if monster.senses_str:
+    profs += statline.replace('{name}', 'Senses').replace('{value}', monster.senses_str)
   if monster.challenge_rating:
     profs += statline.replace('{name}', 'Challenge').replace('{value}', str(monster.challenge_rating))
   block = block.replace('{proficiencies}', profs)
@@ -43,6 +55,8 @@ def main():
   
   reactions = ''
   block = block.replace('{reactions}', reactions)
+
+  block = block.replace('{description}', '<p class="stat-line">{}<p>'.format(monster.description.strip().replace('\n', '<br />')))
 
   html = html.replace('{title}', 'Test Stat Block')
   html = html.replace('{stylesheet-path}', 'templates/css/statblock.css')

@@ -1,6 +1,6 @@
 class ChallengeRating(object):
   def __init__(self, s):
-    if s not in ['1/8', '1/4', '1/2'] and s not in range(0, 31):
+    if s not in ['1/8', '1/4', '1/2'] and s not in [str(n) for n in range(0, 31)]:
       raise ValueError('The given value [%s] is not a valid challenge rating.' % s)
     self.cr_str = s
     self.cr = .5 if s=='1/2' else .25 if s=='1/4' else .125 if s=='1/8' else int(s)
@@ -45,7 +45,7 @@ class ChallengeRating(object):
       30: 155000
     }
     if cr not in d:
-      raise ValueError('The given value [%s] is not a valid challenge rating.' % s)
+      raise ValueError('The given value [%s] is not a valid challenge rating.' % cr)
     return d[cr]
 
   def __repr__(self):

@@ -34,6 +34,15 @@ class Monster (XmlEntity):
     self.conditionImmune = self._get('conditionImmune')
     self.senses = self._get('senses')
     self.passive = self._get_as_obj('passive', int)
+
+    self.senses_str = self.senses
+    if self.senses_str and self.passive:
+      self.senses_str += ", passive Perception {}".format(self.passive)
+    elif self.passive:
+      self.senses_str = 'passive Perception {}'.format(self.passive)
+    else:
+      self.senses_str = None
+
     self.languages = self._get('languages')
     self.challenge_rating = self._get_as_obj('cr', ChallengeRating)
     self.description = self._get('description')
