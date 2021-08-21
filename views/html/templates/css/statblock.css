@@ -1,3 +1,8 @@
+body {
+	background-color: black;
+	color: white;
+}
+
 h1 {
   margin: 0;
 }
@@ -29,7 +34,8 @@ table {
 
 .creature-name {
   font-size: 20px;
-  color: #5b0f00;
+  color: #c00;
+  /*color: #5b0f00;*/
 }
 
 .size-type-alignment {

@@ -1,6 +1,4 @@
-
 import re
-
 
 class CreatureType (object):
   def __init__(self, s):

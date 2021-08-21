@@ -12,6 +12,8 @@ def main():
     html = f.read()
   with open('views/html/templates/statblock.html') as f:
     block = f.read()
+  with open('views/html/templates/statline.html') as f:
+    statline = f.read()
 
   block = block.replace('{creature-name}', monster.name)
   block = block.replace('{size-type-alignment}', monster.sta_txt)
@@ -25,6 +27,22 @@ def main():
   block = block.replace('{stat-int}', str(monster.ability_scores.int))
   block = block.replace('{stat-wis}', str(monster.ability_scores.wis))
   block = block.replace('{stat-cha}', str(monster.ability_scores.cha))
+  
+  profs = ''
+  if monster.saves:
+    profs += statline.replace('{name}', 'Saving Throws').replace('{value}', str(monster.saves))
+  if monster.challenge_rating:
+    profs += statline.replace('{name}', 'Challenge').replace('{value}', str(monster.challenge_rating))
+  block = block.replace('{proficiencies}', profs)
+  
+  abilities = ''
+  block = block.replace('{abilities}', abilities)
+  
+  actions = ''
+  block = block.replace('{actions}', actions)
+  
+  reactions = ''
+  block = block.replace('{reactions}', reactions)
 
   html = html.replace('{title}', 'Test Stat Block')
   html = html.replace('{stylesheet-path}', 'templates/css/statblock.css')
