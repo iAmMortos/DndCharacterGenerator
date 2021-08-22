@@ -7,5 +7,5 @@ dl.print_stats()
 
 from utils.find_source import find_sources
 for m in dl.monsters:
-  if m.legendaries:
-    print(m.name, m.legendaries, find_sources(m.description))
+  if m.actions:
+    print(m.actions)

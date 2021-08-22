@@ -7,7 +7,7 @@ class AbilityScore (object):
     self._score = int(s)
 
   def __repr__(self):
-    return '%s(%s%s)' % (self._score, '+' if self.bonus >= 0 else '', self.bonus)
+    return '%s (%s%s)' % (self._score, '+' if self.bonus >= 0 else '', self.bonus)
 
   @property
   def score(self):
