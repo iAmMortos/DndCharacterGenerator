@@ -90,11 +90,15 @@ def build_profs(monster):
 def build_traits(monster):
   if not monster.traits:
     return ''
+  with open('views/html/templates/trait.html') as f:
+    trait = f.read()
 
   traits = ''
   for t in monster.traits:
-    print(t)
-
+    if t.text:
+      traits += trait.replace('{name}', t.name).replace('{value}', t.text)
+    elif t.attack:
+      pass
   return traits
 
 
