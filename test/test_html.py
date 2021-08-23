@@ -2,13 +2,13 @@ import test_context
 from model.data_loader import DataLoader
 import webbrowser
 import os
+import io
 import random
 
 
 def main():
-  monster = None
-  while not monster or not monster.languages:
-    monster = random.choice(DataLoader('data/xml/CoreOnly.xml').monsters)
+  monster = random.choice(DataLoader('data/xml/Complete.xml').monsters)
+  
   with open('views/html/templates/boilerplate.html') as f:
     html = f.read()
   with open('views/html/templates/statblock.html') as f:
@@ -49,7 +49,7 @@ def main():
   html = html.replace('{title}', 'Test Stat Block')
   html = html.replace('{stylesheet-path}', 'templates/css/statblock.css')
   html = html.replace('{body}', block)
-  with open('views/html/index.html', 'w') as f:
+  with io.open('views/html/index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
   abspath = os.path.abspath('views/html/index.html')
