@@ -9,6 +9,14 @@ h1 {
   margin: 0;
 }
 
+hr {
+  border-top: 2px solid #5b0f00
+}
+
+hr.thin {
+  border-top: 1px solid #5b0f00
+}
+
 p {
   font-family: Calibri;
   margin: 0;
@@ -18,12 +26,20 @@ table {
   font-family: Calibri;
 }
 
+.stat-block-top {
+  color: #5b0f00;
+}
+
 .stat-line {
   font-size: 14px
 }
 
 .stat-title {
   font-weight: bold;
+}
+
+.scores-header {
+  font-size: 12px;
 }
 
 .stat-scores {
@@ -37,6 +53,7 @@ table {
 .creature-name {
   font-size: 20px;
   color: #5b0f00;
+  font-variant: small-caps;
 }
 
 .size-type-alignment, .source {

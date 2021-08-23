@@ -11,6 +11,7 @@ from model.saves import Saves
 from model.skill import Skill
 from model.challenge_rating import ChallengeRating
 from model.action import Action
+from utils.find_source import find_sources
 
 
 class Monster (XmlEntity):
@@ -19,7 +20,11 @@ class Monster (XmlEntity):
 
     self.name = self._get('name')
     self.size = self._get_as_obj('size', CreatureSize.of_value)
-    self.type = self._get_as_obj('type', CreatureType)
+    if 'tome of Beasts' in self._data['type'].text:
+      self.type = CreatureType(self._data['type'].text.split(',')[0])
+      self._data['description'] = 'Source: Tome of Beasts'
+    else:
+      self.type = self._get_as_obj('type', CreatureType)
     self.alignment = self._get_as_obj('alignment', Alignment)
     self.sta_txt = '%s %s, %s' % (str(self.size).capitalize(), self.type, self.alignment)
     self.armor_class = self._get_as_obj('ac', ArmorClass)
@@ -51,6 +56,8 @@ class Monster (XmlEntity):
     self.actions = self._get_as_obj_list('action', Action)
     self.reactions = self._get_as_obj_list('reaction', Action)
     self.legendaries = self._get_as_obj_list('legendary', Action)
+
+    self.sources = find_sources(self.description)
 
   def __repr__(self):
     return 'Name: {0.name}\nSize: {0.size}\nType: {0.type}\nAlignment: {0.alignment}\nAC: {0.armor_class}\n' \

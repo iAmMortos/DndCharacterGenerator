@@ -1,6 +1,5 @@
 import test_context
 from model.data_loader import DataLoader
-from utils.find_source import find_sources
 import webbrowser
 import os
 import random
@@ -10,7 +9,6 @@ def main():
   monster = None
   while not monster or not monster.languages:
     monster = random.choice(DataLoader('data/xml/CoreOnly.xml').monsters)
-
   with open('views/html/templates/boilerplate.html') as f:
     html = f.read()
   with open('views/html/templates/statblock.html') as f:
@@ -18,9 +16,8 @@ def main():
 
   block = block.replace('{creature-name}', monster.name)
   block = block.replace('{size-type-alignment}', monster.sta_txt)
-  sources = find_sources(monster.description)
-  if sources:
-    block = block.replace('{source}', '<p class="source">{}</p>'.format(', '.join([s.get_abbr() for s in sources])))
+  if monster.sources:
+    block = block.replace('{source}', '<p class="source">{}</p>'.format(', '.join([s.get_abbr() for s in monster.sources])))
   block = block.replace('{armor-class}', str(monster.armor_class))
   block = block.replace('{hit-points}', str(monster.hit_points))
   block = block.replace('{speed}', str(monster.speed))
@@ -38,13 +35,13 @@ def main():
   traits = build_traits(monster)
   block = block.replace('{traits}', traits)
   
-  actions = ''
+  actions = build_actions(monster)
   block = block.replace('{actions}', actions)
   
-  reactions = ''
+  reactions = build_reactions(monster)
   block = block.replace('{reactions}', reactions)
 
-  legendaries = ''
+  legendaries = build_legendaries(monster)
   block = block.replace('{legendaries}', legendaries)
 
   block = block.replace('{description}', '<p class="stat-line">{}<p>'.format(monster.description.strip().replace('\n', '<br />')))
@@ -98,18 +95,32 @@ def build_traits(monster):
     if t.text:
       traits += trait.replace('{name}', t.name).replace('{value}', t.text)
     elif t.attack:
-      pass
+      print(t.attack)
   return traits
 
 
 def build_actions(monster):
   if not monster.actions:
     return ''
-
   actions = ''
 
   return actions
 
+
+def build_reactions(monster):
+  if not monster.reactions:
+    return ''
+  reactions = ''
+
+  return reactions
+
+
+def build_legendaries(monster):
+  if not monster.legendaries:
+    return ''
+  legendaries = ''
+
+  return legendaries
 
 
 if __name__ == '__main__':

@@ -2,28 +2,30 @@
 <p class="size-type-alignment">{size-type-alignment}</p>
 {source}
 <hr>
-<p class="stat-line"><span class="stat-title">Armor Class</span> {armor-class}</p>
-<p class="stat-line"><span class="stat-title">Hit Points</span> {hit-points}</p>
-<p class="stat-line"><span class="stat-title">Speed</span> {speed}</p>
-<hr>
-<table class="stat-scores">
-    <tr class="stat-title">
-        <td>STR</td>
-        <td>DEX</td>
-        <td>CON</td>
-        <td>INT</td>
-        <td>WIS</td>
-        <td>CHA</td>
-    </tr>
-    <tr>
-        <td>{stat-str}</td>
-        <td>{stat-dex}</td>
-        <td>{stat-con}</td>
-        <td>{stat-int}</td>
-        <td>{stat-wis}</td>
-        <td>{stat-cha}</td>
-    </tr>
-</table>
+<div class="stat-block-top">
+    <p class="stat-line"><span class="stat-title">Armor Class</span> {armor-class}</p>
+    <p class="stat-line"><span class="stat-title">Hit Points</span> {hit-points}</p>
+    <p class="stat-line"><span class="stat-title">Speed</span> {speed}</p>
+    <hr>
+    <table class="stat-scores">
+        <tr class="stat-title scores-header">
+            <td>STR</td>
+            <td>DEX</td>
+            <td>CON</td>
+            <td>INT</td>
+            <td>WIS</td>
+            <td>CHA</td>
+        </tr>
+        <tr>
+            <td>{stat-str}</td>
+            <td>{stat-dex}</td>
+            <td>{stat-con}</td>
+            <td>{stat-int}</td>
+            <td>{stat-wis}</td>
+            <td>{stat-cha}</td>
+        </tr>
+    </table>
+</div>
 <hr>
 {proficiencies}
 <hr>
@@ -31,5 +33,5 @@
 {actions}
 {reactions}
 {legendaries}
-<hr>
+<hr class="thin">
 {description}
