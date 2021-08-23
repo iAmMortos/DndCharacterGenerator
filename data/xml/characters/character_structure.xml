@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc version="5">
+    <character>
+        <version></version>
+        <uid></uid>
+        <name></name>
+        <imageData>
+            <uid></uid>
+        </imageData>
+        <race>
+            <name></name>
+            <size></size>
+            <speed></speed>
+            <height></height>
+            <weight></weight>
+            <feat> /* ... */
+                <name></name>
+                <text></text>
+                <expanded></expanded> /* opt */
+            </feat> /* ... */
+            <mod>
+                <category></category>
+                <type></type>
+                <value></value>
+            </mod>
+        </race>
+        <class>
+            <id></id>
+            <name></name>
+            <level></level>
+            <hd></hd>
+            <hdCurrent></hdCurrent>
+            <wealth></wealth>
+            <proficiency></proficiency> /* ... */
+            <numClassSkills></numClassSkills>
+            <armor></armor>
+            <weapons></weapons>
+            <tools></tools>
+            <slots></slots>
+            <slotsCurrent></slotsCurrent>
+            <feat> /* ... */
+                <name></name>
+                <text></text>
+                <expanded></expanded> /* opt */
+                <mod> /* ... */
+                    <category></category>
+                    <type></type> /* opt */
+                    <value></value>
+                </mod>
+                <optional></optional> /* opt */
+            </feat>
+            <autolevel>
+                <level></level> /* opt */
+                <scoreImprovement></scoreImprovement> /* opt */
+                <slots></slots>
+                <feat> /* ... */
+                    <name></name>
+                    <text></text>
+                    <optional></optional> /* opt */
+                </feat>
+            </autolevel>
+            <spellAbility></spellAbility>
+            <spell> /* ... */
+                <name></name>
+                <school></school>
+                <ritual></ritual> /* opt */
+                <level></level>
+                <time></time>
+                <range></range>
+                <v></v> /* opt */
+                <s></s> /* opt */
+                <m></m> /* opt */
+                <materials></materials> /* opt */
+                <duration></duration>
+                <text></text>
+                <sclass></sclass> /* ... */
+                <roll></roll> /* opt ... */
+            </spell>
+        </class> /* ... */
+        <background>
+            <name></name>
+            <align></align>
+            <personality></personality>
+            <ideals></ideals>
+            <bonds></bonds>
+            <flaws></flaws>
+            <feat> /* ... */
+                <name></name>
+                <text></text>
+                <expanded></expanded>
+            </feat>
+            <proficiency></proficiency> /* ... */
+        </background>
+        <unarmed></unarmed>
+        <slots></slots>
+        <slotsCurrent></slotsCurrent>
+        <feat> /* ... */
+            <name></name>
+            <text></text>
+        </feat>
+        <attack> /* ... */
+            <name></name>
+            <type></type>
+            <attackBonus></attackBonus>
+            <damage></damage>
+            <damageType></damageType>
+        </attack>
+        <tracker> /* ... */
+            <label></label>
+            <resetType></resetType>
+            <value></value>
+            <formula></formula>
+        </tracker>
+        <item> /* ... */
+            <name></name>
+            <detail></detail>
+            <text></text>
+            <type></type>
+            <slot></slot> /* opt */
+            <quantity></quantity> /* opt */
+            <value></value>
+            <weight></weight>
+            <ac></ac> /* opt */
+            <damage1H></damage1H>  /* opt */
+            <damageType></damageType> /* opt */
+            <weaponProperty></weaponProperty> /* opt */
+            <weaponRange></weaponRange> /* opt */
+            <weaponLongRange></weaponLongRange> /* opt */
+            <mod> /* ... opt */
+                <type></type>
+            </mod>
+        </item>
+        <container>
+            <label></label>
+            <name></name>
+            <value></value>
+            <weight></weight>
+            <carried></carried>
+            <item> /* opt ... */
+                <name></name>
+                <text></text> /* opt */
+                <quantity></quantity> /* opt */
+                <weight></weight>
+            </item>
+        </container>
+        <note> /* ... */
+            <name></name>
+            <text></text>
+            <expanded></expanded>
+        </note>
+        <abilities></abilities>
+        <hpMax></hpMax>
+        <hpCurrent></hpCurrent>
+    </character>
+    <imageData>
+        <uid></uid>
+        <encoded></encoded>
+    </imageData>
+</pc>
