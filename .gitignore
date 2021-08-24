@@ -1,3 +1,4 @@
 /.idea/
 /views/html/node_modules/
+/views/html/index.html
 __pycache__/
