@@ -6,7 +6,9 @@ import unittest
 class TestMonsterSources(unittest.TestCase):
 
   def setUp(self) -> None:
+    import os
     import test_context
+    raise Exception(os.getcwd())
     from model.data_loader import DataLoader
     from utils.find_source import find_sources
 
