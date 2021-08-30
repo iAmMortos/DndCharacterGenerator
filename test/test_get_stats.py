@@ -1,7 +1,7 @@
 
 import test_context
 from model.data_loader import DataLoader
-from utils.find_source import find_sources
+from utils.regexes import get_sources
 
 
 dl = DataLoader('data/xml/CoreOnly.xml')
