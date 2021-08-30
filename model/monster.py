@@ -11,7 +11,7 @@ from model.saves import Saves
 from model.skill import Skill
 from model.challenge_rating import ChallengeRating
 from model.action import Action
-from utils.find_source import find_sources
+from utils.regexes import get_sources
 
 
 class Monster (XmlEntity):
@@ -57,7 +57,7 @@ class Monster (XmlEntity):
     self.reactions = self._get_as_obj_list('reaction', Action)
     self.legendaries = self._get_as_obj_list('legendary', Action)
 
-    self.sources = find_sources(self.description)
+    self.sources = get_sources(self.description)
 
   def __repr__(self):
     return 'Name: {0.name}\nSize: {0.size}\nType: {0.type}\nAlignment: {0.alignment}\nAC: {0.armor_class}\n' \
