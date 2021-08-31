@@ -1,5 +1,6 @@
 import test_context
 from model.data_loader import DataLoader
+from utils.regexes import is_attack, get_attack
 import webbrowser
 import os
 import io
@@ -7,7 +8,10 @@ import random
 
 
 def main():
-  monster = random.choice(DataLoader('data/xml/Complete.xml').monsters)
+  dl = DataLoader('data/xml/Complete.xml')
+  # monster = dl.monsters['Githyanki Supreme Commander']
+  monster_name = random.choice(list(dl.monsters.keys()))
+  monster = dl.monsters[monster_name]
   
   with open('views/html/templates/boilerplate.html') as f:
     html = f.read()
@@ -102,25 +106,59 @@ def build_traits(monster):
 def build_actions(monster):
   if not monster.actions:
     return ''
+  with open('views/html/templates/actions.html') as f:
+    actions_html = f.read()
+  with open('views/html/templates/attack.html') as f:
+    atk_html = f.read()
+  with open('views/html/templates/trait.html') as f:
+    act_html = f.read()
   actions = ''
+  for action in monster.actions:
+    if is_attack(action.text):
+      parts = get_attack(action.text)
+      actions += atk_html.replace('{name}', action.name).replace('{attack-type}', parts[0]).replace('{to-hit}', parts[1]).replace('{damage}', parts[2])
+    else:
+      actions += act_html.replace('{name}', action.name).replace('{value}', action.text)
 
-  return actions
+  return actions_html.replace('{actions}', actions)
 
 
 def build_reactions(monster):
   if not monster.reactions:
     return ''
+  with open('views/html/templates/reactions.html') as f:
+    reactions_html = f.read()
+  with open('views/html/templates/trait.html') as f:
+    act_html = f.read()
   reactions = ''
+  for reaction in monster.reactions:
+    reactions += act_html.replace('{name}', reaction.name).replace('{value}', reaction.text)
 
-  return reactions
+  return reactions_html.replace('{reactions}', reactions)
 
 
 def build_legendaries(monster):
   if not monster.legendaries:
     return ''
-  legendaries = ''
+  with open('views/html/templates/legendaries.html') as f:
+    legendaries_html = f.read()
+  with open('views/html/templates/attack.html') as f:
+    atk_html = f.read()
+  with open('views/html/templates/trait.html') as f:
+    leg_html = f.read()
+  with open('views/html/templates/standalone_text_line.html') as f:
+    std_html = f.read()
+  legs = ''
+  for legendary in monster.legendaries:
+    if is_attack(legendary.text):
+      parts = get_attack(legendary.text)
+      legs += atk_html.replace('{name}', legendary.name).replace('{attack-type}', parts[0]).replace('{to-hit}', parts[1]).replace('{damage}', parts[2])
+    elif legendary.name is None:
+      legs += std_html.replace('{value}', legendary.text)
+    else:
+      legs += leg_html.replace('{name}', legendary.name).replace('{value}', legendary.text)
 
-  return legendaries
+  return legendaries_html.replace('{legendaries}', legs)
 
 
 if __name__ == '__main__':
