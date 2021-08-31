@@ -9,12 +9,9 @@ import random
 
 def main():
   dl = DataLoader('data/xml/Complete.xml')
-  # monster_name = random.choice(list(dl.monsters.keys()))
-  # monster = dl.monsters[monster_name]
-  for monster_name in dl.monsters:
-    monster = dl.monsters[monster_name]
-    if monster.traits and monster.actions and monster.reactions and monster.legendaries:
-      break
+  # monster = dl.monsters['Githyanki Supreme Commander']
+  monster_name = random.choice(list(dl.monsters.keys()))
+  monster = dl.monsters[monster_name]
   
   with open('views/html/templates/boilerplate.html') as f:
     html = f.read()
@@ -115,15 +112,15 @@ def build_actions(monster):
     atk_html = f.read()
   with open('views/html/templates/trait.html') as f:
     act_html = f.read()
-  actions = []
+  actions = ''
   for action in monster.actions:
     if is_attack(action.text):
       parts = get_attack(action.text)
-      actions += [atk_html.replace('{name}', action.name).replace('{attack-type}', parts[0]).replace('{to-hit}', parts[1]).replace('{damage}', parts[2])]
+      actions += atk_html.replace('{name}', action.name).replace('{attack-type}', parts[0]).replace('{to-hit}', parts[1]).replace('{damage}', parts[2])
     else:
-      actions += [act_html.replace('{name}', action.name).replace('{value}', action.text)]
+      actions += act_html.replace('{name}', action.name).replace('{value}', action.text)
 
-  return actions_html.replace('{actions}', ''.join(actions))
+  return actions_html.replace('{actions}', actions)
 
 
 def build_reactions(monster):
@@ -133,11 +130,11 @@ def build_reactions(monster):
     reactions_html = f.read()
   with open('views/html/templates/trait.html') as f:
     act_html = f.read()
-  reactions = []
+  reactions = ''
   for reaction in monster.reactions:
-    reactions += [act_html.replace('{name}', reaction.name).replace('{value}', reaction.text)]
+    reactions += act_html.replace('{name}', reaction.name).replace('{value}', reaction.text)
 
-  return reactions_html.replace('{reactions}', ''.join(reactions))
+  return reactions_html.replace('{reactions}', reactions)
 
 
 def build_legendaries(monster):
@@ -151,17 +148,17 @@ def build_legendaries(monster):
     leg_html = f.read()
   with open('views/html/templates/standalone_text_line.html') as f:
     std_html = f.read()
-  legs = []
+  legs = ''
   for legendary in monster.legendaries:
     if is_attack(legendary.text):
       parts = get_attack(legendary.text)
-      legs += [atk_html.replace('{name}', legendary.name).replace('{attack-type}', parts[0]).replace('{to-hit}', parts[1]).replace('{damage}', parts[2])]
+      legs += atk_html.replace('{name}', legendary.name).replace('{attack-type}', parts[0]).replace('{to-hit}', parts[1]).replace('{damage}', parts[2])
     elif legendary.name is None:
-      legs += [std_html.replace('{value}', legendary.text)]
+      legs += std_html.replace('{value}', legendary.text)
     else:
-      legs += [leg_html.replace('{name}', legendary.name).replace('{value}', legendary.text)]
+      legs += leg_html.replace('{name}', legendary.name).replace('{value}', legendary.text)
 
-  return legendaries_html.replace('{legendaries}', ''.join(legs))
+  return legendaries_html.replace('{legendaries}', legs)
 
 
 if __name__ == '__main__':
