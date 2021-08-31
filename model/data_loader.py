@@ -16,7 +16,7 @@ class DataLoader (object):
     self.classes = []
     self.feats = []
     self.items = []
-    self.monsters = {}
+    self.monsters = []
     self.races = []
     self.spells = []
 
@@ -34,7 +34,7 @@ class DataLoader (object):
         self.items += [Item(c)]
       elif t == 'monster':
         m = Monster(c)
-        self.monsters[m.name] = m
+        self.monsters += [m]
       elif t == 'race':
         self.races += [Race(c)]
       elif t == 'spell':

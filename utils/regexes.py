@@ -5,7 +5,7 @@ from model.source import Source
 
 def get_sources(s):
   if type(s) is not str:
-    return None
+    return []
   m = re.search(r'Source: ?(.*)$', s, re.MULTILINE)
   srcs = []
   if m:
@@ -13,6 +13,9 @@ def get_sources(s):
       gs = [gr.strip() for gr in g.split(',')]
       srcs += [Source(gr) for gr in gs]
   return srcs
+
+def get_src_abbr_str(srcs):
+  return ', '.join([s.abbr for s in srcs])
   
 def is_attack(s):
   m = re.match(r'^(Melee|Ranged)', s)

@@ -9,14 +9,22 @@
 			"type": "python",
 			"request": "launch",
 			"program": "${file}",
-			"console": "integratedTerminal"
+			"cwd": "${workspaceFolder}/${relativeFileDirname}",
+			"console": "integratedTerminal",
+			"windows": {
+				"cwd": "${workspaceFolder}\\${relativeFileDirname}"
+			}
 		},
 		{
 			"name": "Python: Run Data Tests",
 			"type": "python",
 			"request": "launch",
-			"program": "test/data_tests/runner.py",
-			"console": "integratedTerminal"
-		}
+			"program": "runner.py",
+			"console":"integratedTerminal",
+			"cwd": "${workspaceFolder}/test/data_tests",
+			"windows": {
+				"cwd": "${workspaceFolder}\\test\\data_tests",
+			}
+		},
 	]
 }

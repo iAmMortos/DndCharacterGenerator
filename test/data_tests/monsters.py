@@ -1,16 +1,15 @@
 
 import unittest
-import test_context
-import os
 from model.data_loader import DataLoader
 from utils.regexes import get_sources, is_attack, get_attack
 
 
-class TestMonsterSources(unittest.TestCase):
+class TestMonsters(unittest.TestCase):
 
-  def setUp(self) -> None:
-    self.data_loader = DataLoader('data/xml/Complete.xml')
-    return super().setUp()
+  @classmethod
+  def setUpClass(cls) -> None:
+    super().setUpClass()
+    cls.data_loader = DataLoader('data/xml/Complete.xml')
 
   def test_monster_sources(self):
     for m in self.data_loader.monsters:
@@ -33,6 +32,3 @@ class TestMonsterSources(unittest.TestCase):
       for a in m.actions:
         if a.attack and is_attack(a.text):
           self.assertTrue(get_attack(a.text) is not None, msg=f'\nMonster: [{m.name}]\nAttack: [{a.name}, {a.attack}]\nText is improperly formatted:\n[{a.text}]')
-
-  def tearDown(self) -> None:
-    return super().tearDown()
