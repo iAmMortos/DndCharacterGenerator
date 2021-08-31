@@ -34,8 +34,21 @@ table {
   font-size: 14px
 }
 
+.core-stat-title {
+  font-weight: bold;
+}
+
 .stat-title {
   font-weight: bold;
+  font-style: italic;
+}
+
+.attack-type {
+  font-style: italic;
+}
+
+.hit-text {
+  font-style: italic;
 }
 
 .scores-header {

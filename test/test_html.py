@@ -1,5 +1,6 @@
 import test_context
 from model.data_loader import DataLoader
+from utils.regexes import is_attack, get_attack
 import webbrowser
 import os
 import io
@@ -7,7 +8,9 @@ import random
 
 
 def main():
-  monster = random.choice(DataLoader('data/xml/Complete.xml').monsters)
+  dl = DataLoader('data/xml/Complete.xml')
+  monster_name = random.choice(list(dl.monsters.keys()))
+  monster = dl.monsters[monster_name]
   
   with open('views/html/templates/boilerplate.html') as f:
     html = f.read()
@@ -102,15 +105,31 @@ def build_traits(monster):
 def build_actions(monster):
   if not monster.actions:
     return ''
-  actions = ''
+  with open('views/html/templates/actions.html') as f:
+    actions_html = f.read()
+  actions = []
+  for action in monster.actions:
+    if is_attack(action.text):
+      with open('views/html/templates/attack.html') as f:
+        html = f.read()
+      parts = get_attack(action.text)
+      html = html.replace('{name}', action.name).replace('{attack-type}', parts[0]).replace('{to-hit}', parts[1]).replace('{damage}', parts[2])
+      actions += [html]
+    else:
+      with open('views/html/templates/trait.html') as f:
+        html = f.read()
+      html = html.replace('{name}', action.name).replace('{value}', action.text)
+      actions += [html]
+  actions_html = actions_html.replace('{actions}', ''.join(actions))
 
-  return actions
+  return actions_html
 
 
 def build_reactions(monster):
   if not monster.reactions:
     return ''
-  reactions = ''
+  with open('views/html/templates/reactions.html') as f:
+    reactions = f.read()
 
   return reactions
 
@@ -118,7 +137,8 @@ def build_reactions(monster):
 def build_legendaries(monster):
   if not monster.legendaries:
     return ''
-  legendaries = ''
+  with open('views/html/templates/legendaries.html') as f:
+    legendaries = f.read()
 
   return legendaries
 

@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="templates/css/statblock.css">
   </head>
   <body>
-    <h1 class="creature-name">Kingsport</h1>
-<p class="size-type-alignment">Medium beast, Unaligned</p>
-<p class="source">IDRotF (p. 243)</p>
+    <h1 class="creature-name">Mirror Hag</h1>
+<p class="size-type-alignment">Medium fey, chaotic neutral</p>
+<p class="source">ToB</p>
 <hr>
 <div class="stat-block-top">
-    <p class="stat-line"><span class="stat-title">Armor Class</span> 11</p>
-    <p class="stat-line"><span class="stat-title">Hit Points</span> 5 (1d8 + 1)</p>
-    <p class="stat-line"><span class="stat-title">Speed</span> walk 20 ft., swim 40 ft.</p>
+    <p class="stat-line"><span class="core-stat-title">Armor Class</span> 16 (natural armor)</p>
+    <p class="stat-line"><span class="core-stat-title">Hit Points</span> 168 (16d8 + 96)</p>
+    <p class="stat-line"><span class="core-stat-title">Speed</span> 30 ft., fly 10 ft.</p>
     <hr>
     <table class="stat-scores">
-        <tr class="stat-title scores-header">
+        <tr class="core-stat-title scores-header">
             <td>STR</td>
             <td>DEX</td>
             <td>CON</td>
@@ -29,27 +29,47 @@
             <td>CHA</td>
         </tr>
         <tr>
-            <td>6 (-2)</td>
+            <td>15 (+2)</td>
+            <td>16 (+3)</td>
+            <td>22 (+6)</td>
             <td>12 (+1)</td>
-            <td>12 (+1)</td>
-            <td>10 (+0)</td>
-            <td>10 (+0)</td>
-            <td>4 (-3)</td>
+            <td>14 (+2)</td>
+            <td>19 (+4)</td>
         </tr>
     </table>
 </div>
 <hr>
-<p class="stat-line"><span class="stat-title">Senses</span> blindsight 30 ft. (blind beyond this radius), passive Perception 10</p>
-<p class="stat-line"><span class="stat-title">Languages</span> Common</p>
-<p class="stat-line"><span class="stat-title">Challenge</span> 0 (10 XP)</p>
+<p class="stat-line"><span class="stat-block-top core-stat-title">Damage Resistances</span> thunder</p>
+<p class="stat-line"><span class="stat-block-top core-stat-title">Condition Immunities</span> charmed, frightened</p>
+<p class="stat-line"><span class="stat-block-top core-stat-title">Senses</span> darkvision 60 ft., passive Perception 12</p>
+<p class="stat-line"><span class="stat-block-top core-stat-title">Languages</span>  Common</p>
+<p class="stat-line"><span class="stat-block-top core-stat-title">Challenge</span> 6 (2,300 XP)</p>
 
 <hr>
-<p class="stat-line"><span class="stat-title">Hold Breath.</span> Kingsport can hold its breath for 20 minutes.</p>
-
+<p class="stat-line"><span class="stat-title">Innate Spellcasting.</span> The hag's innate spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). She can innately cast the following spells, requiring no material components:
+At will: disguise self, inflict wounds (4d10), message, ray of enfeeblement
+1/day each: detect thoughts, dispel magic, lightning bolt, locate creature, shillelagh, stinking cloud, teleport</p><p class="stat-line"><span class="stat-title">Magic Resistance.</span> The hag has advantage on saving throws against spells and other magical effects.</p><p class="stat-line"><span class="stat-title">Confounding Ugliness.</span> When confronting a mirror hag at any range, a creature must make a choice at the start of each of its turns: either avert its eyes so that it has disadvantage on attack rolls against the hag until the start of its next turn, or look at the hag and make a DC 15 Constitution saving throw. Failure on the saving throw leaves the character stunned until the start of its next turn.</p>
+<h2>Actions</h2>
+<hr class="thin">
+<p class="stat-line"><span class="stat-title">Multiattack.</span> A mirror hag can use its Reconfiguring Curse and make one melee attack.</p><p class="stat-line">
+    <span class="stat-title">Bite.</span>
+    <span class="attack-type">Melee Weapon Attack:</span>
+    +6 to hit, reach 5 ft., one target
+    <span class="hit-text">Hit: </span>
+    21 (4d8 + 3) piercing damage, or 39 (8d8 + 3) piercing damage against a stunned target.
+</p>
+<p class="stat-line">
+    <span class="stat-title">Quarterstaff.</span>
+    <span class="attack-type">Melee Weapon Attack:</span>
+    +5 to hit, reach 5 ft., one target
+    <span class="hit-text">Hit: </span>
+    5 (1d6 + 2) bludgeoning damage.
+</p>
+<p class="stat-line"><span class="stat-title">Reconfiguring Curse.</span> The mirror hag curses a living creature within 60 feet, giving it beastly or hideous features. The target of the reconfiguring curse must succeed on a DC 15 Constitution saving throw or take 1d6 Charisma damage. A successful save renders the target immune to further uses of that hag's curse for 24 hours.</p>
 
 
 <hr class="thin">
-<p class="stat-line">Scrivenscry is an arcanaloth who always refers to itself in the third person. It has a fondness for black licorice, strips of which it keeps in the pockets of its robe. The fiend is attended by Kingsport, a blind, albino giant penguin under the effect of an awaken spell.<br />Scrivenscry's anxious penguin servant, Kingsport, was promised a life of enlightenment. The truth is that Kingsport was turned into Scrivenscry's lackey, who lives in fear of his cruel, unpredictable master. The blind giant penguin hopes to be free of the arcanaloth one day.<br />Source: Icewind Dale: Rime of the Frostmaiden p. 243<p>
+<p class="stat-line">Source: Tome of Beasts<p>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
   </body>
