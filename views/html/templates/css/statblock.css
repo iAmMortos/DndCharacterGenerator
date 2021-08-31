@@ -3,9 +3,9 @@ h1 {
 }
 
 h2 {
-  font-family: Tahoma;
+  font-family: Verdana;
   margin: .5em 0 0 0;
-  font-size: 1em;
+  font-size: 1.2em;
   color: #5b0f00;
   font-variant: small-caps;
 }
@@ -15,17 +15,18 @@ hr {
 }
 
 hr.thin {
-  border-top: .1em solid #5b0f00;
+  border-top: .05em solid #5b0f00;
   margin: 0;
 }
 
 p {
-  font-family: Tahoma;
+  font-family: Verdana;
   margin: 0;
 }
 
 table {
-  font-family: Calibri;
+  font-size: .8em;
+  font-family: Verdana;
 }
 
 .stat-block-top {
@@ -67,7 +68,7 @@ table {
 }
 
 .creature-name {
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: #5b0f00;
   font-variant: small-caps;
 }
