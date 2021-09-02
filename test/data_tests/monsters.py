@@ -1,15 +1,9 @@
 
-import unittest
-from model.data_loader import DataLoader
+from data_test import DataTest
 from utils.regexes import get_sources, is_attack, get_attack
 
 
-class TestMonsters(unittest.TestCase):
-
-  @classmethod
-  def setUpClass(cls) -> None:
-    super().setUpClass()
-    cls.data_loader = DataLoader('data/xml/Complete.xml')
+class TestMonsters(DataTest):
 
   def test_monster_sources(self):
     for m in self.data_loader.monsters:

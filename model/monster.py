@@ -50,6 +50,7 @@ class Monster (XmlEntity):
 
     self.languages = self._get('languages')
     self.challenge_rating = self._get_as_obj('cr', ChallengeRating)
+    self.summary = '%s, %s %s' % (self.challenge_rating, self.size, self.type)
     self.description = self._get('description')
 
     self.traits = self._get_as_obj_list('trait', Action)

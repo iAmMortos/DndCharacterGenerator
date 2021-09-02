@@ -15,8 +15,7 @@ from test.data_tests import spells
 def main():
 	suite = unittest.TestSuite()
 	loader = unittest.TestLoader()
-	dl = DataLoader('data/xml/Complete.xml')
-
+	
 	suite.addTest(loader.loadTestsFromModule(backgrounds))
 	suite.addTest(loader.loadTestsFromModule(classes))
 	suite.addTest(loader.loadTestsFromModule(feats))

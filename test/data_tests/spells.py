@@ -1,11 +1,5 @@
 
-import unittest
-from model.data_loader import DataLoader
+from data_test import DataTest
 
-
-class TestSpells(unittest.TestCase):
-
-  @classmethod
-  def setUpClass(cls) -> None:
-    super().setUpClass()
-    cls.data_loader = DataLoader('data/xml/Complete.xml')
+class TestSpells(DataTest):
+  pass

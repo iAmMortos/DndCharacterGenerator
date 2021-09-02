@@ -13,13 +13,18 @@ def main():
 
 
 def iterate():
-  for bg in dl.backgrounds:
-    has = False
-    for t in bg.traits:
-      if t.name == 'Description':
-        has = True
-    if not has:
-      print(bg.name)
+  for cl in dl.classes:
+    found = None
+    for al in cl.auto_levels:
+      if al.level == 1:
+        for f in al.features:
+          if f.name.startswith('Starting'):
+            found = 
+            break
+    if not found:
+      print(f'Missing Source: {cl.name}')
+    else:
+      print(f'{cl.name}: {get_sources()}')
 
 
 def find_dupes():

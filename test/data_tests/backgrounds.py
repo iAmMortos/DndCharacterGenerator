@@ -1,14 +1,16 @@
 
-import unittest
-from model.data_loader import DataLoader
+from data_test import DataTest
+from utils.regexes import get_sources
 
-
-class TestBackgrounds(unittest.TestCase):
-
-  @classmethod
-  def setUpClass(cls) -> None:
-    super().setUpClass()
-    cls.data_loader = DataLoader('data/xml/Complete.xml')
+class TestBackgrounds(DataTest):
 
   def test_backgrounds_have_source(self):
-    self.assertTrue(True)
+    for b in self.data_loader.backgrounds:
+      found = False
+      for t in b.traits:
+        if t.name == 'Description':
+          if get_sources(t.text):
+            found = True
+            break
+      self.assertTrue(found, msg=f'Background [{b.name}] has no source in description.')
+          

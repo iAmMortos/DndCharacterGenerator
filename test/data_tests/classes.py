@@ -1,11 +1,7 @@
 
-import unittest
-from model.data_loader import DataLoader
+from data_test import DataTest
 
-
-class TestClasses(unittest.TestCase):
-
-  @classmethod
-  def setUpClass(cls) -> None:
-    super().setUpClass()
-    cls.data_loader = DataLoader('data/xml/Complete.xml')
+class TestClasses(DataTest):
+  
+  def test_classes_have_source(self):
+    pass
