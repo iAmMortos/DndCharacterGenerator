@@ -18,13 +18,14 @@ def iterate():
     for al in cl.auto_levels:
       if al.level == 1:
         for f in al.features:
-          if f.name.startswith('Starting'):
-            found = 
+          s = f.name if type(f.name) is str else ''.join(f.name)
+          if s.startswith('Starting'):
+            found = get_sources(''.join(f.text))
             break
     if not found:
       print(f'Missing Source: {cl.name}')
     else:
-      print(f'{cl.name}: {get_sources()}')
+      print(f'{cl.name}: {found}')
 
 
 def find_dupes():

@@ -5,6 +5,17 @@ from utils.regexes import get_sources, is_attack, get_attack
 
 class TestMonsters(DataTest):
 
+  def test_monster_duplicates(self):
+    names = []
+    dupes = []
+    for m in self.data_loader.monsters:
+      if m.name not in names:
+        names += [m.name]
+      else:
+        dupes += [m.name]
+    self.assertTrue(len(dupes) == 0, msg=f'The following monster names are duplicated: [{dupes}]')
+
+
   def test_monster_sources(self):
     for m in self.data_loader.monsters:
       self.assertTrue(len(get_sources(m.description)) > 0, msg=f'Monster [{m.name}]: no source found in description.')
