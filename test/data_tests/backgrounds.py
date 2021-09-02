@@ -15,7 +15,8 @@ class TestBackgrounds(DataTest):
         names += [b.name]
       self.assertTrue(len(dupes) == 0, msg=f'The following background names are duplicated: [{dupes}]')
 
-  def test_backgrounds_have_source(self):
+  def test_background_sources(self):
+    missing = []
     for b in self.data_loader.backgrounds:
       found = False
       for t in b.traits:
@@ -23,4 +24,6 @@ class TestBackgrounds(DataTest):
           if get_sources(t.text):
             found = True
             break
-      self.assertTrue(found, msg=f'Background [{b.name}] has no source in description.')
+      if not found:
+        missing += [b.name]
+    self.assertTrue(len(missing) == 0, msg=f'The following backgrounds are missing source annotations: [{missing}]')

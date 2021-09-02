@@ -1,5 +1,6 @@
 
 from data_test import DataTest
+from utils.regexes import get_sources
 
 
 class TestFeats(DataTest):
@@ -13,3 +14,11 @@ class TestFeats(DataTest):
       else:
         dupes += [f.name]
     self.assertTrue(len(dupes) == 0, msg=f'The following feat names were duplicated: [{dupes}]')
+
+  def test_feat_sources(self):
+    missing = []
+    for f in self.data_loader.feats:
+      found = get_sources(f.text)
+      if not found:
+        missing += [f.name]
+    self.assertTrue(len(missing) == 0, msg=f'The following feats are missing source annotations: [{missing}]')

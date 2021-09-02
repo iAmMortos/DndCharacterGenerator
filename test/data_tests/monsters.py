@@ -15,23 +15,26 @@ class TestMonsters(DataTest):
         dupes += [m.name]
     self.assertTrue(len(dupes) == 0, msg=f'The following monster names are duplicated: [{dupes}]')
 
-
   def test_monster_sources(self):
+    missing = []
     for m in self.data_loader.monsters:
-      self.assertTrue(len(get_sources(m.description)) > 0, msg=f'Monster [{m.name}]: no source found in description.')
+      found = get_sources(m.description)
+      if not found:
+        missing += [m.name]
+    self.assertTrue(len(missing) == 0, msg=f'The following monsters are missing source annotations: [{missing}]')
 
-  def test_all_actions_have_text(self):
+  def test_monster_actions_have_text(self):
     for m in self.data_loader.monsters:
       for a in m.actions:
         self.assertTrue(a.text is not None, msg=f'Monster actions found without any text: Monster [{m.name}: {m.sources}], action: [{a}].')
       
-  def test_attacks_have_text(self):
+  def test_monster_attacks_have_text(self):
     for m in self.data_loader.monsters:
       for a in m.actions:
         if a.attack:
           self.assertTrue(a.text is not None and a.text.strip() != '', msg=f'Monster [{m.name}], Attack [{a.name}] missing text')
           
-  def test_attack_text_format(self):
+  def test_monster_attack_text_format(self):
     import re
     for m in self.data_loader.monsters:
       for a in m.actions:

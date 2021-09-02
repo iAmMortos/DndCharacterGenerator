@@ -1,5 +1,6 @@
 
 from data_test import DataTest
+from utils.regexes import get_sources
 
 
 class TestSpells(DataTest):
@@ -13,3 +14,11 @@ class TestSpells(DataTest):
       else:
         dupes += [s.name]
     self.assertTrue(len(dupes) == 0, msg=f'The following Spells have duplicate names: [{dupes}]')
+
+  def test_spell_sources(self):
+    missing = []
+    for s in self.data_loader.spells:
+      found = get_sources(s.text)
+      if not found:
+        missing += [s.name]
+    self.assertTrue(len(missing) == 0, msg=f'The following spells are missing source annotations: [{missing}]')
