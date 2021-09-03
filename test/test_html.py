@@ -10,8 +10,7 @@ import random
 def main():
   dl = DataLoader('data/xml/Complete.xml')
   # monster = dl.monsters['Githyanki Supreme Commander']
-  monster_name = random.choice(list(dl.monsters.keys()))
-  monster = dl.monsters[monster_name]
+  monster = random.choice(dl.monsters)
   
   with open('views/html/templates/boilerplate.html') as f:
     html = f.read()
