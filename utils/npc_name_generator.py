@@ -27,6 +27,17 @@ class NPCNameGenerator(object):
     i = random.randint(0, len(self._nouns) - 1)
     last = f'{self._epithets[i]}{self._nouns[i]}'
     return f'{first} {last}'
+    
+  def get_alliteration_name(self):
+    first = random.choice(self._first_names)
+    l = first[0].lower()
+    es = []
+    for e in self._epithets:
+      if e[0].lower() == l:
+        es += [e]
+    epithet = random.choice(es)
+    noun = random.choice(self._nouns)
+    return f'{first} {epithet}{noun}'
 
 
 if __name__ == '__main__':
@@ -43,3 +54,7 @@ if __name__ == '__main__':
   print("\nPre-Paired Last Names:")
   for _ in range(10):
     print('  ', gen.generate_paired_name())
+    
+  print('\nAlliterated Names:')
+  for _ in range(10):
+    print('  ',gen.get_alliteration_name())
