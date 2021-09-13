@@ -29,8 +29,10 @@ class NPCNameGenerator(object):
     return f'{first} {last}'
     
   def get_alliteration_name(self):
-    first = random.choice(self._first_names)
-    l = first[0].lower()
+    l = 'z'
+    while l == 'z':  # There's no last names that start with Z
+      first = random.choice(self._first_names)
+      l = first[0].lower()
     es = []
     for e in self._epithets:
       if e[0].lower() == l:
@@ -38,6 +40,14 @@ class NPCNameGenerator(object):
     epithet = random.choice(es)
     noun = random.choice(self._nouns)
     return f'{first} {epithet}{noun}'
+
+  def get_last_name_starting_with(self, start):
+    eps = []
+    start = start.lower()
+    for e in self._epithets:
+      if e.lower().startswith(start):
+        eps += [e]
+    return f'{random.choice(eps)}{random.choice(self._nouns)}'
 
 
 if __name__ == '__main__':
@@ -57,4 +67,8 @@ if __name__ == '__main__':
     
   print('\nAlliterated Names:')
   for _ in range(10):
-    print('  ',gen.get_alliteration_name())
+    print('  ', gen.get_alliteration_name())
+
+  print('\nR Last Names:')
+  for _ in range(10):
+    print('  ', gen.get_last_name_starting_with('R'))
