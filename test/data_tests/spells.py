@@ -13,7 +13,7 @@ class TestSpells(DataTest):
         names += [s.name]
       else:
         dupes += [s.name]
-    self.assertTrue(len(dupes) == 0, msg=f'The following Spells have duplicate names: [{dupes}]')
+    self.assertTrue(len(dupes) == 0, msg=f'{len(dupes)} Spells have duplicate names: [{dupes}]')
 
   def test_spell_sources(self):
     missing = []
@@ -21,4 +21,4 @@ class TestSpells(DataTest):
       found = get_sources(s.text)
       if not found:
         missing += [s.name]
-    self.assertTrue(len(missing) == 0, msg=f'The following spells are missing source annotations: [{missing}]')
+    self.assertTrue(len(missing) == 0, msg=f'{len(missing)} Spells are missing source annotations: [{missing}]')

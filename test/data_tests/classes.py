@@ -13,7 +13,7 @@ class TestClasses(DataTest):
         names += [cl.name]
       else:
         dupes += [cl.name]
-    self.assertTrue(len(dupes) == 0, msg=f'The following class names were duplicated: {dupes}.')
+    self.assertTrue(len(dupes) == 0, msg=f'{len(dupes)} class names were duplicated: {dupes}.')
 
   def test_class_sources(self):
     missing = []
@@ -28,4 +28,4 @@ class TestClasses(DataTest):
               break
       if not found:
         missing += [cl.name]
-    self.assertTrue(len(missing) == 0, msg=f'The following classes are missing source annotations: [{missing}]')
+    self.assertTrue(len(missing) == 0, msg=f'{len(missing)} classes are missing source annotations: [{missing}]')

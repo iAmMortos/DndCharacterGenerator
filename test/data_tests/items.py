@@ -13,7 +13,7 @@ class TestItems(DataTest):
         dupes += [i.name]
       else:
         names += [i.name]
-    self.assertTrue(len(dupes) == 0, msg=f'The following item names were duplicated: [{dupes}]')
+    self.assertTrue(len(dupes) == 0, msg=f'{len(dupes)} item names were duplicated: [{dupes}]')
 
   def test_item_sources(self):
     missing = []
@@ -21,4 +21,4 @@ class TestItems(DataTest):
       found = get_sources(i.text)
       if not found:
         missing += [i.name]
-    self.assertTrue(len(missing) == 0, msg=f'The following items are missing source annotations: [{missing}]')
+    self.assertTrue(len(missing) == 0, msg=f'{len(missing)} items are missing source annotations: [{missing}]')

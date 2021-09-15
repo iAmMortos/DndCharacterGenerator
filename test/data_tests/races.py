@@ -13,7 +13,7 @@ class TestRaces(DataTest):
         names += [r.name]
       else:
         dupes += [r.name]
-    self.assertTrue(len(dupes) == 0, msg=f'The following race names have duplicates: [{dupes}]')
+    self.assertTrue(len(dupes) == 0, msg=f'{len(dupes)} race names have duplicates: [{dupes}]')
 
   def test_race_sources(self):
     missing = []
@@ -23,4 +23,4 @@ class TestRaces(DataTest):
           found = get_sources(t.text)
       if not found:
         missing += [r.name]
-    self.assertTrue(len(missing) == 0, msg=f'The following races are missing source annotations: [{missing}]')
+    self.assertTrue(len(missing) == 0, msg=f'{len(missing)} races are missing source annotations: [{missing}]')

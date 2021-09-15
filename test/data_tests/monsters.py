@@ -13,7 +13,7 @@ class TestMonsters(DataTest):
         names += [m.name]
       else:
         dupes += [m.name]
-    self.assertTrue(len(dupes) == 0, msg=f'The following monster names are duplicated: [{dupes}]')
+    self.assertTrue(len(dupes) == 0, msg=f'{len(dupes)} monster names are duplicated: [{dupes}]')
 
   def test_monster_sources(self):
     missing = []
@@ -21,7 +21,7 @@ class TestMonsters(DataTest):
       found = get_sources(m.description)
       if not found:
         missing += [m.name]
-    self.assertTrue(len(missing) == 0, msg=f'The following monsters are missing source annotations: [{missing}]')
+    self.assertTrue(len(missing) == 0, msg=f'{len(missing)} monsters are missing source annotations: [{missing}]')
 
   def test_monster_actions_have_text(self):
     for m in self.data_loader.monsters:

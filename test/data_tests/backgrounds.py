@@ -13,7 +13,7 @@ class TestBackgrounds(DataTest):
         dupes += [b.name]
       else:
         names += [b.name]
-      self.assertTrue(len(dupes) == 0, msg=f'The following background names are duplicated: [{dupes}]')
+      self.assertTrue(len(dupes) == 0, msg=f'{len(dupes)} background names are duplicated: [{dupes}]')
 
   def test_background_sources(self):
     missing = []
@@ -26,4 +26,4 @@ class TestBackgrounds(DataTest):
             break
       if not found:
         missing += [b.name]
-    self.assertTrue(len(missing) == 0, msg=f'The following backgrounds are missing source annotations: [{missing}]')
+    self.assertTrue(len(missing) == 0, msg=f'{len(missing)} backgrounds are missing source annotations: [{missing}]')
