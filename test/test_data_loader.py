@@ -2,21 +2,17 @@ import test_context
 
 from model.data_loader import DataLoader
 from utils.regexes import get_sources
+from utils.regexes import is_attack
 
 dl = DataLoader('data/xml/Complete.xml')
 dl.print_stats()
 
 
 def main():
-  for r in dl.races:
-    found = []
-    for t in r.traits:
-      if t.name == 'Description':
-        found = get_sources(t.text)
-    if not found:
-      print(f'MISSING: {r.name}')
-    else:
-      print(f'{r.name}: {found}')
+  for m in dl.monsters:
+    for a in m.actions:
+      if is_attack(a.text) and '\n' in a.text:
+        print(f'{m.name}: {a.name}')
 
 
 if __name__ == "__main__":

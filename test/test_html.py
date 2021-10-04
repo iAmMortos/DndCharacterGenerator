@@ -4,13 +4,14 @@ from utils.regexes import is_attack, get_attack
 import webbrowser
 import os
 import io
+import re
 import random
 
 
 def main():
   dl = DataLoader('data/xml/Complete.xml')
-  # monster = dl.monsters['Githyanki Supreme Commander']
-  monster = random.choice(dl.monsters)
+  monster = dl.get_monster('Darkmantle')
+  # monster = random.choice(dl.monsters)
   
   with open('views/html/templates/boilerplate.html') as f:
     html = f.read()
@@ -47,7 +48,7 @@ def main():
   legendaries = build_legendaries(monster)
   block = block.replace('{legendaries}', legendaries)
 
-  block = block.replace('{description}', '<p class="stat-line">{}<p>'.format(monster.description.strip().replace('\n', '<br />')))
+  block = block.replace('{description}', '<p class="stat-line">{}</p>'.format(html_newlines(monster.description.strip())))
 
   html = html.replace('{title}', 'Test Stat Block')
   html = html.replace('{stylesheet-path}', 'templates/css/statblock.css')
@@ -59,6 +60,11 @@ def main():
   abspath = abspath.replace('\\', '/')
   url = 'file:///{}'.format(abspath)
   webbrowser.open_new_tab(url)
+  
+  
+def html_newlines(s):
+  # st = re.sub('')
+  return s.replace('\n', '<br />')
 
 
 def build_profs(monster):
@@ -96,9 +102,9 @@ def build_traits(monster):
   traits = ''
   for t in monster.traits:
     if t.text:
-      traits += trait.replace('{name}', t.name).replace('{value}', t.text)
+      traits += trait.replace('{name}', t.name).replace('{value}', html_newlines(t.text))
     elif t.attack:
-      print(t.attack)
+      raise(Exception(f'Found a trait containing an attack: [{t.attack}]'))
   return traits
 
 
@@ -115,9 +121,9 @@ def build_actions(monster):
   for action in monster.actions:
     if is_attack(action.text):
       parts = get_attack(action.text)
-      actions += atk_html.replace('{name}', action.name).replace('{attack-type}', parts[0]).replace('{to-hit}', parts[1]).replace('{damage}', parts[2])
+      actions += atk_html.replace('{name}', action.name).replace('{attack-type}', parts[0]).replace('{to-hit}', parts[1]).replace('{damage}', html_newlines(parts[2]))
     else:
-      actions += act_html.replace('{name}', action.name).replace('{value}', action.text)
+      actions += act_html.replace('{name}', action.name).replace('{value}', html_newlines(action.text))
 
   return actions_html.replace('{actions}', actions)
 
@@ -131,7 +137,7 @@ def build_reactions(monster):
     act_html = f.read()
   reactions = ''
   for reaction in monster.reactions:
-    reactions += act_html.replace('{name}', reaction.name).replace('{value}', reaction.text)
+    reactions += act_html.replace('{name}', reaction.name).replace('{value}', html_newlines(reaction.text))
 
   return reactions_html.replace('{reactions}', reactions)
 
@@ -150,12 +156,12 @@ def build_legendaries(monster):
   legs = ''
   for legendary in monster.legendaries:
     if is_attack(legendary.text):
-      parts = get_attack(legendary.text)
+      parts = get_attack(html_newlines(legendary.text))
       legs += atk_html.replace('{name}', legendary.name).replace('{attack-type}', parts[0]).replace('{to-hit}', parts[1]).replace('{damage}', parts[2])
     elif legendary.name is None:
-      legs += std_html.replace('{value}', legendary.text)
+      legs += std_html.replace('{value}', html_newlines(legendary.text))
     else:
-      legs += leg_html.replace('{name}', legendary.name).replace('{value}', legendary.text)
+      legs += leg_html.replace('{name}', legendary.name).replace('{value}', html_newlines(legendary.text))
 
   return legendaries_html.replace('{legendaries}', legs)
 
