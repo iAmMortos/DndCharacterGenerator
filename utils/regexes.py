@@ -22,7 +22,7 @@ def is_attack(s):
   return m is not None
   
 def get_attack(s):
-  m = re.match(r'^((?:Melee(?: or Ranged)?|Ranged) (?:Weapon|Spell|Magic(?:al)?)? ?Attack): ?(.*?)\.\s(?:Hit: ?)?(.*)', s)
+  m = re.match(r'^((?:Melee(?: or Ranged)?|Ranged) (?:Weapon|Spell|Magic(?:al)?)? ?Attack): ?(.*?)\.\s(?:Hit: ?)?([\s\S]*)', s)
   if m:
     gs = m.groups()
     atk = []
