@@ -57,8 +57,10 @@ class Monster (XmlEntity):
     self.actions = self._get_as_obj_list('action', Action)
     self.reactions = self._get_as_obj_list('reaction', Action)
     self.legendaries = self._get_as_obj_list('legendary', Action)
+    self.environment = self._get('environment')
 
     self.sources = get_sources(self.description)
+    
 
   def __repr__(self):
     return 'Name: {0.name}\nSize: {0.size}\nType: {0.type}\nAlignment: {0.alignment}\nAC: {0.armor_class}\n' \

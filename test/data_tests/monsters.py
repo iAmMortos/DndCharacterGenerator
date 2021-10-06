@@ -40,3 +40,10 @@ class TestMonsters(DataTest):
       for a in m.actions:
         if a.attack and is_attack(a.text):
           self.assertTrue(get_attack(a.text) is not None, msg=f'\nMonster: [{m.name}]\nAttack: [{a.name}, {a.attack}]\nText is improperly formatted:\n[{a.text}]')
+          
+  def test_monster_environments(self):
+    missing = []
+    for m in self.data_loader.monsters:
+      if not m.environment:
+        missing += [m.name]
+    self.assertTrue(len(missing) == 0, msg=f'{len(missing)} monsters are missing environment metadata: [{missing}]')
