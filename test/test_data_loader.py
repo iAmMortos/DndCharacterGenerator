@@ -9,11 +9,13 @@ dl.print_stats()
 
 
 def main():
+  fs = []
   for m in dl.monsters:
-    for a in m.actions:
-      if is_attack(a.text) and '\n' in a.text:
-        print(f'{m.name}: {a.name}')
+    print(f'{m.name}: {m.environment}')
+      
+  print(fs)
 
 
 if __name__ == "__main__":
-  main()
+  pass
+  # main()

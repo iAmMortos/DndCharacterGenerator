@@ -98,4 +98,8 @@ class XmlEntity (object):
     
   @property
   def _xml_str(self):
-    return ET.tostring(self._node, encoding='utf8')
+    import xml.dom.minidom
+    xml_str = ET.tostring(self._node, encoding='utf-8').replace(b'\n', b'')
+    dom = xml.dom.minidom.parseString(xml_str)
+    s = dom.toprettyxml()
+    return s

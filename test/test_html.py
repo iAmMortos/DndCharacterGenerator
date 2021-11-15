@@ -1,6 +1,7 @@
 import test_context
 from model.data_loader import DataLoader
 from utils.regexes import is_attack, get_attack
+from xml.etree import ElementTree as ET
 import webbrowser
 import os
 import io
@@ -10,7 +11,7 @@ import random
 
 def main():
   dl = DataLoader('data/xml/Complete.xml')
-  monster = dl.get_monster('Darkmantle')
+  monster = dl.get_monster('Young Frost Giant')
   # monster = random.choice(dl.monsters)
   
   with open('views/html/templates/boilerplate.html') as f:
