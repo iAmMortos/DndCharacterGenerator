@@ -9,13 +9,18 @@ dl.print_stats()
 
 
 def main():
-  fs = []
+  c = 0
+  envs = []
   for m in dl.monsters:
-    print(f'{m.name}: {m.environment}')
-      
-  print(fs)
+    if m.environment:
+      c += 1
+      for e in [n.strip() for n in m.environment.split(',')]:
+        if e not in envs:
+          envs += [e]
+      print(f'{m.name}: {m.environment}')
+  print(f'{c} of {len(dl.monsters)} monsters have environments.')
+  print(sorted(envs))
 
 
 if __name__ == "__main__":
-  pass
-  # main()
+  main()

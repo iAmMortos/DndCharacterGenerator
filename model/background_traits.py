@@ -1,5 +1,6 @@
 import io
 import random
+from utils.data_file_loader import DataFileLoader as DFL
 
 
 class BG (object):
@@ -72,19 +73,18 @@ class TblValue (object):
 
 
 class BackgroundTraits (object):
-  def __init__(self, path):
+  def __init__(self, data_name):
     self.bgs = {}
-    with io.open(path, mode='r', encoding='utf-8') as f:
-      lines = [l.strip() for l in f.readlines()]
-      for line in lines:
-        bg, tb, n, v, src = line.split('\t')
-        if bg not in self.bgs:
-          self.bgs[bg] = BG(bg, src)
-        b = self.bgs[bg]
-        if tb not in b.tables:
-          b.tables[tb] = Table(tb, n)
-        t = b.tables[tb]
-        t.values.append(TblValue(v))
+    csv_lines = DFL().load_csv(data_name, delimiter='\t')
+    for line in csv_lines:
+      bg, tb, n, v, src = line
+      if bg not in self.bgs:
+        self.bgs[bg] = BG(bg, src)
+      b = self.bgs[bg]
+      if tb not in b.tables:
+        b.tables[tb] = Table(tb, n)
+      t = b.tables[tb]
+      t.values.append(TblValue(v))
         
   def get_random_bg(self, filters=None):
     filtered_bgs = []

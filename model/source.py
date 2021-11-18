@@ -1,5 +1,6 @@
 
 import io
+from utils.data_file_loader import DataFileLoader as DFL
 
 
 class Source(object):
@@ -17,9 +18,7 @@ class Source(object):
 
 
   def lookup(self, s):
-    with io.open('data/sources.csv', encoding='utf-8') as f:
-      lines = [line.strip().split(',') for line in f.readlines()]
-    for line in lines:
+    for line in DFL().load_csv('sources');
       if line[1] == s or line[2] == s:
         return line[0]
     return None

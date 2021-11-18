@@ -4,6 +4,7 @@ import io
 import random
 from views.main_view import MainView
 from model.background_traits import BackgroundTraits
+from utils.data_file_loader import DataFileLoader as DFL
 
 
 class Randomizer(object):
@@ -29,12 +30,12 @@ class Randomizer(object):
     self.load_data()
 
   def load_data(self):
-    self.classes = self._load_csv('data/classes.csv')
-    self.races = self._load_csv('data/races.csv')
-    self.bg_traits = BackgroundTraits('data/background_traits.csv')
+    self.classes = DFL().load_csv('classes')
+    self.races = DFL().load_csv('races')
+    self.bg_traits = BackgroundTraits('background_traits')
 
-    temp_sources = self._load_csv('data/sources.csv')
-    temp_specs = self._load_csv('data/class_specializations.csv')
+    temp_sources = DFL().load_csv('sources')
+    temp_specs = DFL().load_csv('class_specializations')
 
     for tsrc in temp_sources:
       self.sources[tsrc[0]] = tsrc[1]
@@ -52,14 +53,6 @@ class Randomizer(object):
           filtered_set += [item]
           break
     return filtered_set
-
-  def _load_csv(self, file, delimiter=',', quotechar='"'):
-    out = []
-    with io.open(file, mode='r', newline='', encoding='utf-8') as csvfile:
-      rdr = csv.reader(csvfile, delimiter=delimiter, quotechar=quotechar)
-      for row in rdr:
-        out += [row]
-    return out
 
   def _get_short_source_text(self, srctext):
     src_texts = []

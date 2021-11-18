@@ -1,7 +1,7 @@
 import test_context
 from model.background_traits import BackgroundTraits
 
-bt = BackgroundTraits('data/background_traits.csv')
+bt = BackgroundTraits('background_traits')
 bg = bt.get_bg('Far Traveler')
 print(bg.roll_all_tables())
 

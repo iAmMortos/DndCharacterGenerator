@@ -1,5 +1,4 @@
 
-import xml.etree.ElementTree as ET
 
 from model.background import Background
 from model.char_class import CharClass
@@ -9,10 +8,11 @@ from model.monster import Monster
 from model.race import Race
 from model.spell import Spell
 from errors.no_such_entity_error import NoSuchEntityError
+from util.data_file_loader import DataFileLoader as DFL
 
 
 class DataLoader (object):
-  def __init__(self, file):
+  def __init__(self, data_name):
     self.backgrounds = []
     self._bgs = {}
     self.classes = []
@@ -28,8 +28,7 @@ class DataLoader (object):
     self.spells = []
     self._spls = {}
 
-    tree = ET.parse(file)
-    root = tree.getroot()
+    root = DFL().load_compendium_xml(data_name)
     for c in list(root):
       t = c.tag
       if t == 'background':
