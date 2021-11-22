@@ -1,11 +1,11 @@
 
 import random
+from utils.data_file_loader import DataFileLoader as DFL
 
 
 class NPCNameGenerator(object):
   def __init__(self):
-    with open('data/npc_names.csv') as f:
-      data = [line.strip().split(',') for line in f.readlines()]
+    data = DFL().load_csv('npc_names')
     self._first_names = []
     self._epithets = []
     self._nouns = []

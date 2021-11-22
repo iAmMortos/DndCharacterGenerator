@@ -1,10 +1,10 @@
+
 import test_context
 import re
-
 from model.data_loader import DataLoader
-from utils.find_source import find_source
+from utils.regexes import get_sources
 
-dl = DataLoader('data/xml/Complete.xml')
+dl = DataLoader('Complete')
 
 # print('\n'.join(sorted([race.name for race in dl.races])))
 
@@ -12,7 +12,7 @@ sources = []
 for race in dl.races:
   s = '\n'.join([t.text for t in race.traits])
   # print(s)
-  src = find_source(s)
+  src = get_sources(s)
   if src is not None:
     sources += [src]
   else:
@@ -20,7 +20,7 @@ for race in dl.races:
 for monster in dl.monsters:
   s = monster.description
   if s:
-    src = find_source(s)
+    src = get_sources(s)
     if src is not None:
       sources += [src]
     else:
@@ -29,7 +29,7 @@ for spell in dl.spells:
   s = spell.text
   if type(s) is list:
     s = '\n'.join(s)
-  src = find_source(s)
+  src = get_sources(s)
   if src is not None:
     sources += [src]
   else:
@@ -38,7 +38,7 @@ for feat in dl.feats:
   s = feat.text
   if type(s) is list:
     s = '\n'.join(s)
-  src = find_source(s)
+  src = get_sources(s)
   if src is not None:
     sources += [src]
   else:
@@ -47,7 +47,7 @@ for item in dl.items:
   s = item.text
   if type(s) is list:
     s = '\n'.join(s)
-  src = find_source(s)
+  src = get_sources(s)
   if src is not None:
     sources += [src]
   else:
@@ -55,7 +55,7 @@ for item in dl.items:
 for cls in dl.classes:
   for al in cls.auto_levels:
     s = '\n'.join(['\n'.join(f.text) for f in al.features])
-    src = find_source(s)
+    src = get_sources(s)
     if src is not None:
       sources += [src]
     else:
@@ -63,7 +63,7 @@ for cls in dl.classes:
       # print('Class: {0.name}, Auto-Level: {1.level} - No source detected\nAuto-Level Features: {1.features}'.format(cls, al))
 for bg in dl.backgrounds:
   s = '\n'.join([t.text for t in bg.traits])
-  src = find_source(s)
+  src = get_sources(s)
   if src is not None:
     sources += [src]
   else:

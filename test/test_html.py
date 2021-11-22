@@ -10,7 +10,7 @@ import random
 
 
 def main():
-  dl = DataLoader('data/xml/Complete.xml')
+  dl = DataLoader('Complete')
   monster = dl.get_monster('Young Frost Giant')
   # monster = random.choice(dl.monsters)
   

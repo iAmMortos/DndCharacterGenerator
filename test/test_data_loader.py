@@ -4,7 +4,7 @@ from model.data_loader import DataLoader
 from utils.regexes import get_sources
 from utils.regexes import is_attack
 
-dl = DataLoader('data/xml/Complete.xml')
+dl = DataLoader('Complete')
 dl.print_stats()
 
 

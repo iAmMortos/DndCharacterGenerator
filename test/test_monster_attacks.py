@@ -4,7 +4,7 @@ from utils.regexes import *
 
 
 def main():
-  dl = DataLoader('data/xml/Complete.xml')
+  dl = DataLoader('Complete')
   for m in dl.monsters:
     for a in m.actions:
       if a.text and is_attack(a.text):

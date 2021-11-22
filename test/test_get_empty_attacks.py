@@ -3,7 +3,7 @@ import re
 
 from model.data_loader import DataLoader
 
-dl = DataLoader('data/xml/CoreOnly.xml')
+dl = DataLoader('CoreOnly')
 
 for mon in dl.monsters:
   for atype in [mon.traits, mon.actions, mon.reactions, mon.legendaries]:

@@ -1,7 +1,8 @@
 
 import test_context
 from utils.find_table import find_tables, get_tables_for_bg
-from utils.find_source import find_source
+from utils.regexes import get_sources
+from utils.data_file_loader import DataFileLoader as DFL
 from model.data_loader import DataLoader
 from model.die_table import DieTable
 import io
@@ -9,18 +10,17 @@ import io
 
 # import console
 # console.clear()
-dl = DataLoader('data/xml/CoreOnly.xml')
+dfl = DFL()
+dl = DataLoader('CoreOnly')
 sources = {}
 
-with io.open('data/sources.csv', mode='r', encoding='utf-8') as f:
-  lines = [l.strip().split(',') for l in list(filter(lambda a: not a.startswith('#') and a.strip() != '', f.readlines()))]
-  for line in lines:
-    sources[line[0]] = line[1]
-
+lines = dfl.load_csv('sources')
+for line in lines:
+  sources[line[0]] = line[1]
 
 lines = []
 for bg in dl.backgrounds:
-  ss = find_source('\n'.join([t.text for t in bg.traits]))[8:]
+  ss = get_sources('\n'.join([t.text for t in bg.traits]))[8:]
   srcs = []
   for s in [s.strip() for s in ss.split(',')]:
     srcs += [s.split(' p. ')[0]]

@@ -4,7 +4,7 @@ from model.data_loader import DataLoader
 from utils.regexes import get_sources
 
 
-dl = DataLoader('data/xml/CoreOnly.xml')
+dl = DataLoader('CoreOnly')
 
 classes = sorted(dl.classes, key=lambda cls: cls.name)
 

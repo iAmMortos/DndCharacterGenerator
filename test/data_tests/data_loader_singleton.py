@@ -7,4 +7,4 @@ from model.data_loader import DataLoader
 @Singleton
 class DataLoaderSingleton(object):
   def __init__(self):
-    self.dl = DataLoader('data/xml/Complete.xml')
+    self.dl = DataLoader('Complete')
