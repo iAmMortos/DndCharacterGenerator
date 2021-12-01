@@ -12,7 +12,7 @@ class DataFileLoader (object):
     self._compendium_path = compendium_path
 
   def _build_path_for(self, base, name, ext=''):
-    return f'{self._data_path}{name}.{ext}';
+    return f'{base}{name}.{ext}';
 
   def load_csv(self, data_name, delimiter=',', quotechar='"'):
     path = self._build_path_for(self._data_path, data_name, 'csv')
