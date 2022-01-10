@@ -3,6 +3,7 @@ from enum import Enum
 from model.range import Range
 from model.roll import Roll
 from model.xml_entity import XmlEntity
+from utils.ordinals import get_ord_str
 import re
 
 
@@ -25,7 +26,18 @@ class Components(object):
     self.material = gs[2][3:-1] if gs[2] is not None else None
 
   def __repr__(self):
-    return 'Verbal: {0.verbal}\nSomatic: {0.somatic}\nMaterial: {0.material}'.format(self)
+    s = ''
+    if self.verbal:
+      s = 'V'
+    if self.somatic:
+      if s:
+        s += ', '
+      s += 'S'
+    if self.material:
+      if s:
+        s += ', '
+      s += f'M ({self.material})'
+    return s
 
 
 class CastTime(object):
@@ -66,6 +78,7 @@ class Spell (XmlEntity):
     self.level = self._get_as_obj('level', int, -1)
     self.school = self._get_as_obj('school', MagicSchools.of_value, None)
     self.ritual = self._get_as_bool('ritual', False)
+    self.slr_txt = self._build_school_level_ritual_text()
     self.time = self._get_as_obj('time', CastTime, None)
     self.range = self._get_as_obj('range', Range, None)
     self.components = self._get_as_obj('components', Components, None)
@@ -73,6 +86,28 @@ class Spell (XmlEntity):
     self.text = self._get('text', '')
     self.roll = self._get_as_obj('roll', Roll, None)
     self.classes = self._get_as_list('classes')
+
+  def _build_school_level_ritual_text(self):
+    s = ''
+    if self.level == 0:
+      s = f'{self.school} cantrip'
+    else:
+      s = f'{get_ord_str(self.level)}-level {str(self.school).lower()}'
+
+    if self.ritual:
+      s += ' (ritual)'
+
+    return s
+
+  def get_book_str(self):
+    s = f'{self.name}\n' \
+        f'{self.slr_txt}\n' \
+        f'Casting Time: {self.time}\n' \
+        f'Range: {self.range}\n' \
+        f'Component: {str(self.components)}\n' \
+        f'Duration: {self.duration}\n' \
+        f'{self.text}'
+    return s
 
   def __repr__(self):
     return 'Spell Name: {0.name}\nLevel: {0.level}\nSchool: {0.school}\nRitual: {0.ritual}\nTime: {0.time}\n' \

@@ -18,7 +18,7 @@ class Source(object):
 
 
   def lookup(self, s):
-    for line in DFL().load_csv('sources');
+    for line in DFL().load_csv('sources'):
       if line[1] == s or line[2] == s:
         return line[0]
     return None

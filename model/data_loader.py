@@ -8,7 +8,7 @@ from model.monster import Monster
 from model.race import Race
 from model.spell import Spell
 from errors.no_such_entity_error import NoSuchEntityError
-from util.data_file_loader import DataFileLoader as DFL
+from utils.data_file_loader import DataFileLoader as DFL
 
 
 class DataLoader (object):

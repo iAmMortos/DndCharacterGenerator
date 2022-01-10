@@ -5,10 +5,10 @@ from utils.regexes import get_sources
 from utils.regexes import is_attack
 
 dl = DataLoader('Complete')
-dl.print_stats()
+# dl.print_stats()
 
 
-def main():
+def test_environments():
   c = 0
   envs = []
   for m in dl.monsters:
@@ -20,6 +20,12 @@ def main():
       print(f'{m.name}: {m.environment}')
   print(f'{c} of {len(dl.monsters)} monsters have environments.')
   print(sorted(envs))
+
+
+def main():
+  for s in dl.spells:
+    if s.name == "Shield of Faith":
+      print(s.get_book_str())
 
 
 if __name__ == "__main__":
