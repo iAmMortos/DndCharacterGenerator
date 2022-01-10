@@ -10,7 +10,8 @@ def main():
     if child.tag == "imageData":
       for c in child:
         if c.tag == 'encoded':
-          pass
+          s = c.text
+          print(s)
 
 
 
