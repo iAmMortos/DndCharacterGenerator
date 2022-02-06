@@ -11,8 +11,8 @@ import random
 
 def main():
   dl = DataLoader('Complete')
-  monster = dl.get_monster('Young Frost Giant')
-  # monster = random.choice(dl.monsters)
+  # monster = dl.get_monster('Young Frost Giant')
+  monster = random.choice(dl.monsters)
   
   with open('views/html/templates/boilerplate.html') as f:
     html = f.read()

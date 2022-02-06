@@ -22,10 +22,19 @@ def test_environments():
   print(sorted(envs))
 
 
+def test_wildemount_creatures():
+  c = 0
+  for m in dl.monsters:
+    for s in m.sources:
+      if s.abbr == 'EGtW':
+        print(m.name)
+        c += 1
+        break
+  print(f'{c} monsters found')
+  
+  
 def main():
-  for s in dl.spells:
-    if s.name == "Shield of Faith":
-      print(s.get_book_str())
+  test_wildemount_creatures()
 
 
 if __name__ == "__main__":
