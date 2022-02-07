@@ -57,6 +57,8 @@ class Monster (XmlEntity):
     self.actions = self._get_as_obj_list('action', Action)
     self.reactions = self._get_as_obj_list('reaction', Action)
     self.legendaries = self._get_as_obj_list('legendary', Action)
+    self.mythics = self._get_as_obj_list('mythic', Action)
+    self.lairs = self._get_as_obj_list('lair', Action)
     self.environment = self._get('environment')
 
     self.sources = get_sources(self.description)
@@ -68,6 +70,6 @@ class Monster (XmlEntity):
            'Skill: {0.skill}\nVulnerable: {0.vulnerable}+\nResist: {0.resist}\nImmunities: {0.immune}\n' \
            'Conditional Immunities: {0.conditionImmune}\nSenses: {0.senses}\nPassive: {0.passive}\n' \
            'Languages: {0.languages}\nCR: {0.challenge_rating}\n' \
-           'Traits: {1}\nActions: {2}\nReactions: {3}\nLegendary Actions: {4}'.format(
-      self, len(self.traits), len(self.actions), len(self.reactions), len(self.legendaries))
+           'Traits: {1}\nActions: {2}\nReactions: {3}\nLegendary Actions: {4}\nMythic Actions: {5}\nLair: {6}'.format(
+      self, len(self.traits), len(self.actions), len(self.reactions), len(self.legendaries), len(self.mythics), len(self.lairs))
 

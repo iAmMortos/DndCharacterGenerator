@@ -6,7 +6,7 @@ class Action(XmlEntity):
   def __init__(self, xml_node):
     super().__init__(xml_node)
     self.name = self._get('name')
-    self.text = self._get('text')
+    self.text = self._get('text', default_value='')
     self.attack = self._get_as_obj('attack', Attack)
     if type(self.text) is list:
       self.text = '\n'.join(self.text)
