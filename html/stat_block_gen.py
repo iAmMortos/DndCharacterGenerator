@@ -4,8 +4,6 @@ from html.utils import html_newlines
 
 
 def gen_stat_block(monster):
-  with open('views/html/templates/boilerplate.html') as f:
-    html = f.read()
   with open('views/html/templates/statblock.html') as f:
     block = f.read()
 
@@ -49,18 +47,7 @@ def gen_stat_block(monster):
   block = block.replace('{description}',
                         '<p class="stat-line">{}</p>'.format(html_newlines(monster.description.strip())))
 
-  html = html.replace('{title}', 'Test Stat Block')
-  html = html.replace('{stylesheet-path}', 'templates/css/statblock.css')
-  html = html.replace('{body}', block)
-
-  return html
-  # with io.open('views/html/index.html', 'w', encoding='utf-8') as f:
-  #   f.write(html)
-  #
-  # abspath = os.path.abspath('views/html/index.html')
-  # abspath = abspath.replace('\\', '/')
-  # url = 'file:///{}'.format(abspath)
-  # webbrowser.open_new_tab(url)
+  return block
 
 
 def _build_profs(monster):

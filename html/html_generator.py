@@ -12,4 +12,12 @@ class HtmlGenerator(object):
   def gen_spell_block(self, spell):
     pass
 
+  def gen_html_page(self, title, styleref, content_html):
+    with open('views/html/templates/boilerplate.html') as f:
+      html = f.read()
+    html = html.replace('{title}', title)
+    html = html.replace('{stylesheet-path}', styleref)
+    html = html.replace('{body}', content_html)
+    return html
+
 
