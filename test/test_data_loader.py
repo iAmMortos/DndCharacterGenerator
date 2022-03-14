@@ -43,11 +43,6 @@ def test_environments():
         if env not in envs:
           envs += [env]
   print(envs)
-  
-  
-def main():
-  test_environments()
-
 
 def test_lair_monsters():
   c = 0
