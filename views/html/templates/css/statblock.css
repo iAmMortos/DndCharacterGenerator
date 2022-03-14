@@ -36,6 +36,13 @@ table {
   margin-left: -.3em;
 }
 
+.stat-block {
+  padding: 5px;
+  width: 480px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
 .stat-block-top {
   color: #5b0f00;
 }

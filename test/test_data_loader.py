@@ -49,5 +49,26 @@ def main():
   test_environments()
 
 
+def test_lair_monsters():
+  c = 0
+  for m in dl.monsters:
+    if m.lairs:
+      c += 1
+  print(f'{c} monsters have lair features.')
+
+
+def test_mythic_monsters():
+  c = 0
+  for m in dl.monsters:
+    if m.mythics:
+      c += 1
+      print(m.name)
+  print(f'{c} monsters have lair features.')
+
+  
+def main():
+  test_mythic_monsters()
+
+
 if __name__ == "__main__":
   main()
