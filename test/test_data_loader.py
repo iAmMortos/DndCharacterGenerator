@@ -32,9 +32,21 @@ def test_wildemount_creatures():
         break
   print(f'{c} monsters found')
   
+def test_environments():
+  envs = []
+  for m in dl.monsters:
+    if m.environment:
+      es = m.environment.split(', ')
+      for env in es:
+        if env == 'farmland':
+          print(m.name)
+        if env not in envs:
+          envs += [env]
+  print(envs)
+  
   
 def main():
-  test_wildemount_creatures()
+  test_environments()
 
 
 if __name__ == "__main__":

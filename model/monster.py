@@ -11,6 +11,7 @@ from model.saves import Saves
 from model.skill import Skill
 from model.challenge_rating import ChallengeRating
 from model.action import Action
+from model.environments import Environments
 from utils.regexes import get_sources
 
 

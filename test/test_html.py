@@ -12,7 +12,7 @@ from html.html_generator import HtmlGenerator
 
 def main():
   dl = DataLoader('Complete')
-  monster = dl.get_monster('Tromokratis')
+  monster = dl.get_monster('Juiblex')
   hg = HtmlGenerator()
   html = hg.gen_stat_block(monster)
 

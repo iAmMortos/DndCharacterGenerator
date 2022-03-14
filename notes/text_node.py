@@ -1,0 +1,3 @@
+
+class TextNode (object):
+  pass
