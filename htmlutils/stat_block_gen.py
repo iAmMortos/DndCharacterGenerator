@@ -1,6 +1,6 @@
 
 from utils.regexes import is_attack, get_attack
-from html.utils import html_newlines
+from htmlutils.utils import html_newlines
 
 
 def gen_stat_block(monster):

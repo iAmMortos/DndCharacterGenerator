@@ -1,5 +1,9 @@
+html {
+	font-size: 100%;
+}
+
 body {
-	margin: .3em;
+	margin: 0;
 }
 
 h1 {
@@ -8,18 +12,18 @@ h1 {
 
 h2 {
   font-family: Verdana;
-  margin: .5em 0 0 0;
-  font-size: 1.2em;
+  margin: .5rem 0 0 0;
+  font-size: 1.2rem;
   color: #5b0f00;
   font-variant: small-caps;
 }
 
 hr {
-  border-top: .13em solid #5b0f00
+  border-top: .13rem solid #5b0f00
 }
 
 hr.thin {
-  border-top: .05em solid #5b0f00;
+  border-top: .05rem solid #5b0f00;
   margin: 0;
 }
 
@@ -29,16 +33,17 @@ p {
 }
 
 table {
-  font-size: .8em;
+  font-size: .8rem;
   font-family: Verdana;
   width: 100%;
-  max-width: 800px;
-  margin-left: -.3em;
+  max-width: 100%;
+  margin-left: -.3rem;
 }
 
 .stat-block {
+  box-sizing: border-box;
   padding: 5px;
-  width: 480px;
+  width: 100%;
   border: 1px solid #ddd;
   border-radius: 3px;
 }
@@ -48,8 +53,8 @@ table {
 }
 
 .stat-line {
-  font-size: .8em;
-  margin: .5em 0;
+  font-size: .8rem;
+  margin: .5rem 0;
 }
 
 .core-stat-title {
@@ -70,7 +75,7 @@ table {
 }
 
 .scores-header {
-  font-size: .9em;
+  font-size: .9rem;
 }
 
 .stat-scores {
@@ -78,16 +83,16 @@ table {
 }
 
 .stat-scores td {
-  padding: 0 .4em;
+  padding: 0 .4rem;
 }
 
 .creature-name {
-  font-size: 1.5em;
+  font-size: 2.5rem;
   color: #5b0f00;
   font-variant: small-caps;
 }
 
 .size-type-alignment, .source {
-  font-size: .7em;
+  font-size: .7rem;
   font-style: italic;
 }

@@ -1,25 +1,32 @@
 import test_context
 from model.data_loader import DataLoader
-import webbrowser
+# import webbrowser
 import os
 import io
-from html.html_generator import HtmlGenerator
+import ui
+from htmlutils.html_generator import HtmlGenerator
+import urllib.parse
+import random
 
 
 def main():
   dl = DataLoader('Complete')
-  monster = dl.get_monster('Juiblex')
+  # monster = random.choice(dl.monsters)
+  monster = dl.get_monster('Arasta')
   hg = HtmlGenerator()
-  html = hg.gen_stat_block(monster)
-  page_html = hg.gen_html_page(monster.name, 'templates/css/statblock.css', html)
+  htmlstr = hg.gen_stat_block(monster)
+  page_html = hg.gen_html_page(monster.name, 'templates/css/statblock.css', htmlstr)
 
   with io.open('views/html/index.html', 'w', encoding='utf-8') as f:
     f.write(page_html)
 
   abspath = os.path.abspath('views/html/index.html')
   abspath = abspath.replace('\\', '/')
-  url = 'file:///{}'.format(abspath)
-  webbrowser.open_new_tab(url)
+  url = 'file://{}'.format(urllib.parse.quote(abspath))
+  w = ui.WebView()
+  w.load_url(url)
+  # w.load_html(page_html)
+  w.present(style='fullscreen', hide_title_bar=True)
 
 
 if __name__ == '__main__':
