@@ -21,7 +21,7 @@ class HtmlGenerator(object):
     html = html.replace('{stylesheet-path}', styleref)
     # with io.open(os.path.abspath(styleref), encoding='utf-8') as f:
     #   css = f.read()
-    # html = html.replace('{stylesheet-body}', css)
+    #   html = html.replace('{stylesheet-body}', css)
     html = html.replace('{body}', content_html)
     return html
 
