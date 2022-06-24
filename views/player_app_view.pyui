@@ -1,0 +1,72 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 6}, {100, 100}}",
+        "class" : "ImageView",
+        "attributes" : {
+          "flex" : "RB",
+          "border_width" : 1,
+          "frame" : "{{121, 126}, {100, 100}}",
+          "class" : "ImageView",
+          "corner_radius" : 5,
+          "uuid" : "87FF3647-03B3-4E12-8DCE-0A3F261D77DF",
+          "name" : "iv_char_portrait"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{114, 6}, {200, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WB",
+          "font_size" : 28,
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "121D16C2-F180-4B32-AD6C-C6141988809E",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Label",
+          "name" : "lb_char_name",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{114, 46}, {200, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "flex" : "WB",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "E41B7608-61CB-4332-A7AE-8AA373FD3848",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Label",
+          "name" : "lb_char_race_class",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {320, 480}}",
+    "class" : "View",
+    "attributes" : {
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "custom_class" : "PlayerAppView",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
