@@ -14,13 +14,18 @@ class DataFileLoader (object):
   def build_path_for(self, base, name, ext=''):
     return f'{base}{name}.{ext}';
 
-  def load_csv(self, data_name, delimiter=',', quotechar='"'):
+  def load_csv(self, data_name, delimiter=',', quotechar='"', has_header=False):
     path = self.build_path_for(self.data_path, data_name, 'csv')
     out = []
     with io.open(path, mode='r', newline='', encoding='utf-8') as csvfile:
-      rdr = csv.reader(csvfile, delimiter=delimiter, quotechar=quotechar)
-      for row in rdr:
-        out += [row]
+      if has_header:
+        rdr = csv.DictReader(csvfile, delimiter=delimiter, quotechar=quotechar)
+        for row in rdr:
+          out += [row]
+      else:
+        rdr = csv.reader(csvfile, delimiter=delimiter, quotechar=quotechar)
+        for row in rdr:
+          out += [row]
     return out
 
   def load_compendium_xml(self, data_name):

@@ -1,0 +1,36 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 6}, {228, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label1",
+          "flex" : "WB",
+          "frame" : "{{45, 104}, {150, 32}}",
+          "uuid" : "11BB39C9-419B-42E3-979D-AF52555DA1D4",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Hello World",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : true
+      }
+    ],
+    "frame" : "{{0, 0}, {240, 240}}",
+    "class" : "View",
+    "attributes" : {
+      "custom_class" : "DPRToolView",
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
