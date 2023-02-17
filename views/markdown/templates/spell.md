@@ -1,7 +1,7 @@
 ## {name}
-_{spell-details}_
-**Casting Time**: {cast-time}
+_{slr_txt}_
+**Casting Time**: {time}
 **Range**: {range}
 **Components**: {components}
-**Duration**: {concentration}{duration}
-{body}
+**Duration**: {duration}
+{text}
