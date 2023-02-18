@@ -11,14 +11,16 @@ _{sta_txt}_
 
 ---
 {optline|temp:}
-**Damage Vulnerabilities:** bludgeoning
-**Damage Immunities:** poison
-**Condition Immunities:** exhaustion, poisoned
-**Senses:** darkvision 60ft., passive Perception 9
-**Languages:** Common
-**Challenge:** 1/2 (100 XP)
-
 ---
+traits
+actions
+reactions
+legendaries
+mythics
+lairs
+---
+description
+
 ## Actions
 _**Shortsword.**_ _Melee Weapon Attack:_ +4 to hit, reach 5 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
 _**Shortbow.**_ _Ranged Weapon Attack:_ +4 to hit, range 80/320 ft., one target. _Hit:_ 5 (1d6 + 2) piercing damage.
@@ -34,4 +36,5 @@ _**Shortbow.**_ _Ranged Weapon Attack:_ +4 to hit, range 80/320 ft., one target.
 **Spell Ability:** Charisma
 **Spell Save DC:** 8
 **Spell Attack Bonus:** +2
+
 
