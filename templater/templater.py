@@ -8,6 +8,7 @@ class Templater (object):
 
   def __init__(self, output_format):
     self.template_manager = TemplateManager(output_format)
+    self.subtool = Subtool()
 
   @property
   def output_format(self):
@@ -19,5 +20,5 @@ class Templater (object):
 
   def make(self, obj):
     tmp = self.template_manager.get_template(obj)
-    objstr = Subtool.sub(tmp, obj)
+    objstr = self.subtool.sub(tmp, obj)
     return objstr
