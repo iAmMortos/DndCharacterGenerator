@@ -3,6 +3,8 @@ import io
 import re
 import enum
 
+from template_token import TemplateToken
+
 
 class SubFormat (enum.Enum):
   markdown = "Markdown"
@@ -20,18 +22,18 @@ class Subtool (object):
     self.pattern = re.compile(r'{(.*?)}')
   
   def sub(self, text, obj):
-    out = ''
+    out = []
     while True:
       m = re.search(self.pattern, text)
       if m is not None:
         key = m.group(1)
         v = self._get_value(obj, key)
         s = m.span()
-        out += text[:s[0]]
-        out += v
+        self._sub_append(out, text[:s[0]])
+        self._sub_append(out, v)
         text = text[s[1]:]
       else:
-        out += text
+        self._sub_append(out, text)
         break
     return out
 
@@ -51,3 +53,8 @@ class Subtool (object):
     else:
       o = vars(obj)[nxt]
       return self._get_value(o, attrs[1:])
+
+  def _sub_append(self, group, obj):
+    pass
+
+  def _make_token(self):
