@@ -57,4 +57,3 @@ class Subtool (object):
   def _sub_append(self, group, obj):
     pass
 
-  def _make_token(self):

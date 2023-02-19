@@ -44,8 +44,10 @@ class TemplateManager (object):
       raise UnsupportedFormatException(val)
     self._output_format = val
 
-  def get_template(self, obj):
-    t = type(obj)
+  def get_template(self, obj_or_str):
+    t = type(obj_or_str)
+    if t is str:
+      
     output = ''
 
     if self.output_format in self._format_map:
