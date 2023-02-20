@@ -5,6 +5,9 @@ class TemplateToken (object):
     self.opt = False
     self.optline = False
     self.template = None
+    self.value = None
+    self.prefix = ""
+    self.suffix = ""
 
     # Shouldn't need a flag for this: if a list is provided as an object, templater should figure it out.
     # self.repeats = False

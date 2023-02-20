@@ -37,13 +37,15 @@ class Subtool (object):
         if m is not None:
           key = m.group(1)
           token = TemplateToken(key)
+          s = m.span()
           if token.is_simple:
-            v = self._get_value(o, key)
-            s = m.span()
+            v = self._get_value(o, token.obj)
             self._sub_append(out, tmptext[:s[0]])
             self._sub_append(out, v)
             tmptext = tmptext[s[1]:]
           else:
+            if token.obj == 'this':
+              token.obj = o
             # just deposit token object in out list and return to templater
             pass
         else:

@@ -30,7 +30,8 @@ class TemplateManager (object):
       },
       OutputFormats.md: {
         Spell: 'templater/templates/markdown/spell.md',
-        Monster: 'templater/templates/markdown/statblock.md'
+        Monster: 'templater/templates/markdown/statblock.md',
+        'Proficiencies': 'templater/templates/markdown/proficiencies.md'
       }
     }
 
@@ -49,8 +50,6 @@ class TemplateManager (object):
     if t is str:
       if t in globals():
         t = globals()[t]
-      else:
-        raise NoSuchTemplateException(t, self.output_format)
 
     output = ''
 
