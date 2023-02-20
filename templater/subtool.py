@@ -3,7 +3,7 @@ import io
 import re
 import enum
 
-from template_token import TemplateToken
+from templater.template_token import TemplateToken
 
 
 class SubFormat (enum.Enum):
@@ -23,18 +23,37 @@ class Subtool (object):
   
   def sub(self, text, obj):
     out = []
-    while True:
-      m = re.search(self.pattern, text)
-      if m is not None:
-        key = m.group(1)
-        v = self._get_value(obj, key)
-        s = m.span()
-        self._sub_append(out, text[:s[0]])
-        self._sub_append(out, v)
-        text = text[s[1]:]
-      else:
-        self._sub_append(out, text)
-        break
+    objs = []
+    repeating = False
+    if type(obj) is list:
+      objs = obj
+    else:
+      objs = [obj]
+
+    for o in objs:
+      tmptext = text[:]
+      while True:
+        m = re.search(self.pattern, tmptext)
+        if m is not None:
+          key = m.group(1)
+          token = TemplateToken(key)
+          if token.is_simple:
+            v = self._get_value(o, key)
+            s = m.span()
+            self._sub_append(out, tmptext[:s[0]])
+            self._sub_append(out, v)
+            tmptext = tmptext[s[1]:]
+          else:
+            # just deposit token object in out list and return to templater
+            pass
+        else:
+          self._sub_append(out, tmptext)
+          break
+
+    # if the output list no longer contains tokens (and is just a single string),
+    #   return just the string. Otherwise return the list of output objects
+    if len(out) == 1 and type(out[0]) is str:
+      return out[0]
     return out
 
   def _get_value(self, obj, attr):
@@ -55,5 +74,10 @@ class Subtool (object):
       return self._get_value(o, attrs[1:])
 
   def _sub_append(self, group, obj):
-    pass
-
+    if len(group) == 0:
+      group.append(obj)
+    else:
+      if type(obj) is str and type(group[-1]) is str:
+        group[-1] += obj
+      else:
+        group.append(obj)

@@ -47,7 +47,11 @@ class TemplateManager (object):
   def get_template(self, obj_or_str):
     t = type(obj_or_str)
     if t is str:
-      
+      if t in globals():
+        t = globals()[t]
+      else:
+        raise NoSuchTemplateException(t, self.output_format)
+
     output = ''
 
     if self.output_format in self._format_map:

@@ -20,5 +20,5 @@ class Templater (object):
 
   def make(self, obj):
     tmp = self.template_manager.get_template(obj)
-    objstr = self.subtool.sub(tmp, obj)
-    return objstr
+    sublist = self.subtool.sub(tmp, obj)
+    return sublist
