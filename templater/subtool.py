@@ -42,12 +42,12 @@ class Subtool (object):
             v = self._get_value(o, token.obj)
             self._sub_append(out, tmptext[:s[0]])
             self._sub_append(out, v)
-            tmptext = tmptext[s[1]:]
           else:
             if token.obj == 'this':
               token.obj = o
+            self._sub_append(out, token)
             # just deposit token object in out list and return to templater
-            pass
+          tmptext = tmptext[s[1]:]
         else:
           self._sub_append(out, tmptext)
           break
