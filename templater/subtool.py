@@ -36,7 +36,7 @@ class Subtool (object):
           if not token.template:  # if it's not a nested template
             v = self._get_value(o, token.obj)
             self._sub_append(out, tmptext[:s[0]])
-            self._sub_append(out, v)
+            self._sub_append(out, f'{token.prefix}{v}{token.suffix}')
           else:  # if it is a nested template
             if token.obj == 'this':
               token.obj = o

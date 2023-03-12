@@ -32,6 +32,7 @@ class Templater (object):
           if sub.template:
             tmp = self.template_manager.get_template(sub.template)
             sublist = self.subtool.sub(tmp, sub.obj)
+            subappendlist(newsublist, sublist)
           else:
             pass
           # get template from token
@@ -41,5 +42,7 @@ class Templater (object):
         else:
           raise TypeError(f"Unexpected type found in sublist: [{type(sub)}]")
       sublist = newsublist
-        
+
+    if len(sublist) == 1 and type(sublist[0]) is str:
+      return sublist[0]
     return sublist
