@@ -1,9 +1,9 @@
-{optline|prefix:**Saving Throws:** |saves}
-{optline|prefix:**Skills:** |skill}
-{optline|prefix:**Damage Vulnerabilities:** |vulnerable}
-{optline|prefix:**Damage Resistances:** |resist}
-{optline|prefix:**Damage Immunities:** |immune}
-{optline|prefix:**Conditional Immunities:** |conditionImmune}
+{optline|pref:**Saving Throws:** |saves}
+{optline|pref:**Skills:** |skill}
+{optline|pref:**Damage Vulnerabilities:** |vulnerable}
+{optline|pref:**Damage Resistances:** |resist}
+{optline|pref:**Damage Immunities:** |immune}
+{optline|pref:**Conditional Immunities:** |conditionImmune}
 **Senses:** {senses_str}
 **Languages:** {languages}
 **Challenge:** {challenge_rating}

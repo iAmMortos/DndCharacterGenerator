@@ -10,7 +10,7 @@ _{sta_txt}_
 | {ability_scores.str} | {ability_scores.dex} | {ability_scores.con} | {ability_scores.int} | {ability_scores.wis} | {ability_scores.cha} |
 
 ---
-{tmp:Proficiencies|this}
+{temp:Proficiencies|this}
 
 ---
 _**Stuff After**_ Hello :D

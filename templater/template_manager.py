@@ -2,9 +2,7 @@
 import io
 
 from templater.output_formats import OutputFormats
-
-from model.spell import Spell
-from model.monster import Monster
+from templater.subtemplates import SubTemplates
 
 
 class UnsupportedFormatException (Exception):
@@ -29,9 +27,9 @@ class TemplateManager (object):
       OutputFormats.html: {
       },
       OutputFormats.md: {
-        Spell: 'templater/templates/markdown/spell.md',
-        Monster: 'templater/templates/markdown/statblock.md',
-        'Proficiencies': 'templater/templates/markdown/proficiencies.md'
+        SubTemplates.spell: 'templater/templates/markdown/spell.md',
+        SubTemplates.monster: 'templater/templates/markdown/monster.md',
+        SubTemplates.proficiencies: 'templater/templates/markdown/proficiencies.md'
       }
     }
 
@@ -45,12 +43,8 @@ class TemplateManager (object):
       raise UnsupportedFormatException(val)
     self._output_format = val
 
-  def get_template(self, obj_or_str):
-    t = type(obj_or_str)
-    if t is str:
-      if t in globals():
-        t = globals()[t]
-
+  def get_template(self, o):
+    t = SubTemplates.of(o)
     output = ''
 
     if self.output_format in self._format_map:
@@ -61,6 +55,6 @@ class TemplateManager (object):
         raise NoSuchTemplateException(t, self.output_format)
     else:
       # should never get here, as unsupported formats are handled when setting self.output_format
-      raise Exception("Impossible State")
+      raise Exception("Impossible state")
 
     return output

@@ -4,17 +4,12 @@ import re
 import enum
 
 from templater.template_token import TemplateToken
+from templater.subtemplates import SubTemplates
 
 
 class SubFormat (enum.Enum):
   markdown = "Markdown"
   html = "HTML"
-
-
-class SubTemplates (enum.Enum):
-  proficiencies = 'Proficiencies'
-  spell = 'Spell'
-  statblock = 'Statblock'
 
 
 class Subtool (object):
@@ -38,11 +33,11 @@ class Subtool (object):
           key = m.group(1)
           token = TemplateToken(key)
           s = m.span()
-          if token.is_simple:
+          if not token.template:  # if it's not a nested template
             v = self._get_value(o, token.obj)
             self._sub_append(out, tmptext[:s[0]])
             self._sub_append(out, v)
-          else:
+          else:  # if it is a nested template
             if token.obj == 'this':
               token.obj = o
             self._sub_append(out, token)
