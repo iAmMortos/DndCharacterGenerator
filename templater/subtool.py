@@ -34,7 +34,7 @@ class Subtool (object):
           token = TemplateToken(key)
           s = m.span()
           self._sub_append(out, tmptext[:s[0]])
-          if not token.template:  # if it's not a nested template
+          if not token.template:  # if it's not a nested template, resolve and append the string value now
             v = self._get_value(o, token.obj)
             if v:
               self._sub_append(out, f'{token.prefix}{str(v)}{token.suffix}')
@@ -45,9 +45,11 @@ class Subtool (object):
               # If a newline wasn't found before, try to remove one after
               elif tmptext[s[1]] == '\n':
                 tmptext = tmptext[:s[1]] + tmptext[s[1]+1:]
-          else:  # if it is a nested template
+          else:  # if it is a nested template leave the token with appropriate information for a later parsing pass
             if token.obj == 'this':
               token.obj = o
+            else:
+              token.obj = self._get_value(o, token.obj)
             self._sub_append(out, token)
             # just deposit token object in out list and return to templater
           tmptext = tmptext[s[1]:]
