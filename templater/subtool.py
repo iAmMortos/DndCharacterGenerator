@@ -24,24 +24,23 @@ class Subtool (object):
       objs = obj
     else:
       objs = [obj]
-    print('########## SUB CALLED')
-    print(f'######## OBJECTS {objs}')
-    print(f'######## ORIGINAL TEMPLATE TEXT:\n{text}')
 
     for o in objs:
       tmptext = text[:]
       while True:
         m = re.search(self.pattern, tmptext)
-        print(f'###### tmptext:\n{tmptext}')
         if m is not None:
-          print(f'#### match:\n{m}')
           key = m.group(1)
           token = TemplateToken(key)
           s = m.span()
+          self._sub_append(out, tmptext[:s[0]])
           if not token.template:  # if it's not a nested template
             v = self._get_value(o, token.obj)
-            self._sub_append(out, tmptext[:s[0]])
-            self._sub_append(out, f'{token.prefix}{v}{token.suffix}')
+            if v:
+              self._sub_append(out, f'{token.prefix}{str(v)}{token.suffix}')
+            elif not v and token.optline:
+              pass
+              # TODO: pick up here
           else:  # if it is a nested template
             if token.obj == 'this':
               token.obj = o
@@ -49,7 +48,6 @@ class Subtool (object):
             # just deposit token object in out list and return to templater
           tmptext = tmptext[s[1]:]
         else:
-          print(f'########## DOES THIS EVER GET CALLED? ##########\n{tmptext}')
           self._sub_append(out, tmptext)
           break
 
@@ -71,7 +69,7 @@ class Subtool (object):
       raise Exception(f'No such key [{nxt}] in object [{obj}]')
       
     if len(attrs) == 1:
-      return str(vars(obj)[nxt])
+      return vars(obj)[nxt]
     else:
       o = vars(obj)[nxt]
       return self._get_value(o, attrs[1:])

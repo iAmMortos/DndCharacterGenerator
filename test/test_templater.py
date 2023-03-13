@@ -1,5 +1,5 @@
 import test_context
-import console
+# import console
 
 import os
 import sys
@@ -12,10 +12,10 @@ from templater.templater import Templater, OutputFormats
 
 dl = DataLoader('Complete')
 # spell = dl.get_spell('Detect Magic')
-monster = dl.get_monster('Arasta')
+monster = dl.get_monster('Knight')
 tmpltr = Templater(OutputFormats.md)
 
 # print(tmpltr.make(spell))
 # print('\n\n\n##########\n\n\n')
-console.clear()
-print('########## FINAL SUBSTITUTION\n' + tmpltr.make(monster))
+# console.clear()
+print(tmpltr.make(monster))
