@@ -24,12 +24,17 @@ class Subtool (object):
       objs = obj
     else:
       objs = [obj]
+    print('########## SUB CALLED')
+    print(f'######## OBJECTS {objs}')
+    print(f'######## ORIGINAL TEMPLATE TEXT:\n{text}')
 
     for o in objs:
       tmptext = text[:]
       while True:
         m = re.search(self.pattern, tmptext)
+        print(f'###### tmptext:\n{tmptext}')
         if m is not None:
+          print(f'#### match:\n{m}')
           key = m.group(1)
           token = TemplateToken(key)
           s = m.span()
@@ -44,6 +49,7 @@ class Subtool (object):
             # just deposit token object in out list and return to templater
           tmptext = tmptext[s[1]:]
         else:
+          print(f'########## DOES THIS EVER GET CALLED? ##########\n{tmptext}')
           self._sub_append(out, tmptext)
           break
 

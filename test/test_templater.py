@@ -1,4 +1,5 @@
 import test_context
+import console
 
 import os
 import sys
@@ -16,4 +17,5 @@ tmpltr = Templater(OutputFormats.md)
 
 # print(tmpltr.make(spell))
 # print('\n\n\n##########\n\n\n')
-print(tmpltr.make(monster))
+console.clear()
+print('########## FINAL SUBSTITUTION\n' + tmpltr.make(monster))
