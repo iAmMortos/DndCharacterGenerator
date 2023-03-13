@@ -1,5 +1,6 @@
 import test_context
-# import console
+import console
+import clipboard
 
 import os
 import sys
@@ -17,5 +18,8 @@ tmpltr = Templater(OutputFormats.md)
 
 # print(tmpltr.make(spell))
 # print('\n\n\n##########\n\n\n')
-# console.clear()
-print(tmpltr.make(monster))
+console.clear()
+t = tmpltr.make(monster)
+print(t)
+clipboard.set(t)
+print('\n\nValue copied to clipboard.')

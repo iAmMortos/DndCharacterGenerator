@@ -13,4 +13,4 @@ _{sta_txt}_
 {temp:Proficiencies|this}
 
 ---
-_**Stuff After**_ Hello :D
+{optline|temp:Trait|traits}

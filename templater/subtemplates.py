@@ -4,6 +4,7 @@ class SubTemplates (enum.Enum):
   proficiencies = 'Proficiencies'
   spell = 'Spell'
   monster = 'Monster'
+  trait = 'Trait'
   
 
   @classmethod

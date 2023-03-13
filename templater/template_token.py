@@ -5,7 +5,6 @@ from templater.subtemplates import SubTemplates
 class TemplateToken (object):
   ESC_PIPE = '{{ESC_PIPE}}'
   def __init__(self, token_str):
-    self.opt = False
     self.optline = False
     self.template = None
     self.value = None
@@ -20,9 +19,7 @@ class TemplateToken (object):
     self.obj = ps[-1].replace(self.ESC_PIPE, '|')
     for pt in ps[:-1]:
       p = pt.replace(self.ESC_PIPE, '|')
-      if p == 'opt':
-        self.opt = True
-      elif p == 'optline':
+      if p == 'optline':
         self.optline = True
       elif ':' in p:
         if p.startswith('temp:'):

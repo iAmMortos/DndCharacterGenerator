@@ -29,7 +29,8 @@ class TemplateManager (object):
       OutputFormats.md: {
         SubTemplates.spell: 'templater/templates/markdown/spell.md',
         SubTemplates.monster: 'templater/templates/markdown/monster.md',
-        SubTemplates.proficiencies: 'templater/templates/markdown/proficiencies.md'
+        SubTemplates.proficiencies: 'templater/templates/markdown/proficiencies.md',
+        SubTemplates.trait: 'templater/templates/markdown/action.md'
       }
     }
 

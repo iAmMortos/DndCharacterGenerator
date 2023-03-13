@@ -39,8 +39,12 @@ class Subtool (object):
             if v:
               self._sub_append(out, f'{token.prefix}{str(v)}{token.suffix}')
             elif not v and token.optline:
-              pass
-              # TODO: pick up here
+              # If there's a newline at the end of the previous section, remove it
+              if len(out) > 0 and type(out[-1]) is str and out[-1][-1] == '\n':
+                out[-1] = out[-1][:-1]
+              # If a newline wasn't found before, try to remove one after
+              elif tmptext[s[1]] == '\n':
+                tmptext = tmptext[:s[1]] + tmptext[s[1]+1:]
           else:  # if it is a nested template
             if token.obj == 'this':
               token.obj = o
