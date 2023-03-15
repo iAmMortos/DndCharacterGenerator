@@ -30,7 +30,12 @@ class TemplateManager (object):
         SubTemplates.spell: 'templater/templates/markdown/spell.md',
         SubTemplates.monster: 'templater/templates/markdown/monster.md',
         SubTemplates.proficiencies: 'templater/templates/markdown/proficiencies.md',
-        SubTemplates.trait: 'templater/templates/markdown/action.md'
+        SubTemplates.traits: 'templater/templates/markdown/action.md',
+        SubTemplates.actions: 'templater/templates/markdown/actions.md',
+        SubTemplates.bonus_actions: 'templater/templates/markdown/bonus_actions.md',
+        SubTemplates.reactions: 'templater/templates/markdown/reactions.md',
+        SubTemplates.legendaries: 'templater/templates/markdown/legendaries.md',
+        SubTemplates.mythics: 'templater/templates/markdown/mythics.md'
       }
     }
 

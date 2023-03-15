@@ -13,4 +13,9 @@ _{sta_txt}_
 {temp:Proficiencies|this}
 
 ---
-{optline|temp:Trait|traits}
+{optline|temp:Traits|traits}
+{optline|temp:Actions|this}
+{optline|temp:BonusActions|this}
+{optline|temp:Reactions|this}
+{optline|temp:Legendaries|this}
+{optline|temp:Mythics|this}
