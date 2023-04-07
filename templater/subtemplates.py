@@ -5,11 +5,13 @@ class SubTemplates (enum.Enum):
   spell = 'Spell'
   monster = 'Monster'
   traits = 'Traits'
+  action = 'Action'
   actions = 'Actions'
   bonus_actions = 'BonusActions'
   reactions = 'Reactions'
   legendaries = 'Legendaries'
   mythics = 'Mythics'
+  lairs = 'Lairs'
   
 
   @classmethod

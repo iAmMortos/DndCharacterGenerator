@@ -1,6 +1,7 @@
 # {name}
 _{sta_txt}_
 
+
 | AC | HP | Speed |
 |:---:|:---:|:---:|
 | {armor_class} | {hit_points} | {speed} |
@@ -15,7 +16,8 @@ _{sta_txt}_
 ---
 {optline|temp:Traits|traits}
 {optline|temp:Actions|this}
-{optline|temp:BonusActions|this}
 {optline|temp:Reactions|this}
 {optline|temp:Legendaries|this}
 {optline|temp:Mythics|this}
+{optline|temp:Lairs|this}
+
