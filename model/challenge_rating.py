@@ -53,3 +53,15 @@ class ChallengeRating(object):
     if len(xps) > 3:
       xps = '{},{}'.format(xps[:-3], xps[-3:])
     return '{} ({} XP)'.format(self.cr_str, xps)
+    
+  def __eq__(self, o):
+    return type(o) is type(self) and o.cr == self.cr
+    
+
+if __name__ == "__main__":
+  cr1 = ChallengeRating('5')
+  cr2 = ChallengeRating('8')
+  cr3 = ChallengeRating('5')
+  
+  print(cr1 == cr2)
+  print(cr1 == cr3)

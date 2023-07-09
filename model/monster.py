@@ -50,7 +50,9 @@ class Monster (XmlEntity):
       self.senses_str = None
 
     self.languages = self._get('languages')
-    self.challenge_rating = self._get_as_obj('cr', ChallengeRating)
+    # many of the creatures in the compendiums have "<cr/>" tags, and the fight club app seems to interpret those as CR1 creatures. So if a None is found,
+    #  default to CR1.
+    self.challenge_rating = self._get_as_obj('cr', ChallengeRating, ChallengeRating('1'))
     self.summary = '%s, %s %s' % (self.challenge_rating, self.size, self.type)
     self.description = self._get('description')
 
