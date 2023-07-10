@@ -70,12 +70,15 @@ def test_spells():
   print('\n'.join(sorted(l)))
 
 def test_creature_cr_filter():
-  crs = []
+  ms = []
   for m in dl.monsters:
-    cr = m.challenge_rating
-    if cr not in crs:
-      crs += [cr]
-  print(crs)
+    if m.challenge_rating.cr <= 8:
+      abbrs = [s.abbr for s in m.sources]
+      # if 'MM' in abbrs or 'VGtM' in abbrs or 'MToF' in abbrs:
+      if 'MM' in abbrs:
+        if 'fly' in m.speed.s.lower():
+          ms += [m]
+  print('\n'.join([f'{m.name}: {m.challenge_rating} - {[b.abbr for b in m.sources]}' for m in sorted(ms, key=lambda m:m.challenge_rating.cr, reverse=True)]))
 
 def main():
   test_creature_cr_filter()
