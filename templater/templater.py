@@ -1,9 +1,13 @@
 
 from templater.utils.properties_file import PropertiesFile
+from templater.template_manager import TemplateManager
+from templater.template_output_types import TemplateOutputTypes
 
 
 class Templater (object):
-  def __init__(self, template_type, config_path='templater/config/application.properties'):
+  def __init__(self, output_type, config_path='templater/config/application.properties'):
+    self.output_type = TemplateOutputTypes(output_type)
+    self.template_manager = TemplateManager(self.output_type)
     self.properties = PropertiesFile(config_path)
 
   @property

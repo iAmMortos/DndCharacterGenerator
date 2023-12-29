@@ -1,5 +1,5 @@
 
-from templater import TemplateTypes
+from templater.template_output_types import TemplateOutputTypes
 
 
 class TemplateManager (object):
