@@ -11,7 +11,8 @@ from templater.templater import Templater#, OutputFormats
 dl = DataLoader('Complete')
 # spell = dl.get_spell('Detect Magic')
 monster = dl.get_monster('Oni')
-tmpltr = Templater()
+tmpltr = Templater('markdown')
+tmpltr.
 
 # print(tmpltr.make(spell))
 # print('\n\n\n##########\n\n\n')
