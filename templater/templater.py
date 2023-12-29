@@ -3,7 +3,7 @@ from templater.utils.properties_file import PropertiesFile
 
 
 class Templater (object):
-  def __init__(self, config_path='templater/config/application.properties', template_manager):
+  def __init__(self, template_type, config_path='templater/config/application.properties'):
     self.properties = PropertiesFile(config_path)
 
   @property
