@@ -1,25 +1,25 @@
 import test_context
-import console
-import clipboard
+# import console
+# import clipboard
 
 import os
 import sys
 
 from model.data_loader import DataLoader
-from templater.templater import Templater, OutputFormats
+from templater.templater import Templater#, OutputFormats
 
 dl = DataLoader('Complete')
 # spell = dl.get_spell('Detect Magic')
 monster = dl.get_monster('Oni')
-tmpltr = Templater(OutputFormats.md)
+tmpltr = Templater()
 
 # print(tmpltr.make(spell))
 # print('\n\n\n##########\n\n\n')
-console.clear()
-t = tmpltr.make(monster)
-print(t)
-clipboard.set(t)
-print('\n\nValue copied to clipboard.')
+# console.clear()
+# t = tmpltr.make(monster)
+# print(t)
+# clipboard.set(t)
+# print('\n\nValue copied to clipboard.')
 
 
 #success = 0
