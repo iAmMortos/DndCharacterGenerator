@@ -3,10 +3,11 @@
 class Token (object):
   def __init__(self, valueref, flags):
     self._value = None
+    self._finished = False
     self.valueref = valueref
-    self.prefix = self._set_flag(flags, ['prefix', 'pref', 'p'])
-    self.suffix = self._set_flag(flags, ['suffix', 'suff', 's'])
-    self.delimiter = self._set_flag(flags, ['delimiter', 'del', 'd'])
+    self.prefix = self._set_flag(flags, ['prefix', 'pref', 'p'], '')
+    self.suffix = self._set_flag(flags, ['suffix', 'suff', 's'], '')
+    self.delimiter = self._set_flag(flags, ['delimiter', 'del', 'd'], ', ')
     self.template = self._set_flag(flags, ['template', 'temp', 't'])
     self.optline = self._set_bool_flag(flags, ['optline', 'o'])
     self.showif = self._set_flag(flags, ['showif', 'if'])
@@ -14,28 +15,58 @@ class Token (object):
     self.nonnullval = self._set_flag(flags, ['nonnullval', 'nnv'])
     self.regextemplate = self._set_flag(flags, ['regextemplate', 'regextemp', 'rt'])
     
-  def _set_flag(self, flags, keys):
+  def _set_flag(self, flags, keys, default_val=None):
     for key in keys:
       if key in flags:
         return flags[key]
-    return None
+    return default_val
     
   def _set_bool_flag(self, flags, keys):
     for key in keys:
       if key in flags:
         return True
     return False
-    
-  @value.setter
-  def value(self, val):
-    self._value = val
-    
+
   @property
   def value(self):
-    return self._value
-    
+    is_null = self._value is None
+    if self.nonnullval and not is_null:
+      return f'{self.prefix}{self.nonnullval}{self.suffix}'
+    elif self.nullval and is_null:
+      return f'{self.prefix}{self.nullval}{self.suffix}'
+    elif is_null:
+      return ''
+    else:
+      return f'{self.prefix}{self._value}{self.suffix}'
+
+  @value.setter
+  def value(self, val):
+    if val is None:
+      self._value = None
+      self._finished = True
+    elif type(val) is list:
+      if len(val) == 0:
+        self._value = None
+        self._finished = True
+      else:
+        # process each, not finished
+        self._value = val
+    elif type(val) is str:
+      if val == '':
+        self._value = None
+        self._finished = True
+      else:
+        self._value = val
+        self._finished = True
+    else:  # is likely an object, not finished
+      self._value = val
+
   @property
   def is_visible(self):
-    is_null = self.value is None
+    return self.value != ''
+
+  @property
+  def is_finished(self):
+    return self._finished
     
   
