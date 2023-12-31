@@ -12,7 +12,8 @@ dl = DataLoader('Complete')
 # spell = dl.get_spell('Detect Magic')
 monster = dl.get_monster('Oni')
 tmpltr = Templater('markdown')
-tmpltr.
+tmpltr.make(monster)
+# tmpltr.
 
 # print(tmpltr.make(spell))
 # print('\n\n\n##########\n\n\n')

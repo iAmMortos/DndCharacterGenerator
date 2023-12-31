@@ -51,4 +51,9 @@ class PropertiesFile (object):
 
   def _write(self):
     with open(self.path, 'w') as f:
-      f.write('\n'.join([f'{k}={self.properties[k]}' for k in self.properties.keys()]))
+      f.write(str(self))
+      
+  def __repr__(self):
+    return '\n'.join([f'{k}={self.properties[k]}' for k in self.properties.keys()])
+    
+

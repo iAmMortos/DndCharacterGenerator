@@ -1,7 +1,7 @@
 
 
 class Token (object):
-  def __init__(self, value, flag_dict):
+  def __init__(self, value, flags):
     self.value = value
-    self.flags = flag_dict
+    self.flags = flags
   

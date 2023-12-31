@@ -5,12 +5,12 @@ from templater.tokens.tokenizing_error import TokenizingError
 
 
 class Tokenizer (object):
-  def __init__(self):
-    self.properties = PropertiesFile('templater/config/application.properties')
-    self._token_start = self.properties.get('token_start')
-    self._token_end = self.properties.get('token_end')
-    self._token_delimiter = self.properties.get('token_delimiter')
-    self._token_flag_setter = self.properties.get('token_flag_setter')
+  def __init__(self, token_config_path='templater/config/token.properties'):
+    self.properties = PropertiesFile(token_config_path)
+    self._token_start = self.properties.get('start')
+    self._token_end = self.properties.get('end')
+    self._token_delimiter = self.properties.get('delimiter')
+    self._token_flag_setter = self.properties.get('flag_setter')
     
   def tokenize(self, s):
     out = []
@@ -32,7 +32,8 @@ class Tokenizer (object):
         if i >= 0:
           token = self._parse_token_content(rs[:i])
           out += [token]
-          rs = rs[i + len(self._token_end)]
+          rs = rs[i + len(self._token_end):]
+          open = False
         else:
           raise TokenizingError("Unclosed Token")
     return out
@@ -40,10 +41,14 @@ class Tokenizer (object):
   def _parse_token_content(self, s):
     parts = s.split(self._token_delimiter)
     value = parts[0]
-    flags = {}
+    flags = []
     for part in parts[1:]:
-      key, val = part.split(self._token_flag_setter)
-      flags[key] = val
+      if self._token_flag_setter in part:
+        key, val = part.split(self._token_flag_setter)
+        flags += [(key, val)]
+      else:
+        flags += [part]
+
     return Token(value, flags)
 
     
