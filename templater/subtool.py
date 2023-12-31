@@ -1,8 +1,18 @@
 
-class Subtool (object):
-  def __init__(self):
-    pass
+def lookup(obj, attrs):
+  attrs = []
+  if type(attr) is list:
+    attrs = attr
+  elif type(attr) is str:
+    attrs = attr.split('.')
     
-  def sub(self, template, obj):
-    pass
-
+  nxt = attrs[0]
+  if nxt not in vars(obj):
+    return None
+    
+  if len(attrs) == 1:
+    return vars(obj)[nxt]
+  else:
+    o = vars(obj)[nxt]
+    return lookup(o, attrs[1:])
+  
