@@ -3,7 +3,7 @@ from templater.utils.properties_file import PropertiesFile
 from templater.utils.class_utils import fully_qualified_name
 from templater.template_manager import TemplateManager
 from templater.tokens.tokenizer import Tokenizer
-from templater.subtool import lookup
+from templater.utils import obj_utils
 
 
 class Templater (object):
@@ -13,16 +13,14 @@ class Templater (object):
     self.tokenizer = Tokenizer(token_config_path)
     self.template_properties = PropertiesFile(template_config_path)
 
-  def make(self, o, temp_str=None):
+  def make(self, o, template_str=None):
     output = ''
-    template_name = None
-    if not temp_str:
+    template_name = template_str
+    if not template_name:
       obj_clazz = fully_qualified_name(o)
       template_name = self.template_properties.get(obj_clazz)
-    else:
-      template_name = temp_str
     template = self.template_manager.get_template(template_name)
     tokens = self.tokenizer.tokenize(template)
-    return None  # self.subtool.sub(template, o)
+    return None  # obj_utils.get_value(template, o)
 
 

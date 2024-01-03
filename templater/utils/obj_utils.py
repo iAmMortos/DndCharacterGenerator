@@ -1,5 +1,5 @@
 
-def lookup(obj, attrs):
+def get_value(obj, attrs):
   attrs = []
   if type(attr) is list:
     attrs = attr
@@ -14,5 +14,5 @@ def lookup(obj, attrs):
     return vars(obj)[nxt]
   else:
     o = vars(obj)[nxt]
-    return lookup(o, attrs[1:])
+    return get_value(o, attrs[1:])
   
