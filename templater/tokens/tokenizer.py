@@ -21,11 +21,11 @@ class Tokenizer (object):
         i = rs.find(self._token_start)
         if i >= 0:
           if i > 0:
-            out += [rs[:i]]
+            out.append(self._make_string_token(rs[:i]))
           rs = rs[i+len(self._token_start):]
           open = True
         else:
-          out += [rs]
+          out.append(self._make_string_token(rs))
           rs = ''
       else:
         i = rs.find(self._token_end)
@@ -46,11 +46,13 @@ class Tokenizer (object):
       if self._token_flag_setter in part:
         key, val = part.split(self._token_flag_setter)
         flags[key] = val
-      else:
-        flags[key] = None
 
     return Token(value, flags)
 
+  def _make_string_token(self, s):
+    t = Token(None, {})
+    t.value = s
+    return t
     
 if __name__ == '__main__':
   pass

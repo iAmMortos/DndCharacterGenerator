@@ -14,10 +14,10 @@ _{sta_txt}_
 {temp:Proficiencies|this}
 
 ---
-{traits|optline|temp:Traits}
-{this|optline|temp:Actions}
-{this|optline|temp:Reactions}
-{this|optline|temp:Legendaries}
-{this|optline|temp:Mythics}
-{this|optline|temp:Lairs}
+{traits|optline|temp:action}
+{this|optline|temp:actions}
+{this|optline|temp:reactions}
+{this|optline|temp:legendaries}
+{this|optline|temp:mythics}
+{this|optline|temp:lairs}
 

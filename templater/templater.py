@@ -21,6 +21,20 @@ class Templater (object):
       template_name = self.template_properties.get(obj_clazz)
     template = self.template_manager.get_template(template_name)
     tokens = self.tokenizer.tokenize(template)
-    return None  # obj_utils.get_value(template, o)
+    for token in tokens:
+      if token.is_finished:
+        output += token.value
+      else:
+        if token.valueref == 'this':
+          if not token.template:
+            raise Exception("Cannot use a self reference without also specifying a template")
+          output += self.make(o, token.template)
+        else:
+          token.value = obj_utils.get_value(o, token.valueref)
+          if token.is_finished:
+            output += token.value
+          else:
+            output += self.make()
+    return output  # obj_utils.get_value(template, o)
 
 
