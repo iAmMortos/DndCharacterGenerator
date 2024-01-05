@@ -21,11 +21,11 @@ class Tokenizer (object):
         i = rs.find(self._token_start)
         if i >= 0:
           if i > 0:
-            out.append(self._make_string_token(rs[:i]))
+            out.append(rs[:i])
           rs = rs[i+len(self._token_start):]
           open = True
         else:
-          out.append(self._make_string_token(rs))
+          out.append(rs)
           rs = ''
       else:
         i = rs.find(self._token_end)
@@ -45,15 +45,17 @@ class Tokenizer (object):
     for part in parts[1:]:
       if self._token_flag_setter in part:
         key, val = part.split(self._token_flag_setter)
-        flags[key] = val
+        # TODO: will run into problems if different variations of the same key are used within one token
+        #   e.g. 'regextemp' and 'rtemp'
+        if key in flags:
+          if type(flags[key] is not list):
+            flags[key] = [flags[key]]
+          flags[key].append(val)
+        else:
+          flags[key] = val
 
     return Token(value, flags)
 
-  def _make_string_token(self, s):
-    t = Token(None, {})
-    t.value = s
-    return t
-    
 if __name__ == '__main__':
   pass
   
