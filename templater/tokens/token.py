@@ -3,7 +3,6 @@
 class Token (object):
   def __init__(self, valueref, flags):
     self._value = None
-    self._finished = False
     self.valueref = valueref
     self.prefix = self._set_flag(flags, ['prefix', 'pref', 'p'], '')
     self.suffix = self._set_flag(flags, ['suffix', 'suff', 's'], '')
@@ -13,7 +12,7 @@ class Token (object):
     self.showif = self._set_flag(flags, ['showif', 'if'])
     self.nullval = self._set_flag(flags, ['nullval', 'nv'])
     self.nonnullval = self._set_flag(flags, ['nonnullval', 'nnv'])
-    self.regextemplate = self._set_flag(flags, ['regextemplate', 'regextemp', 'rt'])
+    self.regextemplate = self._set_flag(flags, ['regextemplate', 'regextemp', 'rtemp', 'rt'])
     
   def _set_flag(self, flags, keys, default_val=None):
     for key in keys:
@@ -43,30 +42,24 @@ class Token (object):
   def value(self, val):
     if val is None:
       self._value = None
-      self._finished = True
     elif type(val) is list:
       if len(val) == 0:
         self._value = None
-        self._finished = True
       else:
-        # process each, not finished
         self._value = val
     elif type(val) is str:
       if val == '':
         self._value = None
-        self._finished = True
       else:
         self._value = val
-        self._finished = True
-    else:  # is likely an object, not finished
+    else:  # is likely an object
       self._value = val
 
   @property
   def is_visible(self):
     return self.value != ''
-
-  @property
-  def is_finished(self):
-    return self._finished
     
+  @property
+  def is_reference(self):
+    return self.template or self.regextemplate
   
