@@ -1,3 +1,7 @@
+---
+tags:
+  - auto-generated
+---
 ## {name}
 _{slr_txt}_
 **Casting Time**: {time}
