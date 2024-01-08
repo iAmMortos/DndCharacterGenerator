@@ -1,6 +1,9 @@
+---
+tags:
+  - auto-generated
+---
 # {name}
 _{sta_txt}_
-
 
 | AC | HP | Speed |
 |:---:|:---:|:---:|
@@ -11,13 +14,13 @@ _{sta_txt}_
 | {ability_scores.str} | {ability_scores.dex} | {ability_scores.con} | {ability_scores.int} | {ability_scores.wis} | {ability_scores.cha} |
 
 ---
-{temp:Proficiencies|this}
+{this|temp:proficiencies}
 
 ---
-{traits|optline|temp:action}
-{this|optline|temp:actions}
-{this|optline|temp:reactions}
-{this|optline|temp:legendaries}
-{this|optline|temp:mythics}
-{this|optline|temp:lairs}
+{traits|optline|temp:action|delimiter:\n\n|suffix:\n}
+{actions|optline|temp:action|delimiter:\n\n|prefix:## Actions\n|suffix:\n}
+{reactions|optline|temp:action|delimiter:\n\n|prefix:---\n## Reactions\n|suffix:\n}
+{legendaries|optline|temp:action|delimiter:\n\n|prefix:---\n## Legendary Actions\n|suffix:\n}
+{mythics|optline|temp:action|delimiter:\n\n|prefix:---\n## Mythic Actions\n|suffix:\n}
+{lairs|optline|temp:action|delimiter:\n\n|prefix:---\n## Lairs\n|suffix:\n}
 

@@ -19,7 +19,7 @@ class TemplateManager (object):
       if temp.split('.')[0] == template_name:
         path = os.path.join(type_dir, temp)
         with open(path) as f:
-          return f.read()
+          return f.read().strip()
     # no template found
     raise FileNotFoundError(f"No template found for output type [{t}], and template [{template_name}].")
 

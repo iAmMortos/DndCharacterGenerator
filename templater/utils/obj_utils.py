@@ -1,5 +1,5 @@
 
-def get_value(obj, attrs):
+def get_value(obj, attr):
   attrs = []
   if type(attr) is list:
     attrs = attr

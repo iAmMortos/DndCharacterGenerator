@@ -44,16 +44,20 @@ class Tokenizer (object):
     flags = {}
     for part in parts[1:]:
       if self._token_flag_setter in part:
-        key, val = part.split(self._token_flag_setter)
+        ps = part.split(self._token_flag_setter)
+        key = ps[0]
+        val = self._token_flag_setter.join(ps[1:])
         # TODO: will run into problems if different variations of the same key are used within one token
         #   e.g. 'regextemp' and 'rtemp'
+        #   Could fix in Token object and how flag values are retrieved
         if key in flags:
           if type(flags[key] is not list):
             flags[key] = [flags[key]]
           flags[key].append(val)
         else:
           flags[key] = val
-
+      else:
+        flags[part] = None
     return Token(value, flags)
 
 if __name__ == '__main__':

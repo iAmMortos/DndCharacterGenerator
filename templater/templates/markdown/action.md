@@ -1,1 +1,1 @@
-_**{name}.**_ {text}
+{name|prefix:_**|suffix:.**_ }{text}

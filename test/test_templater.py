@@ -6,37 +6,12 @@ import os
 import sys
 
 from model.data_loader import DataLoader
-from templater.templater import Templater#, OutputFormats
+from templater.templater import Templater
 
+console.clear()
 dl = DataLoader('Complete')
 # spell = dl.get_spell('Detect Magic')
-monster = dl.get_monster('Oni')
+monster = dl.get_monster('Arasta')
 tmpltr = Templater('markdown')
-tmpltr.make(monster)
-# tmpltr.
-
-# print(tmpltr.make(spell))
-# print('\n\n\n##########\n\n\n')
-# console.clear()
-# t = tmpltr.make(monster)
-# print(t)
-# clipboard.set(t)
-# print('\n\nValue copied to clipboard.')
-
-
-#success = 0
-#fail = 0
-#total = len(dl.monsters)
-#failures = []
-
-#for i,m in enumerate(dl.monsters):
-#  try:
-#    tmpltr.make(m)
-#    success += 1
-#  except Exception as ex:
-#    fail += 1
-#    if type(ex) not in failures:
-#      failures += [type(ex)]
-#  print(f'Success: {success}/{i+1} ({success/(i+1)*100}%) of total {total}')
-#print(f'Failed Monsters: {failures}')
+print(tmpltr.make(monster))
 
