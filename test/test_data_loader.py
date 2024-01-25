@@ -85,18 +85,19 @@ def test_creature_cr_filter():
   print('\n'.join([f'{m.name}: {m.challenge_rating} - {[b.abbr for b in m.sources]}' for m in monsters]))
   
 def test_create_polymorph_list():
-  import clipboard
+  import clipboard, console
+  console.clear()
   ms = []
   strout = ''
-  for m in dl.monsters:
-    if m.challenge_rating.cr <= 8:
-      abbrs = [s.abbr for s in m.sources]
-      if 'MM' in abbrs:
+  monnames = ''
+  for m in [dl.get_monster(monname) for monname in monnames.split(',')]:
+    if 'MM' in [s.abbr for s in m.sources] and 'beast' in str(m.type).lower():
+      if m.environment and 'urban' in m.environment:
         ms += [m]
   monsters = sorted(ms, key=lambda m:m.challenge_rating.cr, reverse=True)
-#  strout += '| CR | Name | HP | AC | Size | Movement | Senses | Weak | Resist | Immune |\n|:---:|:--- |:---:|:---:|:---:|:--- |:--- |:--- |:--- |:--- |\n'
-#  strout += '\n'.join([f'| {m.challenge_rating.cr_str} | [[{m.name}]] | {m.hit_points.hp} | {m.armor_class} | {m.size} | {m.speed} | {"–" if m.senses is None else m.senses} | {"–" if m.vulnerable is None else m.vulnerable} | {"–" if m.resist is None else m.resist} | {"–" if m.immune is None else m.immune} |' for m in monsters])
-  strout = '\n'.join([f'{m.name}' for m in monsters])
+  strout += '| CR | Name | HP | AC | Size | Movement | Senses | Weak | Resist | Immune |\n|:---:|:--- |:---:|:---:|:---:|:--- |:--- |:--- |:--- |:--- |\n'
+  strout += '\n'.join([f'| {m.challenge_rating.cr_str} | [[{m.name}]] | {m.hit_points.hp} | {m.armor_class} | {m.size} | {m.speed} | {"–" if m.senses is None else m.senses} | {"–" if m.vulnerable is None else m.vulnerable} | {"–" if m.resist is None else m.resist} | {"–" if m.immune is None else m.immune} |' for m in monsters])
+  # strout = '\n'.join([f'{m.name}' for m in monsters])
   clipboard.set(strout)
   print(strout)
   # cr, name, hp, ac, str dex con int wis cha, movement
@@ -125,7 +126,7 @@ def make_monster_csv():
       flags[terrains.index(env)] = True
     return '\t'.join(['X' if f else '' for f in flags])
     
-  "id	Monster	Size	Type	Alignment	CR	Source	Page	Terrain"
+  # id	Monster	Size	Type	Alignment	CR	Source	Page	Terrain
   envs = []
   for m in dl.monsters:
     src, pg = get_src_and_pg(m)
