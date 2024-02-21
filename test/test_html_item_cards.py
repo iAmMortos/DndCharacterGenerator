@@ -93,6 +93,7 @@ def main():
   margin: 0px;
   padding: 6px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .card-back
