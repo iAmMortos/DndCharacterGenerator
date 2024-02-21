@@ -3,16 +3,19 @@ import re
 from model.source import Source
 
 
-def get_sources(s):
+def get_sources(s, skip_prefix=False):
   if type(s) is not str:
     return []
-  m = re.search(r'Source: ?(.*)$', s, re.MULTILINE)
-  srcs = []
-  if m:
-    for g in m.groups():
-      gs = [gr.strip() for gr in g.split(',')]
-      srcs += [Source(gr) for gr in gs]
-  return srcs
+  if skip_prefix:
+    return [Source(sc.strip()) for sc in s.split(',')]
+  else:
+    m = re.search(r'Source: ?(.*)$', s, re.MULTILINE)
+    srcs = []
+    if m:
+      for g in m.groups():
+        gs = [gr.strip() for gr in g.split(',')]
+        srcs += [Source(gr) for gr in gs]
+    return srcs
 
 def get_src_abbr_str(srcs):
   return ', '.join([s.abbr for s in srcs])

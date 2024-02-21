@@ -4,6 +4,7 @@ from model.range import Range
 from model.roll import Roll
 from model.xml_entity import XmlEntity
 from utils.ordinals import get_ord_str
+from utils.regexes import get_sources
 import re
 
 
@@ -83,7 +84,14 @@ class Spell (XmlEntity):
     self.range = self._get_as_obj('range', Range, None)
     self.components = self._get_as_obj('components', Components, None)
     self.duration = self._get_as_obj('duration', Duration, None)
-    self.text = self._get('text', '')
+    
+    main_text = self._get('text', '')
+    self.full_text = main_text
+    parts = self._process_main_text(main_text)
+    self.text = parts[0]
+    self.higher_levels = parts[1]
+    self.sources = get_sources(parts[2], skip_prefix=True)
+    
     self.roll = self._get_as_obj('roll', Roll, None)
     self.classes = self._get_as_list('classes')
 
@@ -96,8 +104,23 @@ class Spell (XmlEntity):
 
     if self.ritual:
       s += ' (ritual)'
-
     return s
+    
+  def _process_main_text(self, s):
+    if type(s) is not str:
+      return ('', None, None)
+    r = re.match(r'^([\w\W]*?)(At Higher Levels:[\w\W]*?)?(Source:[\w\W]*?)?$', s)
+    if r:
+      main, higher_levels, source = r.groups()
+      if main:
+        main = main.strip()
+      if higher_levels:
+        higher_levels = higher_levels[17:].strip()
+      if  source:
+        source = source[7:].strip()
+      return (main, higher_levels, source)
+    else:
+      return (s.strip(), None, None)
 
   def get_book_str(self):
     s = f'{self.name}\n' \
