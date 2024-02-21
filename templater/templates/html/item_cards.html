@@ -4,8 +4,12 @@
 
 <head>
 	<!-- <link rel="stylesheet" href="css/item_cards.css" media="screen"> -->
-	<link rel="stylesheet" href="css/item_cards_print.css" media="screen">
+	<!--<link rel="stylesheet" href="css/item_cards_print.css" media="screen">-->
+	<style>{css}</style>
 	<script src="js/item_cards.js"></script>
+<style>
+
+</style>
 </head>
 
 <body>
@@ -15,33 +19,8 @@
 
 <div id="front-page-print">
   <div id="front-page" class="page">
-    <div class="card">
-
-    </div>
-    <div class="card">
-
-    </div>
-    <div class="card">
-
-    </div>
-    <div class="card">
-
-    </div>
-    <div class="card">
-
-    </div>
-    <div class="card">
-
-    </div>
-    <div class="card">
-
-    </div>
-    <div class="card">
-
-    </div>
-    <div class="card">
-
-    </div>
+    {items|temp:item_card|delimiter:\n}
+    
     <div class="guide hguide hguide0"></div>
     <div class="guide hguide hguide1"></div>
     <div class="guide hguide hguide2"></div>
@@ -55,15 +34,8 @@
 
 <div id="back-page-print">
   <div id="back-page" class="page">
-    <div class="card card-back"></div>
-    <div class="card card-back"></div>
-    <div class="card card-back"></div>
-    <div class="card card-back"></div>
-    <div class="card card-back"></div>
-    <div class="card card-back"></div>
-    <div class="card card-back"></div>
-    <div class="card card-back"></div>
-    <div class="card card-back"></div>
+    {items|temp:item_card_back|delimiter:\n}
+    
     <div class="guide hguide hguide0"></div>
     <div class="guide hguide hguide1"></div>
     <div class="guide hguide hguide2"></div>
