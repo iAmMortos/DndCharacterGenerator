@@ -1,6 +1,9 @@
 import base64
 from ui import WebView
 import random
+import webbrowser
+import os
+import io
 
 import test_context
 from model.data_loader import DataLoader
@@ -8,10 +11,7 @@ from templater.templater import Templater
 
 
 class ItemSheet (object):
-  def __init__(self):
-    self.items = []
-    self.css = ''
-    self.back_img = ''
+  pass
 
 
 def main():
@@ -27,9 +27,12 @@ def main():
 #  return
   
   sheet.items = random.sample(dl.items, 9)
+  # sheet.items = [dl.get_item('Korolnor Scepter')]
   for item in sheet.items:
     if item.text and type(item.text) is str:
       item.text = item.text.replace('\n', '</p>\n<p>')
+      item.text = item.text.replace('\xa0', '&nbsp;')
+      item.text = item.text.replace('•', '&#x2022;')
     setattr(item, "item_img_b64", str(item_img)[2:-1])
   # print(dl.get_item('Iron Flask'))
   
@@ -136,9 +139,24 @@ def main():
   bottom: 0;
 }
 '''
+  sheet.js = '''function printDiv(divId)
+{
+	var printContents = document.getElementById(divId).innerHTML;
+  var originalContents = document.body.innerHTML;
+  
+  document.body.innerHTML = printContents;
+  window.print();
+  document.body.innerHTML = originalContents;
+}'''
 
   html = tmpltr.make(sheet, 'item_cards')
-  show_html(html)
+  with io.open('test/cards.html', 'w', encoding="utf-8") as f:
+    f.write(html)
+  url = 'file:/' + os.path.realpath('test/cards.html')
+  url = url.replace(' ', '%20')
+  # print(url)
+  webbrowser.open(url)
+  # show_html(html)
   # print(html)
   
 
