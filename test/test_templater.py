@@ -33,8 +33,15 @@ def write_mm_monsters():
       mon_out = tmpltr.make(monster)
       with io.open(f'{monster.name}.md', 'w', encoding='utf-8') as f:
         f.write(mon_out)
+        
+        
+def test_template_monster():
+  tmpltr = Templater('markdown')
+  gob = dl.get_monster('Goblin')
+  gob_md = tmpltr.make(gob)
+  print(gob_md)
 
 
 if __name__ == '__main__':
-  test_template_spells()
+  test_template_monster()
 
