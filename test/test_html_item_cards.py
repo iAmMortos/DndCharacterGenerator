@@ -1,5 +1,5 @@
 import base64
-from ui import WebView
+# from ui import WebView
 import random
 import webbrowser
 import os
@@ -26,7 +26,7 @@ def main():
 #  print(item_img)
 #  return
   
-  sheet.items = random.sample(dl.items, 9)
+  sheet.items = random.sample(dl.items, 7)
   # sheet.items = [dl.get_item('Korolnor Scepter')]
   for item in sheet.items:
     if item.text and type(item.text) is str:
@@ -71,30 +71,16 @@ def main():
 .vguide2{ left: 64.7059%; }
 .vguide3{ left: 94.1176%; }
 
-.page
-{
-  position: relative;
-  /* width: 2250px;
-  height: 3150px;
-  padding: 75px 150px; */
-  float: left;
-  margin: 10px;
-  width: 600px;
-  height: 840px;
-  padding: 20px 40px;
-  border: 1px solid black;
-}
-
 .card
 {
   position: relative;
   float: left;
-  width: 33.33333%;
-  height: 33.33333%;
+  width: 33.3333%;
+  height: 33.3333%;
   /* background-color: red; */
   border: 1px #ccc solid;
   margin: 0px;
-  padding: 6px;
+  padding: 1em;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -108,7 +94,7 @@ def main():
 
 .card h1
 {
-  font-size: 8pt;
+  font-size: 1.33em;
   color: #600;
   font-weight: bold;
   margin: 0;
@@ -116,7 +102,7 @@ def main():
 
 .card h6
 {
-  font-size: 6pt;
+  font-size: 1em;
   color: #999;
   font-style: italic;
   margin: 0;
@@ -124,19 +110,67 @@ def main():
 
 .card p
 {
-  font-size: 6pt;
+  font-size: 1em;
   color: black;
   margin: 0px;
-  text-indent: 8px;
+  text-indent: 1.33em;
 }
 
 .card .bg_img
 {
+  position: relative;
+  left: 0;
   opacity: .3;
   width: 100%;
   z-index: -900;
   position: absolute;
   bottom: 0;
+}
+
+@media screen {
+  .page
+  {
+    position: relative;
+    float: left;
+    margin: 10px;
+    width: 600px;
+    height: 840px;
+    padding: 20px 40px;
+    border: 1px solid black;
+    font-size: 6px;
+  }
+}
+
+@media print {
+  @page {
+    size: 2550px 3300px;
+    image-resolution: 300dpi;
+  }
+  /*.page
+  {
+    position: relative;
+    width: 2250px;
+    height: 3150px;
+    padding: 75px 150px;
+    float: left;
+    border: 1px solid black;
+  }*/
+  .page
+  {
+    position: relative;
+    /*width: 100vw;
+    height: 100vh;
+    padding: 2.2727% 5.8824%;
+    */
+    width: 2550px;
+    height: 3300px;
+    padding: 75px 150px;
+    page-break-after:always;
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 25.5px;
+  }
 }
 '''
   sheet.js = '''function printDiv(divId)
@@ -160,10 +194,10 @@ def main():
   # print(html)
   
 
-def show_html(html):
-  wv = WebView()
-  wv.load_html(html)
-  wv.present()
+# def show_html(html):
+#   wv = WebView()
+#   wv.load_html(html)
+#   wv.present()
   
   
 if __name__ == '__main__':
