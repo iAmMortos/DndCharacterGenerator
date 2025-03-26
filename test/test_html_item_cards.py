@@ -9,6 +9,8 @@ import test_context
 from model.data_loader import DataLoader
 from templater.templater import Templater
 
+from utils import objc_utils
+
 
 class ItemSheet (object):
   pass
@@ -38,11 +40,58 @@ def main():
   # print(dl.get_item('Iron Flask'))
   
   sheet.css = '''
+  @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .print-button {
+            margin: 10px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5in;
+            width: 7.5in;
+            margin: 0 auto;
+        }
+
+        .card {
+            width: 2.5in;
+            height: 3.5in;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+            background: white;
+        }
+        
+        @media print {
+            .print-button { display: none; }
+            body { justify-content: flex-start; }
+        }
   '''
   sheet.js = '''
   '''
 
   html = tmpltr.make(sheet, 'item_cards')
+  # bjc_utils.print_html(html)
   with io.open('test/cards.html', 'w', encoding="utf-8") as f:
     f.write(html)
   url = 'file:/' + os.path.realpath('test/cards.html')
