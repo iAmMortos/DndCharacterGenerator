@@ -136,9 +136,15 @@ def make_monster_csv():
       # print(f'###\t{m.name}\t{m.size}\t{m.type}\t{m.alignment}\t{m.challenge_rating.cr}\t{src}\t{pg}\t{m.environment}\t{envcells}')
   clipboard.set(txt)
   print("copied to clipboard")
+  
+
+def print_attacks():
+  for m in dl.monsters:
+    for a in m.actions:
+      print(a)
 
 def main():
-  test_create_polymorph_list()
+  print_attacks()
   
 
 if __name__ == "__main__":
