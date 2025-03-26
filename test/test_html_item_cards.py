@@ -38,16 +38,9 @@ def main():
   # print(dl.get_item('Iron Flask'))
   
   sheet.css = '''
-'''
-  sheet.js = '''function printDiv(divId)
-{
-	var printContents = document.getElementById(divId).innerHTML;
-  var originalContents = document.body.innerHTML;
-  
-  document.body.innerHTML = printContents;
-  window.print();
-  document.body.innerHTML = originalContents;
-}'''
+  '''
+  sheet.js = '''
+  '''
 
   html = tmpltr.make(sheet, 'item_cards')
   with io.open('test/cards.html', 'w', encoding="utf-8") as f:
