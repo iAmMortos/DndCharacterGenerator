@@ -1,4 +1,5 @@
 /.idea/
 views/html/node_modules/
 views/html/index.html
+*.pyc
 __pycache__/
